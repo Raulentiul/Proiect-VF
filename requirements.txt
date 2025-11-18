@@ -1,0 +1,11 @@
+requests
+beautifulsoup4
+python-dateutil
+tqdm
+pyyaml
+# optional:
+PyGithub
+aiohttp
+aiofiles
+pandas
+lxml
