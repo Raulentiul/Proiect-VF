@@ -1,0 +1,4146 @@
+tools:
+- name: DeepMIP
+  website: null
+  description: <p>Code for DeepMIP and MiniMIP algorithms.</p>
+  used_for: &id002 []
+  input_formats: &id001 []
+  supported_languages: []
+  supported_inputs: *id001
+  properties_verified: *id002
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6982973
+  last_updated: '2022-08-15T02:27:01.428268+00:00'
+- name: 'Dataset: Feedforward Neural Network Verification in Isabelle/HOL'
+  website: null
+  description: "<p>This data set complements the publication</p>\n\n<ul>\n\t<li>&nbsp;\
+    \ A.D. Brucker and A. Stell. Verifying feedforward neural networks for classification\
+    \ in&nbsp; Isabelle/HOL. In M. Chechik, J.-P. Katoen, and M. Leucker, editors,\
+    \ Formal Methods (FM 2023). L&uuml;beck, Germany, 2023. ISBN: 978-3-642-38915-3.</li>\n\
+    </ul>\n\n<p>&nbsp;</p>"
+  used_for: &id004 []
+  input_formats: &id003 []
+  supported_languages: []
+  supported_inputs: *id003
+  properties_verified: *id004
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7427122
+  last_updated: '2024-07-15T14:39:53.754857+00:00'
+- name: On Applying Residual Reasoning within Neural Network Verification
+  website: null
+  description: '<p>As neural networks are increasingly being integrated into&nbsp;mission-critical
+    systems, it is becoming crucial to ensure that they meet<br>
+
+    various safety and liveness requirements. Towards, that end, numerous&nbsp;complete
+    and sound verification techniques have been proposed in recent&nbsp;years, but
+    these often suffer from severe scalability issues. One recently&nbsp;proposed
+    approach for improving the scalability of verification techniques&nbsp;is to enhance
+    them with abstraction-refinement capabilities: instead of&nbsp;verifying a complex
+    and large network, abstraction allows the verifier to&nbsp;construct and then
+    verify a much smaller network; and the correctness of&nbsp;the smaller network
+    immediately implies the correctness of the original,&nbsp;larger network. One
+    shortcoming of this scheme is that whenever the<br>
+
+    smaller network cannot be verified, the verifier must perform a refinement step,
+    in which the size of the network being verified is increased.&nbsp;The verifier
+    then starts verifying the new network from scratch &mdash; effectively &ldquo;forgetting&rdquo;
+    its earlier work, in which the&nbsp; smaller network was&nbsp;verified. Here,
+    we present an enhancement to abstraction-based neural&nbsp;network verification,
+    which uses residual reasoning: a process where information acquired when verifying
+    an abstract network is utilized in order&nbsp;to facilitate the verification of
+    refined networks. At its core, the method&nbsp;enables the verifier to retain
+    information about parts of the search space<br>
+
+    in which it was determined that the refined network behaves correctly,&nbsp;allowing
+    the verifier to focus on areas of the search space where bugs&nbsp;might yet be
+    discovered. For evaluation, we implemented our approach&nbsp;as an extension to
+    the Marabou verifier, and obtained highly promising&nbsp;results.</p>'
+  used_for: &id006
+  - liveness
+  - safety
+  input_formats: &id005 []
+  supported_languages: []
+  supported_inputs: *id005
+  properties_verified: *id006
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.8224307
+  last_updated: '2023-08-27T14:26:50.246391+00:00'
+- name: 'Artifact for DNNV: A Framework for Deep Neural Network Verification'
+  website: null
+  description: '<p>Despite the large number of sophisticated deep neural network (DNN)
+    verification algorithms, DNN verifier developers, users, and researchers still
+    face several challenges. First, verifier developers must contend with the rapidly
+    changing DNN field to support new DNN operations and property types. Second, verifier
+    users have the burden of selecting a verifier input format to specify their problem.
+    Due to the many input formats, this decision can greatly restrict the verifiers
+    that a user may run. Finally, researchers face difficulties in re-using benchmarks
+    to evaluate and compare verifiers, due to the large number of input formats required
+    to run different verifiers. Existing benchmarks are rarely in formats supported
+    by verifiers other than the one for which the benchmark was introduced. In this
+    work we present DNNV, a framework for reducing the burden on DNN verifier researchers,
+    developers, and users. DNNV standardizes input and output formats, includes a
+    simple yet expressive DSL for specifying DNN properties, and provides powerful
+    simplification and reduction operations to facilitate the application, development,
+    and comparison of DNN verifiers. We show how DNNV increases the support of verifiers
+    for existing benchmarks from 30% to 74%.<br>
+
+    <br>
+
+    We provide an artifact containing the DNNV tool for DNN verification, as well
+    as some benchmark problems on which to run DNNV. The artifact is provided as a
+    virtual machine running Ubuntu 20.04, and is functional, available, and re-usable.
+    The artifact for evaluation is made permanently available at https://doi.org/10.5281/zenodo.4717923,
+    with the tool source code and documentation made available for re-use at https://github.com/dlshriver/DNNV
+    and https://dnnv.readthedocs.io, respectively.</p>'
+  used_for: &id008 []
+  input_formats: &id007
+  - ONNX
+  supported_languages: []
+  supported_inputs: *id007
+  properties_verified: *id008
+  techniques:
+  - SMT solving
+  - neural network verification techniques
+  external_tools:
+  - TensorFlow
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.4883626
+  last_updated: '2021-06-01T01:48:10.582750+00:00'
+- name: 'Artifact: Example Guided Synthesis of Linear Approximations for Neural Network
+    Verification'
+  website: null
+  description: <p>This is the artifact for the paper &quot;Example Guided Synthesis
+    of Linear Approximations for Neural Network Verification&quot; published at CAV
+    2022. The zip file contains a Readme.txt explaining how to use the artifact, and
+    reproduce our results.</p>
+  used_for: &id010 []
+  input_formats: &id009 []
+  supported_languages: []
+  supported_inputs: *id009
+  properties_verified: *id010
+  techniques:
+  - neural network verification techniques
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6525186
+  last_updated: '2022-05-07T01:49:23.189138+00:00'
+- name: 'Artifact of GenBaB: Neural Network Verification with Branch-and-Bound for
+    General Nonlinearities'
+  website: null
+  description: null
+  used_for: &id012 []
+  input_formats: &id011 []
+  supported_languages: []
+  supported_inputs: *id011
+  properties_verified: *id012
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.14745058
+  last_updated: '2025-01-27T08:19:03.920766+00:00'
+- name: 'TACAS''25 Artifact Submission: The NeuralSAT DPLL(T) Framework For Deep Neural
+    Network Verification'
+  website: null
+  description: null
+  used_for: &id014 []
+  input_formats: &id013 []
+  supported_languages: []
+  supported_inputs: *id013
+  properties_verified: *id014
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.13985134
+  last_updated: '2024-10-24T12:37:08.923583+00:00'
+- name: Building Verified Neural Networks for Computer Systems with Ouroboros
+  website: null
+  description: <p>Neural networks are powerful tools. Applying them in computer systems&mdash;operating
+    systems, databases, and networked systems&mdash;attracts much attention. However,
+    neural networks are complicated black boxes that may produce unexpected results.
+    To train networks with well-defined behaviors, we introduce ouroboros, a system
+    that constructs verified neural networks for computer systems. Verified neural
+    networks are neural networks that satisfy user-defined safety properties, called
+    specifications. Ouroboros builds verified networks by a training-verification
+    loop that combines deep learning training and neural network verification. Ouroboros
+    introduces multiple techniques to fill the gap between today&rsquo;s verification
+    and the properties that systems require. Ouroboros also accelerates the training-verification
+    loop by spec-aware learning. Our experiments show that ouroboros can train verified
+    networks for all five applications that we study and has a 4.3&times; speedup
+    on average compared with the vanilla training-verification loop.</p>
+  used_for: &id016
+  - safety
+  input_formats: &id015 []
+  supported_languages: []
+  supported_inputs: *id015
+  properties_verified: *id016
+  techniques:
+  - neural network verification techniques
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7788500
+  last_updated: '2023-03-31T14:26:38.112069+00:00'
+- name: Artifact for Paper Scalable Verification of GNN-Based Job Schedulers
+  website: null
+  description: <p>Please follow the instructions in the readme to replicate the results
+    in the paper.</p>
+  used_for: &id018 []
+  input_formats: &id017 []
+  supported_languages: []
+  supported_inputs: *id017
+  properties_verified: *id018
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7080246
+  last_updated: '2022-09-15T02:26:28.531445+00:00'
+- name: Benchmark Sets for Variable Elimination in Conjunctions of Linear Real Arithmetic
+    Constraints
+  website: null
+  description: '<p>Three benchmark sets for testing tools on the task of existential
+    quantifier elimination from conjunctions of linear real arithmetic constraints
+    (a.k.a. polyhedron projection).</p>
+
+    <p>All sets are given in three formats:</p>
+
+    <ul>
+
+    <li>ine: <code>.ine</code> files as used by the CDD library and some other polyhedra
+    libraries.</li>
+
+    <li>redlog: <code>.red</code> files as used by the CAS Reduce and its package
+    Redlog</li>
+
+    <li>smtlib: <code>.smt2</code> files as used by SMT related tools like SMT-RAT
+    or z3.</li>
+
+    </ul>
+
+    <p>The <code>Random</code> set contains random satisfiable conjunctions of 3-60
+    constraints with 3-30 variables and different coefficient densities, from which
+    half of the variables are to be eliminated.&nbsp;The <code>NN-Verif</code> set
+    contains conjunctions obtained in neural network verification tasks. The <code>SMT-lib-deriv</code>
+    set contains conjunctions derived during SMT-solving of the <code>QF_LRA</code>
+    satisfiability checking benchmarks from SMT-lib.</p>'
+  used_for: &id020 []
+  input_formats: &id019
+  - SMT-LIB
+  - SMT
+  supported_languages: []
+  supported_inputs: *id019
+  properties_verified: *id020
+  techniques:
+  - SMT solving
+  - neural network verification techniques
+  external_tools:
+  - Z3
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.10605373
+  last_updated: '2024-02-01T13:09:05.290314+00:00'
+- name: 'ravenbeutner/astnar: First Release of Astnar'
+  website: null
+  description: Tools for computing lower bounds on the probability of termination
+    and the almost-sure termination (AST) verification of non-affine recursive programs.
+  used_for: &id022
+  - termination
+  input_formats: &id021 []
+  supported_languages: []
+  supported_inputs: *id021
+  properties_verified: *id022
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.4682811
+  last_updated: '2021-04-13T12:27:24.255564+00:00'
+- name: 'Formal Methods for NFA Equivalence: QBFs, Witness Extraction, and Encoding
+    Verification'
+  website: null
+  description: <p>Supplemental material to the paper.</p>
+  used_for: &id024 []
+  input_formats: &id023 []
+  supported_languages: []
+  supported_inputs: *id023
+  properties_verified: *id024
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6896218
+  last_updated: '2022-07-25T01:49:11.171442+00:00'
+- name: 'Modular Termination Verification: Machine-Checked Proofs'
+  website: null
+  description: "<p>Machine-checked using Coq 8.6.</p>\n\n<p>Contents:</p>\n\n<ul>\n\
+    \t<li><strong>Generic Utility Concepts</strong>\n\n\t<ul>\n\t\t<li><em>Util</em>:\
+    \ Notations for lists and decidable equality</li>\n\t</ul>\n\t</li>\n\t<li><strong>Module\
+    \ Correctness</strong>\n\t<ul>\n\t\t<li><em>Programs</em>: The syntax of programs.\
+    \ Parameterized over the set of types, values, and operators, and the well-founded\
+    \ type of levels.</li>\n\t\t<li><em>ProgramExecution</em>: Relates programs to\
+    \ outcomes (termination with a result value or divergence).</li>\n\t\t<li><em>ProgramCorrectness</em>:\
+    \ Correctness of a class, and correctness of a program in terms of correctness\
+    \ of its classes.</li>\n\t\t<li><em>WellTyped</em>: Well-typedness of a program.\
+    \ Implies that the import graph is acyclic.</li>\n\t\t<li><em>Soundness</em>:\
+    \ Correct well-typed programs do not diverge.</li>\n\t</ul>\n\t</li>\n\t<li><strong>Specification\
+    \ Style</strong>\n\t<ul>\n\t\t<li><em>NonWf</em>: Relates well-foundedness to\
+    \ descending chains. Used by WellOrderingTheoremEx.</li>\n\t\t<li><em>WellOrderingTheoremEx</em>:\
+    \ Each well-founded relation can be extended to a well-ordering.</li>\n\t\t<li><em>MultisetOrder</em>:\
+    \ Finite multisets, the Dershowitz-Manna ordering, and a proof of its well-foundedness.</li>\n\
+    \t\t<li><em>SpecStyle</em>: Instantiates the syntax of programs with a well-founded\
+    \ (in fact: well-ordered) type of method bags.</li>\n\t\t<li><em>MethodBagLemmas</em>:\
+    \ Some lemmas about method bag order, useful for the example correctness proofs.</li>\n\
+    \t</ul>\n\t</li>\n\t<li><strong>Example Programs</strong>\n\t<ul>\n\t\t<li><em>Loopy</em>:\
+    \ An example program that performs infinite inter-module recursion through dynamic\
+    \ binding.</li>\n\t\t<li><em>PlusOneFunc</em>: An example program with dynamic\
+    \ binding that terminates.</li>\n\t\t<li><em>ExamplesWellTyped</em>: Loopy and\
+    \ PlusOneFunc are well-typed.</li>\n\t\t<li><em>ProgramExecutionTests</em>: Loopy\
+    \ diverges; PlusOneFunc has an execution that terminates with result 0.</li>\n\
+    \t\t<li><em>PlusOneFunc_is_Correct</em>: A modular proof of correctness of PlusOneFunc.</li>\n\
+    \t\t<li><em>PlusOneFunc_terminates</em>: Applies the soundness theorem to obtain\
+    \ that PlusOneFunc does not have diverging executions.</li>\n\t</ul>\n\t</li>\n\
+    </ul>"
+  used_for: &id026
+  - termination
+  input_formats: &id025 []
+  supported_languages: []
+  supported_inputs: *id025
+  properties_verified: *id026
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.1248801
+  last_updated: '2024-08-02T16:01:50.746610+00:00'
+- name: 'Making IP = PSPACE Practical: Efficient Interactive Protocols for BDD Algorithms
+    – Artifact'
+  website: null
+  description: '<p>This is the artifact for the submission &ldquo;Making IP = PSPACE
+    Practical: Efficient Interactive Protocols for BDD Algorithms&rdquo;. Within the
+    paper, we develop a new approach to interactively certify BDD algorithms. We implemented
+    this approach as `blic`, a certifying QBF solver. This tool is evaluated against
+    other QBF solvers.</p>
+
+
+    <p>The artifact consists of the source code for `blic`, as well as the data and
+    other tools necessary to replicate the empirical claims of the paper.<br>
+
+    &nbsp;</p>'
+  used_for: &id028 []
+  input_formats: &id027
+  - QBF
+  supported_languages: []
+  supported_inputs: *id027
+  properties_verified: *id028
+  techniques:
+  - SMT solving
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7877702
+  last_updated: '2023-04-29T02:26:43.611281+00:00'
+- name: Supplementary code availability
+  website: null
+  description: '<p># QBF: Quantum Biological Field Framework for Mechanistic Prediction
+    of IDP Diseases</p>
+
+    <p>This project implements **QBF (Quantum Biological Field)** framework to uncover
+    **disease-driving mechanisms** and **pathogenic sites** in **intrinsically disordered
+    proteins (IDPs)**.</p>
+
+    <p>## Features</p>
+
+    <p>- **Mechanism-Oriented** &nbsp;<br>&nbsp; Predicts disease-specific conformational
+    transitions and pathogenic residue hotspots.</p>
+
+    <p>- **Theoretical Integration** &nbsp;<br>&nbsp; Embeds residue-pair interactions
+    for iterative refinement of hidden-state distributions.</p>
+
+    <p>- **No Retraining Required** &nbsp;<br>&nbsp; Generalizes across IDP families
+    and disease variants without retraining, using only sequence input.</p>
+
+    <p>- **Experimentally Validated** &nbsp;<br>&nbsp; Predictions are supported by
+    site-directed mutagenesis, aggregation assays, and Alzheimer&rsquo;s disease models.</p>'
+  used_for: &id030 []
+  input_formats: &id029
+  - QBF
+  supported_languages: []
+  supported_inputs: *id029
+  properties_verified: *id030
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.15758068
+  last_updated: '2025-07-08T16:31:30.174961+00:00'
+- name: Artifact for Paper Search-Space Pruning with Int-Splits for Faster QBF Solving
+  website: null
+  description: <p>This is the artifact for the paper &quot;Search-Space Pruning with
+    Int-Splits for Faster QBF Solving&quot; submitted to the <a href="http://satisfiability.org/SAT23/">SAT2023</a>
+    conference.</p>
+  used_for: &id032 []
+  input_formats: &id031
+  - QBF
+  supported_languages: []
+  supported_inputs: *id031
+  properties_verified: *id032
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7753526
+  last_updated: '2023-03-21T14:26:40.808393+00:00'
+- name: General Boolean Formula Minimization with QBF Solvers
+  website: null
+  description: <p>The minimization of propositional formulae is a classical problem
+    in logic, whose first algorithms date back at least to the 1950s with the works
+    of Quine and Karnaugh. Most previous work in the area has focused on obtaining
+    minimal, or quasi-minimal, formulae in conjunctive normal form (CNF) or disjunctive
+    normal form (DNF), with applications in hardware design. In this paper, we are
+    interested in the problem of obtaining an equivalent formula in any format, also
+    allowing connectives that are not present in the original formula. We are primarily
+    motivated in applying minimization algorithms to generate natural language translations
+    of the original formula, where using shorter equivalents as input may result in
+    better translations. Recently, Buchfuhrer and Umans have proved that the (decisional
+    version of the) problem is <span><span><span><span><span><span><span><span><span>&Sigma;</span></span></span></span></span></span></span></span></span>complete.
+    We analyze three possible (practical) approaches to solving the problem. First,
+    using brute force, generating all possible formulae in increasing size and checking
+    if they are equivalent to the original formula by testing all possible variable
+    assignments. Second, generating the Tseitin coding of all the formulae and checking
+    equivalence with the original using a SAT solver. Third, encoding the problem
+    as a Quantified Boolean Formula (QBF), and using a QBF solver. Our results show
+    that the QBF approach largely outperforms the other two.</p>
+  used_for: &id034 []
+  input_formats: &id033
+  - QBF
+  - CNF
+  supported_languages: []
+  supported_inputs: *id033
+  properties_verified: *id034
+  techniques:
+  - SMT solving
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3233/FAIA230705
+  last_updated: '2024-07-06T22:00:18.423440+00:00'
+- name: 'peitl/qfun-sms: SMS'
+  website: null
+  description: '<p>Support for <a href="https://sat-modulo-symmetries.readthedocs.io/">SAT
+    Modulo Symmetries</a> for isomorph-free graph generation subject to QBF constraints.
+    See also the AAAI 2025 paper titled &quot;Breaking Symmetries in Quantified Graph
+    Search: A Comparative Study.&quot;</p>'
+  used_for: &id036 []
+  input_formats: &id035
+  - QBF
+  supported_languages: []
+  supported_inputs: *id035
+  properties_verified: *id036
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.14528836
+  last_updated: '2024-12-19T15:21:22.491660+00:00'
+- name: Software Artifact Accompanying the Article "Modular Verification for Almost-Sure
+    Termination of Probabilistic Programs"
+  website: null
+  description: '<p>This package contains code and data needed for reproducing results
+    reported in the following paper:</p>
+
+
+    <p>&nbsp;</p>
+
+
+    <p>Modular Verification for Almost-Sure Termination of Probabilistic Programs<br>
+
+    M. Huang, H. Fu, K. Chatterjee, A. Goharshady</p>
+
+
+    <p>To appear in OOPSLA 2019</p>'
+  used_for: &id038
+  - termination
+  input_formats: &id037 []
+  supported_languages:
+  - Java
+  supported_inputs: *id037
+  properties_verified: *id038
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.3363977
+  last_updated: '2020-01-25T07:23:58.298070+00:00'
+- name: 'fslivovsky/qute: v1.2.0'
+  website: null
+  description: '<p>Support for <a href="https://sat-modulo-symmetries.readthedocs.io/en/latest/">SAT
+    Modulo Symmetries</a> for isomorph-free graph generation subject to QBF constraints.
+    See also the AAAI 2025 paper titled Breaking Symmetries in Quantified Graph Search:
+    A Comparative Study.</p>'
+  used_for: &id040 []
+  input_formats: &id039
+  - QBF
+  supported_languages: []
+  supported_inputs: *id039
+  properties_verified: *id040
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.14536421
+  last_updated: '2024-12-20T14:25:30.235177+00:00'
+- name: 'Artifact for Paper ParaQooba: A Fast and Flexible Framework for Parallel
+    and Distributed QBF Solving'
+  website: null
+  description: '<p>The artifact for the paper &quot;ParaQooba: A Fast and Flexible
+    Framework for Parallel and Distributed QBF Solving&quot; submitted to the <a href="https://tacas.info/artifacts-23.php">TACAS2023
+    artifact evaluation</a>.</p>
+
+
+    <p>We thank the reviewers for their comments and added the missing dependencies
+    to this revised version. No other parts have been changed.</p>'
+  used_for: &id042 []
+  input_formats: &id041
+  - QBF
+  supported_languages: []
+  supported_inputs: *id041
+  properties_verified: *id042
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7554207
+  last_updated: '2023-01-20T14:26:34.328426+00:00'
+- name: ReBAC Availability Verifiers
+  website: null
+  description: '<p>This is the implementation of Availability Criteria (Satisfiability,
+    Feasibility and Resiliency) Verifiers for Relationship-based Access Control with
+    support for Multiple Ownership (ReBAC/MO). The following are informal examples
+    of availability criteria.</p>
+
+
+    <p>. Satisfiability: &quot;Object o shall be accessible by at least 35 users in
+    the current protection state.&quot;</p>
+
+
+    <p>. Resiliency: &quot;Even if I were to recruit 10 additional patients (or lose
+    10 of my existing patients), object o shall remain accessible by at least 25 users.&quot;</p>
+
+
+    <p>. Feasibility: &quot;I shall be able to make object o accessible by at least
+    50 users if the company hires no more than 10 additional colleagues (or fires
+    no more than 10 existing colleagues).&quot;</p>
+
+
+    <p>The ReBAC/MO consists of the Boolean combinations of atomic policies. The atomic
+    policies are represented by a 2-tuple; comprising a Birooted graph pattern (one
+    root represents the owner, the other one represents the requester) and a vertex
+    in the social graph, to which the owner in the graph pattern will be anchored.
+    The availability criteria then boils down to finding the graph pattern(s) in the
+    social graph that are isomorphic to the graph patterns in the atomic policies.
+    The verifiers use different technologies as to decide availability criteria. Below
+    we briefly explain each verifier.</p>
+
+
+    <p>. In the first verifier we reduce the Availability Criteria (esp. Satisfiability)
+    to Quantified Boolean Formula Satisfiability (QBF) and compile it into a non-prenex
+    non-CNF format (QCIR). Please note, each atomic policy can be seen as an stand-alone
+    Subgraph Isomorphism problem, hence, we use a fairly standard approach to reduce
+    it to a Boolean Satifiability problem. The Boolean combination of Boolean Satisfiability
+    problem (esp. with negations) yields a non-CNF QBF. A non-clausal QBF solver like
+    RAReQS-NN or GhostQ can then be invoked to decide the availability criteria.&nbsp;</p>
+
+
+    <p>. In the second verifier we employ an approach similar to the previous one.
+    In nutshell, we reduce atomic policies to SAT problems and call a SAT solver (i.e.
+    Sat4J) to solve it. Then we construct the original policy from the atomic policies
+    and check if it is satisifiable.</p>
+
+
+    <p>. In the third verifier we adopt a completely differnet approach. We reduce
+    the availability criteria into an Answer Set Programming problem. Then an ASP
+    solver (i.e. clingo) is invoked to decide the availability criteria.</p>
+
+
+    <p>Please refer to the following paper for further readings:</p>
+
+
+    <p>Pooya Mehregan and Philip W. L. Fong. Policy Negotiation for Co-owned Resources
+    in Relationship-Based Access Control. In the Proceedings of 21st ACM Symposium
+    on Access Control Models and Technologies (SACMAT 2016), Shanghai, China, June
+    6-8, 2016.</p>
+
+
+    <p>Enjoy!</p>
+
+
+    <p>Pooya</p>'
+  used_for: &id044 []
+  input_formats: &id043
+  - QBF
+  - CNF
+  supported_languages: []
+  supported_inputs: *id043
+  properties_verified: *id044
+  techniques:
+  - SMT solving
+  - neural network verification techniques
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.56133
+  last_updated: '2025-04-24T07:28:45.676864+00:00'
+- name: Code, Benchmarks, Data from the ICAPS 2022  paper "Classical Planning as QBF
+    without Grounding"
+  website: null
+  description: "<p>This submission contains three parts:</p>\n\n<ol>\n\t<li>Software/code:\
+    \ A copy of <a href=\"https://github.com/irfansha/Q-Planner\">Q-Planner</a>, a\
+    \ QBF based planner which avoids grounding, which is used for the experiments\
+    \ in the ICAPS-2022 paper.</li>\n\t<li>Benchmarks: All the benchmarks used in\
+    \ the experiments for the paper.</li>\n\t<li>Data: The data from 4 planners on\
+    \ all benchmarks along with statistics from Grendel cluster.&nbsp;</li>\n</ol>"
+  used_for: &id046 []
+  input_formats: &id045
+  - QBF
+  supported_languages: []
+  supported_inputs: *id045
+  properties_verified: *id046
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6367524
+  last_updated: '2022-03-20T01:49:39.701574+00:00'
+- name: 2LS
+  website: null
+  description: <p>2LS ("tools") is a verification tool for C programs. It is built
+    upon the CPROVER framework (<a href="http://www.cprover.org">cprover.org</a>),
+    which supports C89, C99, most of C11 and most compiler extensions provided by
+    gcc and Visual Studio. It allows verifying array bounds (buffer overflows), pointer
+    safety, exceptions, user-specified assertions, and termination properties. The
+    analysis is performed by template-based predicate synthesis and abstraction refinements
+    techniques.</p><p>The uploaded archive is a submission used for SV-COMP 2024.</p>
+  used_for: &id048
+  - safety
+  - termination
+  input_formats: &id047 []
+  supported_languages:
+  - C
+  supported_inputs: *id047
+  properties_verified: *id048
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.10184626
+  last_updated: '2023-11-22T09:35:45.866660+00:00'
+- name: 'A Practical Extension Mechanism for Decision Procedures: the Case Study of
+    Universal Presburger Arithmetic'
+  website: null
+  description: In this paper, we propose a generic mechanism for extending decision
+    procedures by means of a lemma speculation mechanism. This problem is important
+    in order to widen the scope of decision procedures incorporated in state-of-the-art
+    verification systems. Soundness and termination of the extension schema are formally
+    stated and proved. As a case study, we consider extensions of a decision procedure
+    for the quantifier-free fragment of Presburger Arithmetic to significant fragments
+    of non-linear arithmetic.
+  used_for: &id050
+  - termination
+  input_formats: &id049 []
+  supported_languages: []
+  supported_inputs: *id049
+  properties_verified: *id050
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3217/jucs-007-02-0124
+  last_updated: '2024-07-16T06:15:59.564424+00:00'
+- name: 2LS
+  website: null
+  description: '<p>2LS (&quot;tools&quot;) is a verification tool for C programs.
+    It is built upon the CPROVER framework (<a href="http://www.cprover.org">cprover.org</a>),
+    which supports C89, C99, most of C11 and most compiler extensions provided by
+    gcc and Visual Studio. It allows verifying array bounds (buffer overflows), pointer
+    safety, exceptions, user-specified assertions, and termination properties. The
+    analysis is performed by template-based predicate synthesis and abstraction refinements
+    techniques.</p>
+
+
+    <p>The uploaded archive is a submission used for SV-COMP 2023.</p>'
+  used_for: &id052
+  - safety
+  - termination
+  input_formats: &id051 []
+  supported_languages:
+  - C
+  supported_inputs: *id051
+  properties_verified: *id052
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7467706
+  last_updated: '2022-12-22T02:26:53.492730+00:00'
+- name: Reducing Acceptance Marks in Emerson-Lei Automata by QBF Solving
+  website: null
+  description: <p>This paper presents a novel application of QBF solving to automata
+    reduction. We focus on Transition-based Emerson-Lei automata (TELA), which is
+    a popular formalism that generalizes many traditional kinds of automata over infinite
+    words including B&uuml;chi, co-B&uuml;chi, Rabin, Streett, and parity automata.
+    Transitions in a TELA are labelled with acceptance marks and its accepting formula
+    is a positive Boolean combination of atoms saying that a particular mark has to
+    be visited infinitely or finitely often. Algorithms processing these automata
+    are often very sensitive to the number of acceptance marks. We introduce a new
+    technique for reducing the number of acceptance marks in TELA based on satisfiability
+    of quantified Boolean formulas (QBF). We evaluated our reduction technique on
+    TELA produced by state-of-the-art tools of the libraries Owl and Spot and by the
+    tool ltl3tela. The technique reduced some acceptance marks in automata produced
+    by all the tools. On automata with more than one acceptance mark obtained by translation
+    of LTL formulas from literature with tools Delag and Rabinizer 4, our technique
+    reduced 27.7% and 39.3% of acceptance marks, respectively. The reduction was even
+    higher on automata from random formulas.</p>
+  used_for: &id054 []
+  input_formats: &id053
+  - QBF
+  supported_languages: []
+  supported_inputs: *id053
+  properties_verified: *id054
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.4230/LIPIcs.SAT.2023.23
+  last_updated: '2024-07-15T09:20:32.955276+00:00'
+- name: Automated Temporal Verification for Algebraic Effects
+  website: null
+  description: <p>Although effect handlers offer a versatile abstraction for user-defined
+    effects, they produce complex and less restricted execution traces due to the
+    composable non-local control flow mechanisms. This paper is interested in the
+    temporal behaviors of effect sequences, such as unhandled effects, termination
+    of the communication, safety, fairness, etc. Specifically, we propose a novel
+    effects logic ContEffs, to write precise and modular specifications for programs
+    in the presence of user-defined effect handlers and primitive effects. As a second
+    contribution, we devise a forward verifier together with a fixpoint calculator
+    to infer the behaviors of such programs. Lastly, our automated verification framework
+    provides a purely algebraic term-rewriting system (TRS) as the back-end solver,
+    efficiently checking the entailments between ContEffs assertions. To demonstrate
+    the feasibility of our proposals, we prototype a verification system where zero-shot,
+    one-shot, and multi-shot continuations coexist; prove its correctness; present
+    experimental results; and report on case studies.</p>
+  used_for: &id056
+  - safety
+  - termination
+  input_formats: &id055 []
+  supported_languages:
+  - C
+  - OCaml
+  supported_inputs: *id055
+  properties_verified: *id056
+  techniques:
+  - SMT solving
+  external_tools:
+  - Z3
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7108627
+  last_updated: '2024-07-16T02:00:52.067799+00:00'
+- name: Legal Grounds for Establishment and Termination of Business Associations
+  website: null
+  description: '<p>It is known that establishment of associations of business entities
+    is included to the mechanisms for ensuring of favorable conditions for development
+    of modern market relations. Their role increases every year but there are no clear
+    provisions in legislation about the notion of associations of legal entities as
+    well as there is no single direction for development of legal regulation of relations
+    regarding their activities.</p>
+
+
+    <p>According to the Commercial Code of Ukraine legal entities have the right to
+    unite their own activities based on the agreement (particularly joint operation
+    agreement) and by establishing new entities (particularly joint companies).</p>
+
+
+    <p>Joint companies play an important role among members of commercial relations.</p>
+
+
+    <p>Procedures of consolidating funds and concentrating production which take place
+    in modern Ukrainian economy contribute to business associations. In spite of their
+    active participation in commercial relations and taking into account historical
+    and economic conditions of their activities legal regulation of organization and
+    activities of business associations in various business spheres are inadequate
+    because:</p>
+
+
+    <p>i) there are incompliances in legislation regarding business associations;&nbsp;</p>
+
+
+    <p>ii) on practice one can see that associations are established and exist in
+    the forms which are not provided for by Ukrainian legislation such as business
+    group, the group of companies, financial and industrial group etc. They are not&nbsp;legally
+    formalized, registered, do not have clear rights and duties of members, legal
+    status of property etc.</p>
+
+
+    <p>Certain issues which shall be regulated in legislation relate to establishment
+    and activities of business associations such as procedure of managing the state
+    association; differentiation of authorities between the Cabinet of Ministers of
+    Ukraine and central executive agencies regarding establishment of the state associations,
+    approval of the articles of association, appointment of managers etc.</p>'
+  used_for: &id058 []
+  input_formats: &id057 []
+  supported_languages: []
+  supported_inputs: *id057
+  properties_verified: *id058
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.3229082
+  last_updated: '2024-07-22T22:54:53.648209+00:00'
+- name: 'Replication Package for the paper: Verification of Distributed Systems via
+    Sequential Emulation'
+  website: null
+  description: "<p>This package allows to replicate the experiments described in &ldquo;Verification\
+    \ of Distributed Systems via Sequential Emulation&rdquo;.</p>\n\n<p>Instructions\
+    \ for full replication are also included.</p>\n\n<p>Repository contents</p>\n\n\
+    <ul>\n\t<li>\n\t<p><code>main.sh</code>: Quickstart script to run all experiments</p>\n\
+    \t</li>\n\t<li>\n\t<p><code>permissions.sh</code>: script to give adequate permissions\
+    \ to executables</p>\n\t</li>\n\t<li>\n\t<p><code>replication.tar.gz</code>: gzipped\
+    \ archive containing:</p>\n\n\t<ul>\n\t\t<li>\n\t\t<p><code>emergence</code>,\
+    \ <code>invariant</code>, <code>stock</code>: C programs used in the experimental\
+    \ evaluation. Each directory also contains a <code>_logs</code> folder with the\
+    \ log files referred in the paper.</p>\n\t\t</li>\n\t\t<li>\n\t\t<p><code>labs</code>:\
+    \ LAbS specifications used for <code>emergence</code> and <code>invariant</code>\
+    \ experiments.</p>\n\t\t</li>\n\t\t<li>\n\t\t<p><code>LICENSE</code>: conditions\
+    \ to use the repository contents</p>\n\t\t</li>\n\t\t<li>\n\t\t<p><code>tools</code>:\
+    \ Software used to generate C programs and run experiments</p>\n\t\t</li>\n\t\t\
+    <li>\n\t\t<p><code>README.mdown</code>: the README file of the original replication\
+    \ repository (https://gitlab.inria.fr/ldistefa/tosem-artifacts)</p>\n\t\t</li>\n\
+    \t\t<li>\n\t\t<p><code>README-ZENODO.mdown</code>: this document</p>\n\t\t</li>\n\
+    \t\t<li>\n\t\t<p><code>replication.py</code>: Python script to replicate the experiments</p>\n\
+    \t\t</li>\n\t\t<li>\n\t\t<p><code>replication.sh</code>: fallback shell script\
+    \ to replicate the experiments</p>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>Requirements</p>\n\
+    \n<p>All experiments should run successfully on most x64 Linux machines. Python\
+    \ 3.7 or above is needed to run the <code>replication.py</code> script. Alternatively,\
+    \ one may run the <code>replication.sh</code> shell script.</p>\n\n<p>Some caveats\
+    \ about specific tools:</p>\n\n<ul>\n\t<li>\n\t<p>Symbiotic requires a <code>python</code>\
+    \ executable in the machine&rsquo;s PATH (usually <code>/usr/bin/python</code>).\
+    \ This may be a symbolic link pointing to a Python 3 executable (usually <code>/usr/bin/python3</code>).</p>\n\
+    \t</li>\n\t<li>\n\t<p>SeaHorn requires a Python 2 executable (usually <code>/usr/bin/python2</code>).</p>\n\
+    \t</li>\n\t<li>\n\t<p>To generate instrumented programs (see below), an external\
+    \ C preprocessor is required. For instance, we use <code>gcc -E</code>. We do\
+    \ provide ready-to-use instumented programs.</p>\n\t</li>\n</ul>\n\n<p>Quickstart</p>\n\
+    \n<p>Download the whole repository to some directory <code>dir</code>, then:</p>\n\
+    \n<pre><code>cd /path/to/dir\n# Gives execution permission to main.sh, tools,\
+    \ and their dependencies\nchmod +x permissions.sh \n# Unpacks the archive, makes\
+    \ log directories, and runs all experiments\n./main.sh</code></pre>\n\n<p>The\
+    \ script will create a <code>dir/logs</code> directory with subdirectories <code>emergence</code>,\
+    \ <code>invariant</code>, and <code>stock</code>, where it will store the output\
+    \ of each verification task.</p>\n\n<p>Replication details</p>\n\n<p>Generation\
+    \ of C programs from LAbS specifications</p>\n\n<p>The following commands will\
+    \ use <code>sliver</code> to create C emulation programs from each LAbS system\
+    \ considered in the paper:</p>\n\n<pre><code># Invariant programs\ntools/sliver-v1.5_linux_x64/sliver.py\
+    \ labs/formation.invariant.labs size=10 range=2 n=3 --fair --no-bv --show &gt;\
+    \ invariant/formation/formation.c\ntools/sliver-v1.5_linux_x64/sliver.py labs/approx.labs\
+    \ yes=1 no=2 --no-bv --show &gt; invariant/approx-a/approx-a.c\ntools/sliver-v1.5_linux_x64/sliver.py\
+    \ labs/approx.labs yes=2 no=3 --no-bv --show &gt; invariant/approx-a/approx-b.c.orig\n\
+    tools/sliver-v1.5_linux_x64/sliver.py labs/maj.labs yes=1 no=2 --no-bv --show\
+    \ &gt; invariant/maj/maj.c.orig\n# Emergence programs\ntools/sliver-v1.5_linux_x64/sliver.py\
+    \ labs/boids.labs birds=3 size=5 delta=5 --fair --no-bv --show &gt; emergence/boids/boids.c\n\
+    tools/sliver-v1.5_linux_x64/sliver.py labs/flock.labs birds=3 size=5 delta=5 --fair\
+    \ --no-bv --show &gt; emergence/flock/flock.c\ntools/sliver-v1.5_linux_x64/sliver.py\
+    \ labs/formation.emergence.labs size=10 range=2 n=3 --fair --no-bv --show &gt;\
+    \ emergence/formation/formation.c</code></pre>\n\n<p>Each folder under <code>invariant</code>\
+    \ and <code>emergence</code> contains a <code>&lt;program&gt;.c</code> file which\
+    \ is the output of one the above commands. Notice that, for <code>approx-b</code>\
+    \ and <code>maj</code>, we have manually performed some additional transformations.\
+    \ The unmodified <code>sliver</code> output is named <code>maj.c.orig</code> and\
+    \ the final program is named <code>maj.c</code>.</p>\n\n<p>Instrumentation of\
+    \ C programs</p>\n\n<p>SLiVER was originally tailored towards BMC verification,\
+    \ so it generates programs that can be directly verified by CBMC. Other tools\
+    \ require an instrumentation steps. Typically this amounts to replace verification\
+    \ intrinsics with those supported by the tools, add specific headers or function\
+    \ declarations, etc. We have automated this steps by means of a helper Python\
+    \ program called <code>absentee</code>, which can be found in the <code>tools</code>\
+    \ directory and at (https://github.com/lou1306/absentee)</p>\n\n<p>Typically,\
+    \ to instrument the SLiVER program <code>program.c</code> for verification by\
+    \ a specific tool, one can use the following command line:</p>\n\n<pre><code>cd\
+    \ tools/absentee\ngcc -E /path/to/&lt;program&gt;.c | python3 -m absentee --conf\
+    \ &lt;tool&gt;.conf - &gt; /path/to/&lt;program&gt;.&lt;tool&gt;.c</code></pre>\n\
+    \n<p>Preprocessing the original program with <code>gcc</code> (or another compiler)\
+    \ is needed because <code>absentee</code> does not support preprocessor directives.</p>\n\
+    \n<p>Each folder under <code>invariant</code> and <code>emergence</code> already\
+    \ contains a file <code>&lt;program&gt;.&lt;tool&gt;.c</code>, which is the result\
+    \ of this step for each tool in our experimental evaluation.</p>\n\n<p>Verification</p>\n\
+    \n<p>Each tool needs a specific set of arguments, environment variables, etc.\
+    \ to correctly perform its verification task. To investigate the actual commands\
+    \ we used in our evaluation, please check the <code>replication.sh</code> script\
+    \ or the <code>replication.py</code> program.</p>\n\n<p>About the <code>stock</code>\
+    \ case studies</p>\n\n<p>We wrote the <code>stock-safe</code> and <code>stock-unsafe</code>\
+    \ case studies directly as triple structure, and then encoded it as C programs\
+    \ using the same procedure described in the paper and implemented by <code>sliver</code>.</p>\n\
+    \n<p>We provide these C programs, as well as their instumented version for 2ls,\
+    \ in the <code>stock</code> folder.</p>\n\n<p>Usage instructions for <code>replication.py</code></p>\n\
+    \n<p>In case one wants more granularity, <code>replication.py</code> may be run\
+    \ manually. <code>./replication.py --help</code> shows usage instructions. In\
+    \ brief:</p>\n\n<ul>\n\t<li>\n\t<p><code>./replication.py</code> runs all the\
+    \ experiments.</p>\n\t</li>\n\t<li>\n\t<p><code>./replication.py tool1 tool2 ...</code>\
+    \ only runs the experiments with the given tools.</p>\n\t</li>\n\t<li>\n\t<p><code>./replication.py\
+    \ --list</code> lists the tool names.</p>\n\t</li>\n\t<li>\n\t<p><code>./replication\
+    \ --timeout &lt;n&gt;</code> overrides the default timeout to <em>n</em> seconds\
+    \ (<em>n</em> must be a positive integer)</p>\n\t</li>\n</ul>\n\n<p>By adding\
+    \ <code>--dry-run</code>, the script only shows the experiments&rsquo; command\
+    \ lines, without actually executing them. Keep in mind that most tools also require\
+    \ custom environment variables or won&rsquo;t run properly when invoked outside\
+    \ of their own directories, so these command lines are only for reference.</p>\n\
+    \n<p>Support</p>\n\n<p>For further information, you may look at the original Git\
+    \ repository for the artifacts: (https://gitlab.inria.fr/ldistefa/tosem-artifacts)</p>\n\
+    \n<p>You can also contact the paper&rsquo;s corresponding author: Luca Di Stefano\
+    \ <a href=\"mailto:luca.di-stefano@inria.fr\">luca.di-stefano@inria.fr</a></p>\n\
+    \n<p>Acknowledgments</p>\n\n<p>Work partially funded by MIUR project PRIN 2017FTXR7S\
+    \ <em>IT MATTERS</em> (Methods and Tools for Trustworthy Smart Systems).</p>\n\
+    \n<p>Disclaimer</p>\n\n<p>The authors of this repository do not endorse using\
+    \ its contents for ANY purpose besides replication of experiments presented in\
+    \ the paper &ldquo;Verification of Distributed Systems via Sequential Emulation&rdquo;.\
+    \ Please enquire with the paper&rsquo;s corresponding author (Luca Di Stefano\
+    \ <a href=\"mailto:luca.di-stefano@inria.fr\">luca.di-stefano@inria.fr</a>) about\
+    \ software packages intended for generic usage.</p>"
+  used_for: &id060 []
+  input_formats: &id059 []
+  supported_languages:
+  - Python
+  - C
+  supported_inputs: *id059
+  properties_verified: *id060
+  techniques: []
+  external_tools:
+  - CBMC
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.5348289
+  last_updated: '2021-09-15T13:48:24.971380+00:00'
+- name: '2LS: Arrays and Loop Unwinding'
+  website: null
+  description: <p>2LS is a C program analyser built upon the CPROVER infrastructure
+    that can verify and refute program assertions, memory safety, and termination.
+    Until now, one of the main drawbacks of 2LS was its inability to verify most programs
+    with arrays. This paper introduces a new abstract domain in 2LS for reasoning
+    about the contents of arrays. In addition, we introduce an improved approach to
+    loop unwinding, a crucial component of the 2LS&rsquo; verification algorithm,
+    which particularly enables finding proofs and counterexamples for programs working
+    with dynamic memory.</p>
+  used_for: &id062
+  - safety
+  - termination
+  input_formats: &id061 []
+  supported_languages:
+  - C
+  supported_inputs: *id061
+  properties_verified: *id062
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.1007/978-3-031-30820-8_31
+  last_updated: '2024-07-15T09:20:36.022915+00:00'
+- name: 'Symbiotic 7: Integration of Predator and More (Competition Contribution)'
+  website: null
+  description: '<p>Symbiotic is a tool for finding bugs in programs that combines
+    fast static analyses with instrumentation, program slicing, and symbolic execution.
+    This artifact contains Symbiotic 7 in the version that competed in Software Verification
+    Competition (SV-COMP) 2020.</p>
+
+
+    <p>Symbiotic 7 brings improvements in all parts of the tool. In particular, we
+    integrated the advanced shape analysis implemented in Predator to our instrumentation
+    process for memory safety checking. Further, we extended our slicer to correctly
+    handle non-terminating programs. This new slicing is applied in termination analysis,
+    where we also added instrumentation for the detection of simple cycles in the
+    program state space. The witness generation process changed as well.</p>'
+  used_for: &id064
+  - safety
+  - termination
+  input_formats: &id063 []
+  supported_languages: []
+  supported_inputs: *id063
+  properties_verified: *id064
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.3678328
+  last_updated: '2020-02-21T19:20:56.183012+00:00'
+- name: 'QSOLE: Automated QBF Equivalence Checking'
+  website: null
+  description: '<h1>QSOLE: Automatic QBF Equivalence Checking</h1>
+
+    <h2>Introduction</h2>
+
+    <p>This artifact was submitted by Peter Pfeiffer, Mark Peyrer, Daniel Gro&szlig;e
+    and Martina Seidl for the TACAS 2026 with the submission number 9062 aiming for
+    Available, Functional and Reusable badges. It contains everything necessary to
+    reproduce the examples shown in the corresponding paper alongside testcases to
+    demonstrate basic functionality. In the following sections you will learn everything
+    you need to know about this artifact and how to reproduce the experiments.</p>
+
+    <p>The input formulas used by tests are divided into four categories:</p>
+
+    <ul>
+
+    <li><code>atleast</code> contains at-least-k cardinality constraints with randomly
+    generated quantifier prefixes and different encodings (km-totalizer and sequential
+    counters).</li>
+
+    <li><code>eq</code> contains equals-k cardinality constraints with randomly generated
+    quantifier prefixes and different encodings (km-totalizer and sequential counters).</li>
+
+    <li><code>hein</code> features Hein puzzles expressed with different encoding
+    techniques from <a href="https://github.com/irfansha/SQval">SQval</a>.</li>
+
+    <li><code>paper</code> contains the examples presented in the corresponding paper.</li>
+
+    </ul>
+
+    <p>The artifact was published under the following DOI:&nbsp;<a href="10.5281/zenodo.17356608">10.5281/zenodo.17356608</a></p>
+
+    <h2>Structure and Content</h2>
+
+    <p>The artifact has the following structure:<br><code>/</code><br><code>|-- &nbsp;expected</code><br><code>|--
+    &nbsp;output</code><br><code>|-- &nbsp;qsole</code><br><code>|-- &nbsp;scripts</code><br><code>|--
+    &nbsp;tests</code><br><br></p>
+
+    <ul>
+
+    <li><code>expected</code> contains the log-files of the experiments conducted
+    with this artifact on our machine</li>
+
+    <li><code>output</code> is the target of the results from the experiments and
+    is connected to a local folder with the same name on the host-machine. The logfiles
+    from the runs can be found there</li>
+
+    <li><code>qsole</code> contains the c++ source code and build-environment for
+    the QSOLE tool</li>
+
+    <li><code>scripts</code> is a collection of bash-scripts in order to run the experiments.
+    The one relevant for you are listed in the next section</li>
+
+    <li><code>tests</code> contains the input formulas as well as the pcount for each
+    check</li>
+
+    </ul>
+
+    <h2>Running the artifact</h2>
+
+    <h3>1. Setup Docker</h3>
+
+    <p>A working docker environment installed on your machine is required. The docker
+    container can be setup the following way:<br><br><code># download qsole-artifact.zst
+    from zenodo</code><br><code>docker load &lt; qsole-artifact.zst</code><br><code>docker
+    run -v `pwd`/output:/output -itd --network none --name qsole_running1 qsole-artifact</code><br><code>docker
+    exec -it qsole_running1 bash</code></p>
+
+    <p>The first line loads the docker-image from the the export, the second will
+    create a container using the image and the last connects your current terminal
+    to the container.</p>
+
+    <p>In order to leave the container, just execute <code>exit</code>.</p>
+
+    <p>Furthermore, you can call&nbsp;<br><br><code>docker stop qsole_running1</code><br><code>docker
+    rm qsole_running1</code></p>
+
+    <p>to stop and delete the running container.</p>
+
+    <p><strong>Important:</strong> Please ensure to have a working docker setup, with
+    your user added to the <code>docker</code> group. This can be verified using <code>docker
+    ps</code>. If there are no errors, your environment should be in working order.</p>
+
+    <p>&nbsp;</p>
+
+    <h3>2. Run the Smoke Test</h3>
+
+    <p>We prepared a small script for you to check, if the tool was installed successfully.&nbsp;<br>This
+    is just for your convenience, please feel free to use any of the provided ressources
+    to conduct the smoke test.</p>
+
+    <p>The script <code>/scripts/smoke_test.sh</code> will execute the following code</p>
+
+    <p><br><code>/qsole/build/qsole --help</code><br><code>/qsole/build/qsole /test/paper_example/phi.qdimacs
+    /test/paper_example/psi.qdimacs 3 --check sole --subsumption --info --noskip</code><br><br>i.e.
+    printing the help-text and then solve the minimal example presented in the paper
+    using a full Solution Equivalence Check.<br>The following output is to be expected,
+    if the artifact is up and running.</p>
+
+    <p><code>qsole v0.1 - a checker qbf solution equivalence</code><br><code>usage:
+    qsole FORMULA1 FORMULA2 PCOUNT [OPTIONS...]</code></p>
+
+    <p><code>FORMULA1 expects a file containing a QDIMACS encoded QBF</code><br><code>FORMULA2
+    expects a file containing a QDIMACS encoded QBF</code><br><code>PCOUNT expects
+    the length of the common prefix</code><br><code>The following values for OPTIONS
+    are valid:</code><br><code>&nbsp; -h, --help &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    displays this command</code><br><code>&nbsp; --check &lt;VALUE&gt; &nbsp; &nbsp;
+    &nbsp;specifies the check to be made (skent|sole|psole|skeq) [default: skent]</code><br><code>&nbsp;
+    --ouput &lt;PATH&gt; &nbsp; &nbsp; &nbsp; outputs the encoding to the specified
+    path</code><br><code>&nbsp; --models &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    if specified, models will be printed if suitable &nbsp;<br></code><code>&nbsp;
+    --subsumption &nbsp; &nbsp; &nbsp; &nbsp;if specified, eliminate subsumptions
+    before encoding</code><br><code>&nbsp; --noskip &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; if specified, all checks will be done even if the result is already clear</code><br><code>&nbsp;
+    --quiet &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;does not print any logging
+    messages, not even errors</code><br><code>&nbsp; --info &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; increases verbosity level to "info"</code><br><code>[QSOLE]
+    [INF] Skolem Entailment f1 |=SK f2 resulted in 10</code><br><code>[QSOLE] [INF]
+    Skolem Entailment f2 |=SK f1 resulted in 20</code><br><code>[QSOLE] [INF] Skolem
+    Entailment !f1 |=SK !f2 resulted in 10</code><br><code>[QSOLE] [INF] Skolem Entailment
+    !f2 |=SK !f1 resulted in 10</code><br><code>[QSOLE] [INF] Solution Equivalence
+    (f1 &lt;-&gt;SOL f2) resulted in 20</code><br><br></p>
+
+    <h3><br>3. Run the Experiment</h3>
+
+    <p>While connected, you can run one of the following scripts to generate log-files.<br>The
+    output can be found in the <code>output</code> folder.</p>
+
+    <p>The following requirements were measured on a host machine for the docker container
+    with the following specifications:</p>
+
+    <ul>
+
+    <li><a href="https://www.intel.de/content/www/de/de/products/sku/232160/intel-core-i71355u-processor-12m-cache-up-to-5-00-ghz/specifications.html">Intel
+    Core i7-1355U Prozessor</a></li>
+
+    <li>32 GB RAM</li>
+
+    <li>Intel Iris Xe GPU</li>
+
+    </ul>
+
+    <table style="border-collapse: collapse; width: 60.5136%; height: 196px;"><colgroup><col
+    style="width: 30.6307%;"><col style="width: 44.1346%;"><col style="width: 25.1962%;"></colgroup>
+
+    <tbody>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;"><strong>Script</strong></td>
+
+    <td style="height: 19.6px;"><strong>Description</strong></td>
+
+    <td style="height: 19.6px;"><strong>est. time</strong></td>
+
+    </tr>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;">/scripts/atleast_psole.sh</td>
+
+    <td style="height: 19.6px;">Solution Equivalence of atleast</td>
+
+    <td style="height: 19.6px;">~150ms</td>
+
+    </tr>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;">/scripts/atleast_full.sh</td>
+
+    <td style="height: 19.6px;">All checks of atleast</td>
+
+    <td style="height: 19.6px;">~350ms</td>
+
+    </tr>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;">/scripts/eq_psole.sh</td>
+
+    <td style="height: 19.6px;">Solution Equivalence of eq</td>
+
+    <td style="height: 19.6px;">~750ms &nbsp;</td>
+
+    </tr>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;">/scripts/eq_full.sh</td>
+
+    <td style="height: 19.6px;">All checks of eq</td>
+
+    <td style="height: 19.6px;">~1.5s</td>
+
+    </tr>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;">/scripts/hein_psole.sh</td>
+
+    <td style="height: 19.6px;">Solution Equivalence of hein</td>
+
+    <td style="height: 19.6px;">~45s</td>
+
+    </tr>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;">/scripts/hein_full.sh</td>
+
+    <td style="height: 19.6px;">All checks of hein</td>
+
+    <td style="height: 19.6px;">~150s</td>
+
+    </tr>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;">/scripts/paper_psole.sh</td>
+
+    <td style="height: 19.6px;">Solution Equivalence of paper ex.</td>
+
+    <td style="height: 19.6px;">&lt;10ms</td>
+
+    </tr>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;">/scripts/paper_full.sh</td>
+
+    <td style="height: 19.6px;">All checks of paper ex.</td>
+
+    <td style="height: 19.6px;">~20ms</td>
+
+    </tr>
+
+    <tr style="height: 19.6px;">
+
+    <td style="height: 19.6px;">/scripts/all.sh</td>
+
+    <td style="height: 19.6px;">All checks of this artifact</td>
+
+    <td style="height: 19.6px;">~200s</td>
+
+    </tr>
+
+    </tbody>
+
+    </table>
+
+    <p>&nbsp;</p>
+
+    <h2>Dependencies</h2>
+
+    <p>The following core-dependencies are required to run this artifact.<br>Note
+    that this is <strong>soley for information purpose, those do not have to be installed
+    manually</strong>.<br>For a more detailed list we want to refer to the Dockerfile
+    in the sources, where the whole artifact can be reproduced from scratch.<br>Each
+    of the used tool has a licence within its source files.</p>
+
+    <p><em>Third Party Tools used by QSOLE</em>:</p>
+
+    <ul>
+
+    <li><a href="https://github.com/lonsing/depqbf">DepQBF v6.03</a></li>
+
+    <li><a href="https://github.com/arminbiere/cadical">CaDiCaL v2.1.3</a></li>
+
+    <li><a href="https://github.com/lonsing/nenofex">Nenofex v1.1</a>&nbsp;(Included
+    in DepQBF)</li>
+
+    <li><a href="http://fmv.jku.at/picosat">Picosat v965</a> (Included in DepQBF)</li>
+
+    </ul>
+
+    <p>&nbsp;</p>
+
+    <p><em>Needed for Building:</em></p>
+
+    <ul>
+
+    <li>Docker image <a href="https://hub.docker.com/_/ubuntu">ubuntu:24.04</a></li>
+
+    <li>GCC for C++ (<a href="https://gcc.gnu.org/">g++</a>) compiler</li>
+
+    <li><a href="https://cmake.org/">CMake</a></li>
+
+    </ul>'
+  used_for: &id066 []
+  input_formats: &id065
+  - QBF
+  supported_languages:
+  - C
+  supported_inputs: *id065
+  properties_verified: *id066
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.17356608
+  last_updated: '2025-10-29T13:12:02.494251+00:00'
+- name: 'The Octave-State Formalism: A State-Space Representation of Computational
+    Loops'
+  website: null
+  description: '<p>This paper introduces the Octave-State Formalism, a novel theoretical
+    framework for the analysis of computational loops. Moving beyond the classical,
+    one-dimensional view of iteration, this formalism models a loop''s execution as
+    the discrete-time evolution of a state vector within an eight-dimensional abstract
+    space. Each dimension of this "Octave-State" corresponds to a fundamental aspect
+    of the loop''s behavior, including its temporal progression, data transformation,
+    causal dependencies, resource consumption, concurrency potential, numerical stability,
+    control flow path, and termination horizon. By leveraging the mathematical rigor
+    of state-space representation from control theory and drawing conceptual parallels
+    with principles from theoretical physics&mdash;such as dimensional regularization,
+    phase space, and the many-worlds interpretation&mdash;this paper develops a unified
+    model. We demonstrate that this formalism provides a more holistic understanding
+    of loop dynamics, offering new geometric insights into complex problems like data
+    dependency analysis, loop-level parallelism, and formal verification through loop
+    invariants. The Octave-State Formalism is presented not merely as a descriptive
+    tool, but as a generative framework for the design and automated analysis of next-generation
+    algorithms and high-assurance software systems.</p>
+
+    <p>&nbsp;</p>'
+  used_for: &id068
+  - termination
+  input_formats: &id067 []
+  supported_languages: []
+  supported_inputs: *id067
+  properties_verified: *id068
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.17045972
+  last_updated: '2025-09-03T11:18:38.410384+00:00'
+- name: Toward Determining NFA Equivalence via QBFs
+  website: null
+  description: <p>Equivalence of deterministic finite automata (DFAs) has been&nbsp;researched
+    for several decades, but equivalence of nondeterministic&nbsp;finite automata
+    (NFAs) is not as studied. &nbsp;Equivalence of two NFAs is&nbsp;a PSPACE-complete
+    problem. &nbsp;NFA quivalence is a challenging&nbsp;theoretical problem with practical
+    applications such as lexical&nbsp;analysis. &nbsp;Quantified boolean formulas
+    (QBFs) naturally encode&nbsp;PSPACE-complete problems, and we share our preliminary
+    work towards&nbsp;determining NFA equivalence via QBFs.</p>
+  used_for: &id070 []
+  input_formats: &id069 []
+  supported_languages: []
+  supported_inputs: *id069
+  properties_verified: *id070
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.4279875
+  last_updated: '2020-11-19T00:27:05.875267+00:00'
+- name: Security Type Checking for MILS-AADL Specifications
+  website: null
+  description: '<p>Information flow policies are widely used for specifying confidentiality
+    and integrity requirements of security-critical systems. In contrast to access
+    control policies and security protocols, they impose global constraints on the
+    information flow and thus provide end-to-end security guarantees. The information
+    flow policy that is usually adopted is non-interference. It postulates that con
+    dential data must not affect the publicly visible behavior of a system. However, this
+    requirement is usually broken in the presence of cryptographic operations. </p>
+
+
+    <p>In this paper, we provide an extended definition of non-interference for systems
+    that are specified in a MILS variant of the Architecture Analysis and Design Language
+    (AADL). More concretely, we propose a type system for MILS-AADL component definitions
+    that distinguishes between breaking non-interference because of legitimate use
+    of sufficientlynbsp;strong encryption and breaking non-interference due to annbsp;unintended
+    information leak. To this aim, it tracks bothnbsp;intra- and inter-component information
+    flow and considersbr /&gt; both data- and event-flow security./p&gt;</p>'
+  used_for: &id072
+  - security
+  input_formats: &id071 []
+  supported_languages: []
+  supported_inputs: *id071
+  properties_verified: *id072
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.47989
+  last_updated: '2024-08-04T04:12:36.664620+00:00'
+- name: 'FSE2022benchmarks/termination: FSE2022benchmark-termination'
+  website: null
+  description: <p>Benchmarks and result-files for paper "Large-Scale Analysis of Non-Termination
+    Bugs in Real-World OSS Projects" (FSE-2022)</p>
+  used_for: &id074
+  - termination
+  input_formats: &id073 []
+  supported_languages: []
+  supported_inputs: *id073
+  properties_verified: *id074
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6548039
+  last_updated: '2022-05-14T13:50:23.382140+00:00'
+- name: General Boolean Formula Minimization with QBF Solvers
+  website: null
+  description: null
+  used_for: &id076 []
+  input_formats: &id075 []
+  supported_languages: []
+  supported_inputs: *id075
+  properties_verified: *id076
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3233/FAIA230705
+  last_updated: '2024-07-06T22:00:29.530867+00:00'
+- name: Artifact for (Semantic) Feature Model Differences with (Q)SAT
+  website: null
+  description: "<h2>Author Information</h2>\n<ul>\n<li><strong>Names</strong>: Simone\
+    \ Heisinger, Maximilian Heisinger, Martina Seidl</li>\n<li><strong>Affiliations</strong>:\
+    \ Johannes Kepler University Linz, Institute for Symbolic AI</li>\n<li><strong>Emails</strong>:\
+    \ <a href=\"mailto:simone.heisinger@jku.at\">simone.heisinger@jku.at</a>, <a href=\"\
+    mailto:maximilian.heisinger@jku.at\">maximilian.heisinger@jku.at</a>, <a href=\"\
+    mailto:martina.seidl@jku.at\">martina.seidl@jku.at</a></li>\n</ul>\n<h2><a href=\"\
+    #associated-paper-information\"></a>Associated Paper Information</h2>\n<ul>\n\
+    <li><strong>Title</strong>: (Semantic) Feature Model Differences with (Q)SAT</li>\n\
+    <li><strong>Abstract</strong>: Feature models evolve in multiple iterations over\
+    \ time. When modellers change a model, they enact syntactical changes in order\
+    \ to produce specific semantic differences between model iterations. Many tools\
+    \ have been developed to analyze such syntactical differences, but the changing\
+    \ semantics of models were harder to assess. Tools for semantic differences between\
+    \ feature model iterations rely on Binary Decision Diagrams (BDDs) or encode each\
+    \ change into SAT, the former leading to BDD scaling issues and the latter requiring\
+    \ editor support or other specialized tooling. We contribute the first concise\
+    \ formalization of feature models and their semantic differences into propositional\
+    \ logic and use it to efficiently and scalably classify semantic differences using\
+    \ SAT solvers. We then extend our definition into QSAT in order to quantify the\
+    \ full list of semantic differences between feature models and enumerate them\
+    \ using QBF tools, without needing specialized feature model solvers. We implement\
+    \ a semantic difference classifier using our UVL processing pipeline based on\
+    \ Booleguru (instead of the more widely used FeatureIDE) and evaluate it on industrial\
+    \ feature model instances in the standardized UVL format. We also evaluate our\
+    \ QSAT-based semantic difference enumerator and reproduce prior results. We provide\
+    \ all software and evaluation results in an artifact.</li>\n</ul>\n<h2><a href=\"\
+    #documentation\"></a>Documentation</h2>\n<p dir=\"auto\">The code comes from these\
+    \ upstream repositories:</p>\n<ul>\n<li><a href=\"https://gitlab.sai.jku.at/booleguru/booleguru\"\
+    >https://gitlab.sai.jku.at/booleguru/booleguru</a></li>\n<li><a href=\"https://gitlab.sai.jku.at/maximaximal/outer-count\"\
+    >https://gitlab.sai.jku.at/maximaximal/outer-count</a></li>\n<li><a href=\"https://github.com/arminbiere/kissat\"\
+    \ target=\"_blank\" rel=\"nofollow noreferrer noopener\">https://github.com/arminbiere/kissat</a></li>\n\
+    <li><a href=\"https://github.com/lonsing/depqbf\" target=\"_blank\" rel=\"nofollow\
+    \ noreferrer noopener\">https://github.com/lonsing/depqbf</a></li>\n</ul>\n<p\
+    \ dir=\"auto\">The artifact contains:</p>\n<ul>\n<li>the necessary software to\
+    \ run the experiments (booleguru, outercount, kissat, compare.sh)</li>\n<li>a\
+    \ script <code>quick-test.sh</code> to see if all software is correctly installed</li>\n\
+    <li><code>test-formula-uvl.uvl</code> and <code>test-formula-dimacs.dimacs</code>\
+    \ which are needed for <code>quick-test.sh</code></li>\n<li>the scripts <code>reproduce-table1.sh</code>,\
+    \ <code>reproduce-table2.sh</code>, <code>reproduce-table3.sh</code> and <code>reproduce-table4.sh</code>\
+    \ to generate the output from the corresponding tables in the paper <em>(Semantic)\
+    \ Feature Model Differences with (Q)SAT</em></li>\n<li>in bigfiles/ are all .uvl\
+    \ files used in the evaluation (original files can also be downloaded from uvlhub.io).\
+    \ The modified versions of each formula are names _mov.uvl which indicate that\
+    \ some part of the formula was moved</li>\n<li><code>applet1.uvl</code> and <code>applet2.uvl</code>\
+    \ represent the running example from the paper <em>Feature Model Differences</em>\
+    \ from 2012</li>\n<li><code>bike1.uvl</code> and <code>bike2.uvl</code> represent\
+    \ the running example from our paper</li>\n<li>when using the sources without\
+    \ docker, we provide the compiled binaries for x64 Linux in <code>bin-linux-amd64</code>.\
+    \ This also includes a <code>setup-path.sh</code> script to set the <code>$PATH</code>\
+    \ variable. For more detailed information on this see our <code>DETAILS.html</code>.</li>\n\
+    <li>the results (classifications and runtimes) for table 3 in the paper from the\
+    \ original run. For more detailed information on this see the <code>DETAILS.html</code></li>\n\
+    <li>a <code>DETAILS.org</code>/<code>DETAILS.html</code> with more detailed information\
+    \ on the commands used in the scripts: <a href=\"/booleguru/feature-model-equivalences-artifact/-/blob/main/DETAILS.html\"\
+    >DETAILS.html</a>, its markup version is in <a href=\"/booleguru/feature-model-equivalences-artifact/-/blob/main/DETAILS.org\"\
+    >DETAILS.org</a>.</li>\n<li>a <code>Dockerfile</code> to run the software and\
+    \ tests in, using Docker, Podman, or some other software.</li>\n</ul>\n\n\n<h2><a\
+    \ href=\"#artifact-evaluation-environment\"></a>Artifact Evaluation Environment</h2>\n\
+    <h3><a href=\"#system-specifications-used-by-authors\"></a>System Specifications\
+    \ Used by Authors</h3>\n<ul>\n<li><strong>Operating System: Ubuntu 24.04</strong></li>\n\
+    <li><strong>CPU:</strong> AMD EPYC 7313</li>\n<li><strong>Memory:</strong> 256\
+    \ GB</li>\n<li><strong>Disk Space:</strong> 10 GB</li>\n<li><strong>GPU (if applicable):</strong>\
+    \ none</li>\n</ul>\n<h3><a href=\"#estimated-hardware-requirements-for-evaluation\"\
+    ></a>Estimated Hardware Requirements for Evaluation</h3>\n<ul>\n<li><strong>Minimum\
+    \ required CPU:</strong> <em>any</em></li>\n<li><strong>Minimum required Memory:</strong>\
+    \ 8 GB</li>\n<li><strong>Minimum required Disk Space:</strong> 10 GB</li>\n<li><strong>Minimum\
+    \ required GPU (if applicable):</strong> none</li>\n</ul>\n<h3><a href=\"#software-requirements\"\
+    ></a>Software Requirements</h3>\n<ul>\n<li><strong>Podman</strong> or <strong>Docker</strong>\
+    \ (the former often is readily available in package repositories)</li>\n</ul>\n\
+    <h3><a href=\"#compatibility-considerations\"></a>Compatibility Considerations</h3>\n\
+    <ul>\n<li><strong>Known compatibility issues of the container/VM:</strong> Untested\
+    \ on Windows</li>\n</ul>\n<h2><a href=\"#kick-the-tires\"></a>Kick-the-Tires</h2>\n\
+    <p dir=\"auto\">To run the container with the provided zst using <em>Podman</em>:</p>\n\
+    <div>\n<pre><code>podman load &lt; fmdiff-container.tar.zst\npodman run -ti --replace\
+    \ --name fmdiff localhost/fmdiff</code></pre>\n</div>\n<p dir=\"auto\">To fully\
+    \ rebuild the container, use the following:</p>\n<div>\n<pre><code>podman build\
+    \ . -t fmdiff\npodman run -ti --replace --name fmdiff localhost/fmdiff</code></pre>\n\
+    </div>\n<p dir=\"auto\">If opening the provided container, change your directory\
+    \ into <code>artifact</code> using <code>cd artifact</code> before running the\
+    \ mentioned scripts.</p>\n<p dir=\"auto\">To check all tools if they are working\
+    \ correctly after the setup, run the provided script <code>./quick-test.sh</code>.</p>\n\
+    <p dir=\"auto\">There, all tools should display some output. The correct output\
+    \ is provided directly after the tool's output. Please confirm if the tool output\
+    \ and the expected output match. The output could be out of order, this has no\
+    \ impact on the functionality of the artifact.</p>\n<p dir=\"auto\">the checks\
+    \ included in <code>quick-test.sh</code> are:</p>\n<ul>\n<li>booleguru working\
+    \ test</li>\n<li>kissat working test</li>\n<li>outercount working test</li>\n\
+    <li>compare.sh working test</li>\n</ul>\n<p dir=\"auto\">For the bigger evaluations,\
+    \ increase the stack size using <code>ulimit -s 800000</code>. This is done automatically\
+    \ in the <code>reproduce-table3.sh</code> script, but has to be done manually\
+    \ once for each terminal session if you decide to do further evaluations.</p>\n\
+    <p dir=\"auto\">If booleguru is aborting with errors, most likely the stack size\
+    \ was too small, which happens if it stays at the default. The error comes from\
+    \ the kernel not allowing booleguru's stack to grow forever. Booleguru's design\
+    \ has some recursive functions that need a bigger stack size for some operations.</p>\n\
+    <h2><a href=\"#full-evaluation\"></a>Full Evaluation</h2>\n<p dir=\"auto\">If\
+    \ opening the provided container, change your directory into <code>artifact</code>\
+    \ using <code>cd artifact</code> before running the mentioned scripts.</p>\n<h3><a\
+    \ href=\"#table-1\"></a>Table 1</h3>\n<p dir=\"auto\">To reproduce table 1 from\
+    \ the paper (configurations which are allowed in bike2 but not in bike1):</p>\n\
+    <p dir=\"auto\">run the script <code>reproduce-table1.sh</code> with <code>./reproduce-table1.sh</code></p>\n\
+    <p dir=\"auto\">This prints the 4 configurations mentioned in the paper in table\
+    \ 1. <strong>NOTE</strong>: the lines in the table featured in the paper are rearranged\
+    \ and for better human reading include some spacing. The output from this script\
+    \ contains the same information as in the table in the paper.</p>\n<p dir=\"auto\"\
+    >The estimated runtime is less than a few seconds.</p>\n<h3><a href=\"#table-2\"\
+    ></a>Table 2</h3>\n<p dir=\"auto\">To reproduce table 2 from the paper (configurations\
+    \ which are allowed in bike1 but not in bike2):</p>\n<p dir=\"auto\">run the script\
+    \ <code>reproduce-table2.sh</code> with <code>./reproduce-table2.sh</code></p>\n\
+    <p dir=\"auto\">This prints the 5 configurations mentioned in the paper in table\
+    \ 2. <em>NOTE</em>: the lines in the table featured in the paper are rearranged\
+    \ and for better human reading include some spacing. The output from this script\
+    \ contains the sam information as in the table in the paper.</p>\n<p dir=\"auto\"\
+    >The estimated runtime is less than a few seconds.</p>\n<h3><a href=\"#table-3\"\
+    ></a>Table 3</h3>\n<p dir=\"auto\">To reproduce table 3 from the paper (times\
+    \ to classify edits and if a classification applies):</p>\n<p dir=\"auto\">run\
+    \ the script <code>reproduce-table3.sh</code> with <code>./reproduce-table3.sh</code></p>\n\
+    <p dir=\"auto\">This prints for every feature model name mentioned in table 3\
+    \ in the paper the classification and how long it took to get that classification.\
+    \ So each cell from the paper is printed with the script like this:</p>\n<div>\n\
+    <pre><code>============================================\n= automotive01\n============================================\n\
+    \n=== automotive01 generalization ===\nbooleguru \"!(\" \"bigfiles/automotive01.uvl\"\
+    \ \"&lt;-\" \"bigfiles/automotive01_mov.uvl\" \")\" --dimacs\nbigfiles/automotive01.uvl\
+    \ &lt;- bigfiles/automotive01_mov.uvl ===== 1\nbigfiles/automotive01.uvl is not\
+    \ a generalization of bigfiles/automotive01_mov.uvl\n\nreal\t0m1,507s\nuser\t\
+    0m1,486s\nsys\t0m0,019s</code></pre>\n</div>\n<p dir=\"auto\">From this we can\
+    \ see that for <code>automotive01</code> it checks if it is a generalization or\
+    \ not. The last line of text says <code>bigfiles/automotive01.uvl is not a generalization\
+    \ of bigfiles/automotive01_mov.uvl</code> so it is not a generalization. The time\
+    \ which is important for the table is <code>real 0m1,507s</code>. Times can change\
+    \ depending on used hardware, the important part is that for the <code>strict-generalization</code>\
+    \ and <code>strict-specialization</code> the runtime should be around double that\
+    \ of the non strict version if the non strict check holds. This means that for\
+    \ <code>automotive01</code> and <code>financialservices01</code> since <code>generalization</code>\
+    \ and <code>specialization</code> do not hold, all five times should be around\
+    \ the same. For all other names in the table (<code>automotive02_01</code>, <code>automotive02_02</code>,\
+    \ <code>automotive02_03</code>, <code>automotive02_04</code>, <code>ea2468,</code>\
+    \ <code>linux-2.6.33.3</code>) <code>strict-generalization</code> and <code>strict-specialization</code>\
+    \ should take around double the time <code>generalization</code> and <code>specialization</code>\
+    \ take. Relative differences between the files should be similar compared to in\
+    \ the paper.</p>\n<p dir=\"auto\">The estimated runtime depends on the hardware\
+    \ used, with a regular laptop with a recent Intel CPU and 16GB of RAM the whole\
+    \ script runs for about 5 minutes.</p>\n<p dir=\"auto\">In the folder <code>results</code>\
+    \ are the times with the tested setup which are the times mentioned in the paper.</p>\n\
+    <h3><a href=\"#table-4\"></a>Table 4</h3>\n<p dir=\"auto\">To reproduce table\
+    \ 4 from the paper (configurations which are allowed in applet1 but not in applet2):</p>\n\
+    <p dir=\"auto\">run the script <code>reproduce-table4.sh</code> with <code>./reproduce-table4.sh</code></p>\n\
+    <p dir=\"auto\">This prints the 4 configurations mentioned in the paper in table\
+    \ 4.</p>\n<p dir=\"auto\">The estimated runtime is less than a few seconds.</p>"
+  used_for: &id078 []
+  input_formats: &id077
+  - QBF
+  supported_languages: []
+  supported_inputs: *id077
+  properties_verified: *id078
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.15338222
+  last_updated: '2025-05-04T20:35:41.422740+00:00'
+- name: From Innermost to Full Almost-Sure Termination of Probabilistic Term Rewriting
+    - AProVE Artifact
+  website: null
+  description: '<p>This is the artifact for AProVE''s newest version for FoSSaCS24!
+    In order to run the artifact, you can find an OVA file for a VM that has everything
+    installed and is ready to go! Just open the VM with your favourite tool. On startup
+    a terminal should open with further instructions. These instructions can also
+    be found in the Readme.txt.</p>
+
+    <p>Additionally, you can find the necessary text files for the installation, requirements,
+    and license of the artifact.</p>
+
+    <p>In this artifact, one can use the Automated Program Verification Environment
+    (AProVE) in order to prove (innermost) almost-sure termination of probabilistic
+    term rewrite systems (TRSs). TRSs are a very basic functional programming language
+    which we use to analyze probabilistic algorithms mainly concerning (user-defined)
+    data structures.</p>
+
+    <p>Inside the VM, AProVE is already installed, and you will find our benchmark
+    set. Furthermore, the required SAT/SMT-Solvers for AProVE (MiniSat, Yices, Z3)
+    are installed as well.</p>'
+  used_for: &id080
+  - termination
+  input_formats: &id079
+  - SMT
+  supported_languages:
+  - Java
+  supported_inputs: *id079
+  properties_verified: *id080
+  techniques:
+  - SMT solving
+  external_tools:
+  - Z3
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.10787128
+  last_updated: '2024-07-06T23:32:11.505841+00:00'
+- name: Report of the Third QBF Solvers Evaluation1
+  website: null
+  description: n/a
+  used_for: &id082 []
+  input_formats: &id081 []
+  supported_languages: []
+  supported_inputs: *id081
+  properties_verified: *id082
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3233/sat190019
+  last_updated: '2024-12-13T08:42:35.662272+00:00'
+- name: 'TokenJoin: Efficient Filtering for Set Similarity Join with Maximum Weighted
+    Bipartite Matching'
+  website: null
+  description: <p>Set similarity join is an important problem with many applications
+    in data discovery, cleaning and integration. To increase robustness, fuzzy set
+    similarity join calculates the similarity of two sets based on maximum weighted
+    bipartite matching instead of set overlap. This allows pairs of elements, represented
+    as sets or strings, to also match approximately rather than exactly, e.g., based
+    on Jaccard similarity or edit distance. However, this significantly increases
+    the verification cost, making even more important the need for efficient and effective
+    filtering techniques to reduce the number of candidate pairs. The current state-of-the-art
+    algorithm relies on similarity computations between pairs of elements to filter
+    candidates. In this paper, we propose token-based instead of element-based filtering,
+    showing that it is significantly more lightweight, while offering similar or even
+    better pruning effectiveness. Moreover, we address the top-𝑘 variant of the problem,
+    alleviating the need for a user-specified similarity threshold. We also propose
+    early termination to reduce the cost of verification. Our experimental results
+    on six real-world datasets show that our approach always outperforms the state
+    of the art, being an order of magnitude faster on average.</p>
+  used_for: &id084
+  - robustness
+  - termination
+  input_formats: &id083 []
+  supported_languages: []
+  supported_inputs: *id083
+  properties_verified: *id084
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.14778/3574245.3574263
+  last_updated: '2024-07-12T16:07:42.417773+00:00'
+- name: RV-Match
+  website: null
+  description: '<p>Docker image file containing the RV-Match tool installed in an
+    Ubuntu Jammy container. Run:</p>
+
+
+    <pre><code class="language-bash">docker load &lt; rv-match-nfm-23.tar.gz</code></pre>
+
+
+    <p>to install the image in your local environment.</p>'
+  used_for: &id086 []
+  input_formats: &id085 []
+  supported_languages: []
+  supported_inputs: *id085
+  properties_verified: *id086
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7464477
+  last_updated: '2023-01-20T10:40:20.845360+00:00'
+- name: 'Incremental Development of Real-Time Requirements: The Light Control Case
+    Study'
+  website: null
+  description: System requirements frequently change while the system is still under
+    development. Usually this means going back and revising the requirements specification
+    and redoing those development steps already completed. In this article we show
+    how formal requirements can be allowed to evolve while system development is in
+    progress, without the need for costly redevelopment. This is done via a formalism
+    which allows requirements engineering steps to be interleaved with formal development
+    steps in a manageable way. The approach is demonstrated by a significant case
+    study, the Light Control System.
+  used_for: &id088 []
+  input_formats: &id087 []
+  supported_languages: []
+  supported_inputs: *id087
+  properties_verified: *id088
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3217/jucs-006-07-0704
+  last_updated: '2024-07-16T06:16:13.638204+00:00'
+- name: Design and implementation of QASP Solver
+  website: null
+  description: <p>We present, a new ASP solver called <em>Quantifying over ASP</em>,
+    or briefly <strong>QASP</strong>, for ASP(Q) problems resolution, i.e. an extensive
+    ASP formalism, inspired by <em>Quantified Boolean Formula</em>, which adds quantifiers
+    over stable models, in order to model PSPACE problem.</p>
+  used_for: &id090 []
+  input_formats: &id089 []
+  supported_languages: []
+  supported_inputs: *id089
+  properties_verified: *id090
+  techniques:
+  - SMT solving
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.5425783
+  last_updated: '2021-09-04T01:48:42.733274+00:00'
+- name: A QSAT Benchmark Based on Vertex-Folkman Problems
+  website: null
+  description: <p>The purpose of this project is to draw attention to a particular
+    family of quantified Boolean formulas (QBFs) stemming from encodings of some vertex
+    Folkman problems in extremal graph theory. We argue that this family of formulas
+    is interesting for QSAT research because it is both conceptually simple and parametrized
+    in a way that allows for a fine-grained diversity in the level of difficulty of
+    its instances. Additionally, when coupled with symmetry breaking, the formulas
+    in this family exhibit backbones (unique satisfying assignments) at the top-level
+    existential variables. This benchmark is thus suitable for addressing questions
+    regarding the connection between the existence of backbones and the hardness of
+    QBFs.</p>
+  used_for: &id092 []
+  input_formats: &id091 []
+  supported_languages: []
+  supported_inputs: *id091
+  properties_verified: *id092
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.3548977
+  last_updated: '2024-07-22T16:04:37.170449+00:00'
+- name: Artifact for article "Reflections on Termination of Linear Loops"
+  website: null
+  description: <p>This is the artifact for the CAV 2021 paper, &ldquo;Reflections
+    on Termination of Linear Loops&rdquo;.&nbsp;The artifact provided is an OVA virtual
+    machine that can be opened via&nbsp;VirtualBox. The operating system is Ubuntu
+    18.04 LTS. It contains an installation of the tool as described in the paper,
+    and the benchmark suites we have used to evaluate the tool. It also contains installations
+    of benchexec and ComPACT, Ultimate Automizer, 2LS, CPAchecker for easy reproduction
+    of results in the Evaluation section of the paper.&nbsp;</p>
+  used_for: &id094
+  - termination
+  input_formats: &id093
+  - C source
+  supported_languages:
+  - C
+  supported_inputs: *id093
+  properties_verified: *id094
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.4742843
+  last_updated: '2021-05-08T01:48:10.012648+00:00'
+- name: 'FSE2022benchmarks/-FSE-2022-Termination: FSE2022-Termination'
+  website: null
+  description: <p>Benchmarks and result-files for paper "Large-Scale Analysis of Non-Termination
+    Bugs in Real-World OSS Projects" (FSE-2022)</p>
+  used_for: &id096
+  - termination
+  input_formats: &id095 []
+  supported_languages: []
+  supported_inputs: *id095
+  properties_verified: *id096
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6548310
+  last_updated: '2022-05-14T13:50:27.233099+00:00'
+- name: A special view on the method of implication, classification, and decision-making
+    strategies of the human body channels
+  website: null
+  description: '<p>The fast development of semiconductor technology and method scaling
+    over a couple of many years has enabled the prolific increase of small-form issue
+    wearable gadgets and physiological sensors. Those devices are connected to every
+    different thru radio frequency conversation via air medium, and form a network
+    of interconnected devices around the human body, normally known as the wireless
+    body location network (WBAN). Human body verbal exchange (HBC), which uses the
+    human frame because the communication medium, has these days emerged as an alternative
+    to wireless media for conversation amongst these devices because of its low power
+    requirement and more desirable safety residences. This alleviates key technological
+    challenges: 1) electricity consumption, and 2) security, for such electricity-restricted
+    battery-operated devices and may beautify their lifetime notably. One of the primary
+    reasons for the electricity performance of HBC is due to the low loss channel
+    supplied through the human frame, because of the conductance belongings of human
+    tissue, compared to communique thru radio waves around the human frame. As a result,
+    the entire know-how of the frequency characteristics of the human frame channel
+    below special communication eventualities will permit the development of strength-efficient
+    HBC primarily based on circuits and systems. Previous studies on HBC channel size
+    have in most cases targeted intra-frame HBC, which characterizes the verbal exchange
+    among two wearable devices worn by means of the identical character. There has
+    been a huge variance in the measurement consequences reported in the literature
+    mostly because of the experimental setup (low impedance size, vicinity of transmitter,
+    receiver and many others.) and the excitation and termination modalities</p>'
+  used_for: &id098
+  - safety
+  - security
+  - termination
+  input_formats: &id097 []
+  supported_languages: []
+  supported_inputs: *id097
+  properties_verified: *id098
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7109863
+  last_updated: '2024-07-16T01:58:44.862671+00:00'
+- name: 'The Efficacy and Safety of Extraamniotic Mannitol along with Carboprost (PGF2α)
+    and Intracervical Misoprostol (PGE1) in Second Trimester Termination of Pregnancy:
+    A Prospective Comparative Clinical Study'
+  website: null
+  description: '<p><strong>Introduction:&nbsp;</strong>Second trimester termination
+    of pregnancy accounts for around 10 to 15% of all abortions annually. These can
+    be performed either medically or surgically. The aim of this study is to compare
+    the efficacy and safety of extraamniotic mannitol along with carboprost (PGF2&alpha;)
+    and intracervical misoprostol in second trimester termination of pregnancy.&nbsp;<strong>Result:&nbsp;</strong>The
+    most common indication for termination of pregnancy was intrauterine fetal demise
+    (41.7% in mannitol group and 45.8% in misoprostol group). Second trimester termination
+    of pregnancy success rate was significantly higher in the extra-amniotic mannitol
+    along with PGF2&alpha; group as compared to intracervical misoprostol group (95.8%
+    v/s 75%, p&lt;0.05).A significantly shorter duration from induction to delivery
+    was observed in the extra-amniotic mannitol along with PGF2&alpha; group as compared
+    to intracervical misoprostol group (19.3 &plusmn; 4.2 v/s 22.3 &plusmn; 2.1 hours,
+    p&lt;0.01).Incidence of side effects like pyrexia, diarrhea, abdominal pain and
+    headache were significantly lower in the mannitol group as compared to misoprostol
+    group.&nbsp;<strong>Conclusion:</strong>&nbsp;Extra-amniotic mannitol along with
+    carboprost (PGF2&alpha;) is an effective and safe method for second trimester
+    termination of pregnancy. The success rate of extra amniotic mannitol along with
+    PGF2&alpha; was significantly higher with notably shorter induction-abortion interval.
+    A remarkable lower hospital stay and fewer side effects were seen in patients
+    induced by mannitol along with PGF2&alpha;.</p>
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+
+    <div>&nbsp;</div>'
+  used_for: &id100
+  - safety
+  - termination
+  input_formats: &id099 []
+  supported_languages: []
+  supported_inputs: *id099
+  properties_verified: *id100
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.12679117
+  last_updated: '2024-07-07T09:50:18.760535+00:00'
+- name: Fig. 4 in Geometric morphometric analysis and taxonomic revision of the Gzhelian
+    (Late Pennsylvanian) conodont Idiognathodus simulator from North America
+  website: null
+  description: 'Fig. 4. Wireframe created by connecting landmarks chosen for the Idiognathodus
+    simulator morphometric analysis. Numbers represent the landmark number designations
+    used for the morphometric analysis: 1, ventral termination of the rostral adcarinal
+    ridge; 2, dorsal termination of the carina; 3, ventral termination of the caudal
+    adcarinal ridge; 4, rostral termination of the most ventral transverse ridge on
+    the rostral side; 5, caudal termination of the most ventral transverse ridge on
+    the rostral side; 6, rostral termination of the most ventral transverse ridge
+    on the caudal side; 7, caudal termination of the most ventral transverse ridge
+    on the caudal side; 8, rostral termination of the transverse ridge closest to
+    the point of maximum curvature along the rostral platform margin on the rostral
+    side. 9, caudal termination of the transverse ridge closest to the point of maximum
+    curvature along the rostral platform margin on the rostral side; 10, rostral termination
+    of the transverse ridge closest to the point of maximum curvature along the caudal
+    platform margin on the caudal side; 11, caudal termination of the transverse ridge
+    closest to the point of maximum curvature along the caudal platform margin on
+    the caudal side; 12, rostral termination of the most dorsal transverse ridge on
+    the rostral side; 13, caudal termination of the most dorsal transverse ridge on
+    the rostral side; 14, rostral termination of the most dorsal transverse ridge
+    on the caudal side; 15, caudal termination of the most dorsal transverse ridge
+    on the caudal side; 16, dorsal tip of the element; 17, midpoint along the rostral
+    adcarinal ridge; 18, midpoint along the caudal adcarinal ridge.'
+  used_for: &id102
+  - termination
+  input_formats: &id101 []
+  supported_languages: []
+  supported_inputs: *id101
+  properties_verified: *id102
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.13264153
+  last_updated: '2024-08-28T13:09:06.694268+00:00'
+- name: 'jreeves3/qbf-definition-variable-movement-Artifact: Zenodo Archive'
+  website: null
+  description: <p>Archiving the artifact with Zenodo on release.</p>
+  used_for: &id104 []
+  input_formats: &id103 []
+  supported_languages: []
+  supported_inputs: *id103
+  properties_verified: *id104
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.5733440
+  last_updated: '2021-11-29T13:48:45.166375+00:00'
+- name: A comparative study of second trimester termination of pregnancy with mifepristone
+    and misoprostol vs misoprostol alone in 50 cases
+  website: null
+  description: 'The aim: To study the efficacy and safety of combined mifepristone
+    and misoprostol used in second-trimester abortion(≥ 12 and ≤ 20 weeks) in comparison
+    with only vaginal misoprostol.
+
+
+
+    Materials and methods: This study was a prospective comparative randomised clinical
+    study in women attending hospitals in need of a second-trimester abortion, i.e.,
+    12–20 weeks of pregnancy were taken up and divided as Group A – 50 women with
+    mifeprisptone and misoprostol, Group B – 50 women with misoprostol alone Results
+    were analysed according to age, parity, gestational age, average dose of misoprostol
+    required for complete abortion, Induction abortion interval, completeness of abortion,
+    side effects and mean days of hospital stay.
+
+
+
+    Results: Demographic details are comparable and insignificant in the comparison.
+    The average dose of misoprostol (mcg) required for the completeness of abortion
+    in group A is 596±28.28 mcg, and in group B, it is 1148±160.66 mcg (p&lt;0.001)
+    which is statistically significant. In the present study, the induction abortion
+    interval is significantly less in group A compared to group B, with p&lt;0.001.
+    In addition, 10 out of 50 patients in group A aborted within 7 hours, whereas
+    none in group B. Mean duration of hospital stay in group A is 24 hours. In group
+    B, it is 34.82 hours which is statistically significant with a p-value of &lt;0.001.
+    12 patients in group A and 26 in group B had side effects like nausea, vomiting,
+    fever, headache and diarrhoea. 8 % of group A and 20 % of group B had a fever.
+    These patients were treated with antipyretics. 6 % in group A and 14 % in group
+    B had nausea and vomiting and were treated with antiemetics. 4 % in group A and
+    8 % in group B had diarrhoea and were treated with antimotility drugs. 6 % in
+    group A and 10 % in group B had a headache; these patients were treated with NSAIDs.
+
+
+
+    Conclusions: The combination of mifepristone and misoprostol is a highly effective
+    and safe method for second-trimester termination of pregnancy. The amount of misoprostol
+    needed to accomplish the abortion, and the severity of the adverse effects are
+    lower in the mifepristone-primed group than in the misoprostol-alone group. Since
+    there are fewer difficulties, this approach can be employed in hospitals with
+    high patient density.'
+  used_for: &id106
+  - safety
+  - termination
+  input_formats: &id105 []
+  supported_languages: []
+  supported_inputs: *id105
+  properties_verified: *id106
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.21303/2504-5679.2022.002726
+  last_updated: '2024-07-15T12:01:10.327763+00:00'
+- name: 'FIGURES 35–40 in A new species of Balaustium von Heyden, 1826 (Acari: Actinotrichida,
+    Erythraeidae) from Spain'
+  website: null
+  description: 'FIGURES 35–40. Balaustium hernandezi sp. nov. (adult, female), SEM
+    micrographs: 35. Eye (on the right) and urnula (on the left); 36. Dorsal opisthosomal
+    setae; 37. Tarsus I termination; 38. Tarsus II termination; 39. Tarsus III termination;
+    40. Tarsus IV termination.'
+  used_for: &id108
+  - termination
+  input_formats: &id107 []
+  supported_languages: []
+  supported_inputs: *id107
+  properties_verified: *id108
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.211654
+  last_updated: '2024-08-03T21:32:00.200194+00:00'
+- name: 'Prove your Colorings: Formal Verification of Cache Coloring of Bao Hypervisor.
+    Companion Artifact for the Paper Submitted to FASE 2025'
+  website: null
+  description: '<p>This artifact aims to support and reproduce the verification results
+    of the paper&nbsp; "Prove your Colorings: Formal Verification of Cache Coloring
+    of Bao Hypervisor" by Axel Ferr&eacute;ol, Laurent Corbin and Nikolai Kosmatov,
+    and should be cited as:</p>
+
+    <p>Axel Ferr&eacute;ol, Laurent Corbin and Nikolai Kosmatov. "Prove your Colorings:
+    Formal Verification of Cache Coloring of Bao Hypervisor. Companion Artifact for
+    the Paper Submitted to FASE 2025"</p>
+
+    <p>The artifact itself is available in the attached VM BaoVerifArtifact.ova. See
+    the documentation in README.md in the folder /home/user/BaoVerifArtifact inside
+    the VM.</p>
+
+    <p>For convenience of the readers and a faster access to files, the contents of
+    the VM are also available in the attached ZIP. The ZIP is provided for information.
+    The artifact should be preferably used with the attached VM BaoVerifArtifact.ova.<br><br>The
+    VM is running Ubuntu 24.04. The VM was tested with VirtualBox 7.1.2 on a host
+    machine (with x86 architecture runnning Ubuntu 24.04). For information, the password
+    of user "user" in the VM is "user". The default keyboard is French (press Super+Space,
+    that is Windows button + Space, to change to English keyboard).&nbsp;</p>
+
+    <p>Requirements for the VM:</p>
+
+    <p>- at least 4 CPU cores allocated for the VM;&nbsp;<br>- at least 8 GB RAM allocated
+    for the VM;&nbsp;<br>- at least 25 GB free disk space before importing the VM.</p>
+
+    <p>See the included REQUIREMENTS.md file for more detail and the Disclaimer in
+    README.md for possible reasons and situations when to increase allocated resources.</p>
+
+    <p><em>Hint: on some versions of host OS and VirtualBox, bugs or limited support
+    prevent the use of VirtualBox or a correct termination of the VM start-up (the
+    VM remains freezed on the loading screen). Changing the VM window size a couple
+    of times can help to refresh the VM screen and get control on it. Otherwise check
+    the known VirtualBox bugs or limitations.</em></p>'
+  used_for: &id110
+  - termination
+  input_formats: &id109 []
+  supported_languages: []
+  supported_inputs: *id109
+  properties_verified: *id110
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.14616331
+  last_updated: '2025-01-17T17:01:29.921907+00:00'
+- name: Rho-dependent terminators and transcription termination
+  website: null
+  description: Rho-dependent transcription terminators participate in sophisticated
+    genetic regulatory mechanisms, in both bacteria and phages; they occur in regulatory
+    regions preceding the coding sequences of genes and within coding sequences, as
+    well as at the end of transcriptional units, to prevent readthrough transcription.
+    Most Rho-dependent terminators have been found in enteric bacteria, but they also
+    occur in Gram-positive bacteria and may be widespread among bacteria. Rho-dependent
+    termination requires bothcis-acting elements, on the mRNA, andtrans-acting factors.
+    The onlycis-acting element common to Rho-dependent terminators is richness in
+    rC residues. Additional sequence elements have been observed at different Rho
+    termination sites. These 'auxiliary elements' may assist in the termination process;
+    they differ among terminators, their occurrence possibly depending on the function
+    and sequence context of the terminator. Specific nucleotides required for termination
+    have also been identified at Rho sites. Rho is the main factor required for termination;
+    it is a ring-shaped hexameric protein with ATPase and helicase activities. NusG,
+    NusA and NusB are additional factors participating in the termination process.
+    Rho-dependent termination occurs by binding of Rho to ribosome-free mRNA, C-rich
+    sites being good candidates for binding. Rho's ATPase is activated by Rho–mRNA
+    binding, and provides the energy for Rho translocation along the mRNA; translocation
+    requires sliding of the message into the central hole of the hexamer. When a polymerase
+    pause site is encountered, the actual termination occurs, and the transcript is
+    released by Rho's helicase activity. Many aspects of this process are still being
+    studied. The isolation of mutants suppressing termination, site-directed mutagenesis
+    ofcis-acting elements in Rho-dependent termination, and biochemistry, are and
+    will be contributing to unravelling the still undefined aspects of the Rho termination
+    machinery. Analysis of the more sophisticated regulatory mechanisms relying on
+    Rho-dependent termination may be crucial in identifying new essential elements
+    for termination.
+  used_for: &id112
+  - termination
+  input_formats: &id111 []
+  supported_languages:
+  - C
+  supported_inputs: *id111
+  properties_verified: *id112
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.1099/mic.0.28982-0
+  last_updated: '2024-12-14T04:12:52.721076+00:00'
+- name: Profile of abortion seekers in the tertiary center of northern hills with
+    review of medical termination of pregnancy act in India
+  website: null
+  description: '<p><strong>The aim of the present study</strong>&nbsp;was to investigate
+    the socio-demographic and obstetric profile of pregnant women, seeking medical
+    termination of pregnancy in accordance with the Medical Termination of Pregnancy
+    (MTP) Act and the reasons for undergoing termination of pregnancy in the tertiary
+    care center of the hilly region of Northern India and to further review the amendments
+    in the Medical Termination of Pregnancy Act 1971 along with its future implications
+    in legalizing abortions in India.</p>
+
+
+    <p><strong>Materials and Methods</strong>: A registry-based retrospective study
+    was carried out among pregnant women, attending the gynecologic outpatient department
+    for termination of pregnancy at the tertiary care teaching hospital and the referral
+    center for Himalayan foothills in Northern India. The records of women, seeking
+    termination of pregnancy during a 1-year period between October 2020 and September
+    2021, were reviewed and information on their demographic and obstetric profile,
+    reason for undergoing termination of pregnancy, and acceptance of contraception,
+    following termination of pregnancy was recorded in the data sheet. The information
+    obtained was analyzed using SPSS version 20 (IBM, Chicago, USA) for descriptive
+    statistics.</p>
+
+
+    <p><strong>Results:</strong>&nbsp;A total of 400 pregnant women underwent Medical
+    Termination of Pregnancy between October 2020 and September 2021. 30.5 % (122/400)
+    women between 26&ndash;30 years of age underwent termination of pregnancy, followed
+    by 27.3 % women aged between 31&ndash;35 years. Social reasons for termination
+    of pregnancy were more evident in women aged 26 years and above. 84.09 % pregnancies
+    were terminated in the second trimester (&gt;12 weeks) on eugenic ground, while
+    65.01 % pregnancies were terminated in the first trimester (6&ndash;12 weeks)
+    on social grounds. Only 7.75 % (31/400) women opted for sterilization or family
+    planning after MTP, out of which the majority opted for temporary methods of contraception.</p>
+
+
+    <p><strong>Conclusion</strong>: We conclude from the results of the present study
+    that women in the peak reproductive age (26&ndash;30 years) are more likely to
+    seek pregnancy termination and this group of women needs to be the focus of contraceptive
+    counseling and family planning services. Timely ultrasound scans by an expert
+    sonologist may be a step forward towards lowering the rates of late pregnancy
+    termination. There is a need to educate women to avail and use contraceptive methods
+    in an effective manner and to make them aware of utilizing sterilization services,
+    once they complete their families to avoid unwanted pregnancies.</p>'
+  used_for: &id114
+  - termination
+  input_formats: &id113 []
+  supported_languages: []
+  supported_inputs: *id113
+  properties_verified: *id114
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.15587/2519-4798.2021.249957
+  last_updated: '2024-07-17T12:21:15.195812+00:00'
+- name: The moment of termination of corporate legal relations
+  website: null
+  description: <p>The long-term nature of corporate legal relations necessitates the
+    theoretical selection of certain moments of their emergence, change and termination.
+    The update of the corporate legislation has necessitated a review of the established
+    positions on the moment of termination of corporate legal relations, analysis
+    and study of the legislation and resolution of problems that arise in connection
+    with its application. The introduction of the institution of consent in corporate
+    legal relations necessitated a scientific rethinking of certain aspects of the
+    mechanism of termination of corporate legal relations. The article investigates
+    the main scientific approaches to determining the moment of termination of corporate
+    legal relations, analyzes the moment of termination of corporate legal relations
+    depending on the grounds for their termination. Based on four main approaches
+    to determining the moment of termination of corporate legal relations, the positions
+    of scientists who adhere to them are studied, changes to the current corporate
+    legislation are analyzed, inconsistencies regarding the moment of termination
+    of corporate legal relations are revealed. The peculiarities of the moment of
+    termination of corporate legal relations in case of alienation of a share (part
+    of a share) in the authorized capital of the company, exclusion of a participant
+    from the company, its withdrawal, withdrawal, recovery from the defendant (claim
+    from his possession) to a share (part of the share) are analyzed. Peculiarities
+    of state registration of changes in information about a legal entity in the aspect
+    of determining the moment of termination of corporate legal relations are determined.
+    A position has been formed regarding the application of a separate approach to
+    determining the moment of termination of corporate legal relations on certain
+    grounds for termination of corporate legal relations and suggested ways to resolve
+    existing inconsistencies in corporate law regarding certain grounds for termination
+    of corporate legal relations.</p>
+  used_for: &id116
+  - termination
+  input_formats: &id115 []
+  supported_languages: []
+  supported_inputs: *id115
+  properties_verified: *id116
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.21564/2414-990X.152.223330
+  last_updated: '2024-07-19T05:13:31.284753+00:00'
+- name: Right to abortion & safe abortion will reduce maternal mortality
+  website: null
+  description: '<p><strong>Abstract&nbsp;</strong><br>
+
+    Recent report of the United Nations population fund&rsquo;s state of the world
+    population says that around 08 women die<br>
+
+    every day in India because of unsafe abortion. There are many reasons behind the
+    deaths such as taking abortion pills<br>
+
+    without consulting doctor, abortion carried out by untrained personals, abortion
+    in hospitals without facilities settings<br>
+
+    etc. Married women have the right to abortion but what about the unmarried pregnant
+    women; this case is one of the<br>
+
+    major cause of unsafe abortion especially in our country India. Right to abortion
+    simply means one can go for safe<br>
+
+    abortion i.e. the abortion will be carried out by a trained doctor in a hospital
+    approved for pregnancy termination having<br>
+
+    facilities settings. Time to time amendments in Medical termination of Pregnancy
+    act took place but no right provided<br>
+
+    to unmarried. Supreme Court in its judgment on 29th September 2022 gave right
+    to abortion to unmarried pregnant<br>
+
+    women too up to 20 weeks from the date of gestation. This judgement came in a
+    case that filed on July 2022 by 25 years<br>
+
+    old pregnant women. The judgement is a revolution and save many lives of women
+    because it will stop or reduce the<br>
+
+    number of unsafe abortions. &nbsp;The article discussed about the impact of this
+    decision on women in near future, unsafe<br>
+
+    abortion, medical abortion using medications, actions and adverse effects of medications
+    used for abortion, medical<br>
+
+    termination of pregnancy act 1971, amendment in act and effect of Supreme Court&rsquo;s
+    judgement on women&rsquo;s health and<br>
+
+    mortality.</p>'
+  used_for: &id118
+  - termination
+  input_formats: &id117 []
+  supported_languages: []
+  supported_inputs: *id117
+  properties_verified: *id118
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.30574/gscbps.2022.21.1.0393
+  last_updated: '2024-07-15T20:34:16.919353+00:00'
+- name: '[ ATVA24 Artifact ] HyperQB: A QBF-Based Bounded Model Checker for Hyperproperties'
+  website: null
+  description: '<p>Artifact for ATVA 2024, paper 80: HyperQB: A QBF-Based Bounded
+    Model Checker for Hyperproperties</p>'
+  used_for: &id120 []
+  input_formats: &id119
+  - QBF
+  supported_languages: []
+  supported_inputs: *id119
+  properties_verified: *id120
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.11282197
+  last_updated: '2024-05-24T16:08:35.288296+00:00'
+- name: 'The Medical Termination of Pregnancy (Amendment) Act 2021: A Boon or a Bane
+    to Society'
+  website: null
+  description: '<p>This paper has been published in Peer-reviewed International Journal
+    "Remarking An Analisation"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>URL
+    : https://www.socialresearchfoundation.com/new/publish-journal.php?editID=7690</p><p>Publisher
+    : Social Research Foundation, Kanpur (SRF International)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Abstract
+    :<br>The <i>Medical Termination of Pregnancy<strong> </strong></i>Act, 1971 is
+    considered a major milestone of social legislations in India. However, 50 years
+    of its application, it has failed to keep up with changing times, needs and advancements
+    in technology. In this regard, The <i>Medical Termination of Pregnancy<strong>
+    </strong>(Amendment)<strong> </strong></i>Act, 2021 was a welcome step. Though
+    the amendment made many necessary changes in the MTP Act. The aforementioned Amendment
+    Act has failed to give any recognition to the right to abortion as a right to
+    privacy of a pregnant woman. At no point of time during pregnancy can a pregnant
+    woman seek abortion as per her choice. The Abortion law as such does not provide
+    a pregnant woman right over her body making an essential human right like the
+    right to privacy meaningless to a pregnant woman.<i> </i>The judiciary has time
+    and again reiterated right to abortion as a right to privacy through different
+    judgments. However, the legislature has time and again failed to give recognition
+    to the same including the<i> Medical Termination of Pregnancy (Amendment) Act
+    2021.</i></p>'
+  used_for: &id122
+  - termination
+  input_formats: &id121 []
+  supported_languages: []
+  supported_inputs: *id121
+  properties_verified: *id122
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.10213120
+  last_updated: '2024-07-10T17:19:38.727497+00:00'
+- name: 'HyperQB: A QBF-Based Bounded Model Checker for Hyperproperties'
+  website: null
+  description: <p>HyperQB is a push-button bounded model checker for hyperproperties.
+    The inputs are model(s), in NuSMV syntax, a hyperproperty, in HyperLTL logic,
+    and a finite bound k. HyperQB encodes the inputs as Boolean formulations and unroll
+    up to k (additional bounded semantics can be given), and output either the given
+    property is verified or falsified. &nbsp; &nbsp;</p>
+  used_for: &id124 []
+  input_formats: &id123 []
+  supported_languages: []
+  supported_inputs: *id123
+  properties_verified: *id124
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.10048374
+  last_updated: '2023-10-28T04:42:52.570425+00:00'
+- name: Synochoneura
+  website: null
+  description: <p><b>Key to species of <i>Synochoneura</i> based on the male genital
+    characters</b></p><p>1. Valva long and narrow, distinctly narrowed beyond middle,
+    forming a neck; sacculus very long, exceeding termination of costa .................................................................................................................
+    <i>S. ochriclivis</i></p><p>- Valva short and broad, without distinctly narrowed
+    neck; sacculus short, not reaching termination of costa......................................................................................................................................................................2</p><p>2.
+    Distal part of valva slightly contracted; free termination of sacculus subquadrate;
+    aedeagus slender........... ..................................................................................................................................................
+    <i>S. tapaishani</i></p><p>- Distal part of valva distinctly contracted; free
+    termination of sacculus dentate; aedeagus stout ................... ........................................................................................................................................
+    <i>S. dentana</i> sp. nov.</p>
+  used_for: &id126
+  - termination
+  input_formats: &id125 []
+  supported_languages: []
+  supported_inputs: *id125
+  properties_verified: *id126
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6242027
+  last_updated: '2024-12-10T02:10:56.137162+00:00'
+- name: HAK DAN KEWAJIBAN PEKERJA YANG DI RUMAHKAN AKIBAT DARI  PANDEMI COVID-19
+  website: null
+  description: '<p>ABSTRACT</p>
+
+
+    <p>&nbsp;</p>
+
+
+    <p>In the current pandemic, there are many problems that arise. Not only from
+    the health aspect, but also from the employment aspect, human rights, etc. Moreover,
+    in terms of rights, there are issues regarding the rights and obligations of workers
+    who directly experience termination of employment (PHK). This is considered not
+    in accordance with the rights and obligations of the workers, but due to the current
+    pandemic conditions and leading to a crisis in all aspects of the field, the decision
+    to lay off is the final decision made by the companies in order to avoid further
+    losses in the company. Reducing employees is considered efficiency because it
+    can help reduce expenses. There are so many companies that suppress HR behind
+    this pandemic. There are layoffs, because there is no financial capability on
+    the part of the company. It is felt, a pandemic situation like this is a responsibility
+    and also a problem from all aspects. Not only about employees, but also the government,
+    companies, all feel the impact of this pandemic.</p>
+
+
+    <p>Keywords: Pandemic, Workers, Termination.</p>
+
+
+    <p>&nbsp;</p>
+
+
+    <p>ABSTRAK</p>
+
+
+    <p>&nbsp;</p>
+
+
+    <p>Terhadap kondisi pendemi seperti saat ini sangat banyak problematika yang muncul.
+    Tidak hanya dari aspek kesehatan, namun juga aspek ketenagakerjaan, hak asasi
+    manusia, dll. Terlebih lagi dalam hak, adapun permasalahan atas hak dan kewajiban
+    para pekerja yang secara langsung mendapati Pemutusan Hubungan Kerja (PHK). Hal
+    ini dinilai tidak sesuai dengan hak dan kewajiban para pekerja, namun dikarenakan
+    kondisi pandemi yang sepeeti ini dan berujung pada krisis disegala aspek bidang,
+    maka keputusan PHK nenjadi keputusan akhir yang dilakukan oleh para perusahaan
+    meningat agar tidak semakin rugi dalam perusahaan tersebut. Mengurangi karyawan
+    adalah dianggap efisiensi karena dapat membantu mengurangi pengeluaran. Banyak
+    sekali perusahaan yang menekan SDM di balik keadaan pandemi seperti ini. PHK ada,
+    karena sudah tidak adanya kemampuan dari pihak perusahaan dari sisi keuangan.
+    Dirasa, keadaan pandemi seperti imi adalah tanggungjawab dan juga masalah dari
+    segala aspek. Tidak hanya tentang pegawai, namun juga pemerintahan, perusahaan,
+    semua ikut merasakan dampak dari keadaan pandemi ini.</p>
+
+
+    <p>Kata Kunci: Pandemi, Pekerja, Pemutusan.</p>'
+  used_for: &id128
+  - termination
+  input_formats: &id127 []
+  supported_languages: []
+  supported_inputs: *id127
+  properties_verified: *id128
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6562537
+  last_updated: '2024-07-16T18:06:46.171132+00:00'
+- name: Termination patterns of Karenia brevis blooms in the eastern Gulf of Mexico
+  website: null
+  description: '<p>The factors governing the initiation and development of <em>K.
+    brevis</em> blooms in the eastern Gulf<br>
+
+    of Mexico are fairly well understood, however the physical, chemical and biological
+    factors<br>
+
+    underlying bloom transport and termination are not. The Florida Fish and Wildlife
+    Conservation<br>
+
+    Commission&rsquo;s HAB Monitoring database was analyzed from 1998 - 2021 for temporal
+    trends in<br>
+
+    bloom duration, initiation and termination and for repetitive spatial patterns
+    in bloom termination.<br>
+
+    A unimodal pattern in bloom initiation was observed, with the most frequent initiations
+    in<br>
+
+    September. Bloom termination was more variable, with the most frequent occurrences
+    in April.<br>
+
+    Four recurring patterns in bloom termination were identified during this period
+    for southwest<br>
+
+    Florida <em>K. brevis</em> blooms: 1) coastal transport south to the Florida Keys
+    then west into the<br>
+
+    Gulf of Mexico, 2) transport to the Florida Panhandle with subsequent termination
+    in place,<br>
+
+    or 3) via coastal transport west to Alabama, and 4) termination in place in southwest
+    Florida.<br>
+
+    These patterns suggest that consistent physical, chemical and biological drivers
+    underlie the<br>
+
+    termination stages of <em>K. brevis </em>blooms, and that identification of these
+    drivers may provide<br>
+
+    useful management tools for bloom prediction and monitoring.</p>'
+  used_for: &id130
+  - termination
+  input_formats: &id129 []
+  supported_languages: []
+  supported_inputs: *id129
+  properties_verified: *id130
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7034923
+  last_updated: '2024-07-16T04:51:30.714211+00:00'
+- name: Formal Verification of PKCS#1 Signature Parser using Frama-C. Companion Artifact
+    for the Paper Submitted to iFM 2025
+  website: null
+  description: '<p>This artifact aims to support and reproduce the verification results
+    of the paper&nbsp; <em>"Formal Verification of PKCS#1 Signature Parser using Frama-C"</em>
+    by Martin H&aacute;na, Nikolai Kosmatov, Virgile Prevosto and Julien Signoles,
+    accepted for publication at iFM 2025,&nbsp;and should be cited as:</p>
+
+    <p>Martin H&aacute;na, Nikolai Kosmatov, Virgile Prevosto and Julien Signoles.
+    <em>"Formal Verification of PKCS#1 Signature Parser using Frama-C. Companion Artifact
+    for the Paper Submitted to iFM 2025"</em>. &nbsp;Zenodo. https://doi.org/10.5281/zenodo.16919839</p>
+
+    <p>The artifact itself is available in the attached VM PKCS1ParserProof.ova. See
+    the documentation in README.md in the folder /home/user/PKCS1ParserProof/ inside
+    the VM. In the provided VM, all tools have already been installed.&nbsp;</p>
+
+    <p>The VM is running Ubuntu 24.04. The VM was tested with VirtualBox 7.0.14. For
+    information, the password of user "user" in the VM is "user".&nbsp;&nbsp;</p>
+
+    <p>For convenience of the readers and a faster access to files, the contents of
+    the VM are also available in the attached ZIP. The ZIP is provided for information.
+    The artifact should be preferably used with the attached VM PKCS1ParserProof.ova.<br><br>Requirements
+    for the VM:</p>
+
+    <p>- at least 4 CPU cores allocated for the VM;&nbsp;<br>- at least 8 GB RAM allocated
+    for the VM;&nbsp;<br>- at least 25 GB free disk space before importing the VM.</p>
+
+    <p>See the included REQUIREMENTS.md file for more detail and the Disclaimer in
+    README.md for possible reasons and situations when to increase allocated resources.</p>
+
+    <p>See the included LICENSE.md file for the licenses of different components.&nbsp;</p>
+
+    <p><em>Hint: on some versions of host OS and VirtualBox, bugs or limited support
+    prevent the use of VirtualBox or a correct termination of the VM start-up (the
+    VM remains freezed on the loading screen). Changing the VM window size a couple
+    of times can help to refresh the VM screen and get control on it. Otherwise check
+    the known VirtualBox bugs or limitations. In particular, there are known compatibility
+    issues for VirtualBox on ARM processors at the time of writing.</em></p>'
+  used_for: &id132
+  - termination
+  input_formats: &id131 []
+  supported_languages:
+  - C
+  supported_inputs: *id131
+  properties_verified: *id132
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.16919839
+  last_updated: '2025-09-03T08:12:54.971642+00:00'
+- name: The Termination— Ensis
+  website: null
+  description: n/a
+  used_for: &id134 []
+  input_formats: &id133 []
+  supported_languages: []
+  supported_inputs: *id133
+  properties_verified: *id134
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.1017/s0009840x00194764
+  last_updated: '2024-08-01T16:08:30.905015+00:00'
+- name: 'PBFD and PDFD: Formally Defined and Verified Methodologies and Empirical  Evaluation
+    for Scalable Full-Stack Software Engineering'
+  website: null
+  description: '<p>This paper introduces Primary Breadth-First Development (PBFD)
+    and Primary Depth-First Development (PDFD), two formally defined and verified
+    methodologies for scalable, industrial-grade full-stack software engineering.
+    These approaches bridge a longstanding gap between formal methods and real-world
+    development practice by enforcing structural correctness through graph-theoretic
+    modeling.&nbsp;Unlike prior graph-based approaches, PBFD and PDFD operate over
+    layered directed graphs and are formalized using unified state machines and Communicating
+    Sequential Processes (CSP) to ensure critical properties, including bounded-refinement
+    termination and structural completeness.</p>
+
+    <p>To coordinate hierarchical data at scale, we propose Three-Level Encapsulation
+    (TLE)&mdash;a novel, bitmask-based encoding scheme that delivers provably constant-time
+    updates. TLE&rsquo;s formal guarantees underpin PBFD&rsquo;s industrial-scale
+    performance and scalability.</p>
+
+    <p>PBFD was empirically validated through an eight-year enterprise deployment,
+    demonstrating over 20&times; faster development than Salesforce OmniScript and
+    7&ndash;8&times; faster query performance compared to conventional relational
+    models. Additionally, both methodologies are supported by open-source MVPs, with
+    PDFD&rsquo;s implementation conclusively demonstrating its correctness-first design
+    principles.</p>
+
+    <p>Together, PBFD and PDFD establish a reproducible, transparent framework that
+    integrates formal verification into practical software development. All formal
+    specifications, MVPs, and datasets are publicly available to foster academic research
+    and industrial-grade&nbsp;adoption.</p>'
+  used_for: &id136
+  - termination
+  input_formats: &id135 []
+  supported_languages: []
+  supported_inputs: *id135
+  properties_verified: *id136
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.16883985
+  last_updated: '2025-08-17T02:55:56.424272+00:00'
+- name: Juridical Review of Unilateral Termination of Employment by PT Indosat TBK
+    during the Covid-19 Pandemic
+  website: null
+  description: <p>This research examined from a legal perspective regarding the unilateral
+    termination of employment by PT Indosat Tbk, during the Covid-19 Pandemic. Two
+    main issues were discussed in this study, the first was the chronology of unilateral
+    termination carried out by PT Indosat Tbk to its employees during the Covid-19
+    pandemic, and analyzing the legal termination procedural during the Covid-19 Pandemic.
+    This study used a normative juridical research method using secondary legal data.
+    Based on the results of the study, it was known that the chronology of layoffs
+    was carried out by PT. Indosat, Tbk to its workers during the Covid-19 pandemic
+    was unilateral. Meanwhile, the legal termination procedure during the Covid-19
+    pandemic must go through the stages of negotiations between the employers, in
+    this case, PT. Indosat, Tbk with employees represented by existing labor associations.
+    In its implementation carried out, PT. Indosat, Tbk did not carry out negotiations
+    before carrying out simultaneous termination. In connection with the above, the
+    employer should negotiate first before implementing efficiency by doing the termination
+    of employment (PHK).</p>
+  used_for: &id138
+  - termination
+  input_formats: &id137 []
+  supported_languages: []
+  supported_inputs: *id137
+  properties_verified: *id138
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6416911
+  last_updated: '2024-07-16T22:50:41.717470+00:00'
+- name: AtrialFibrillation
+  website: null
+  description: '<p>This is a physionet dataset of two-channel ECG recordings has been
+    created from data used in the Computers in Cardiology Challenge 2004, an open
+    competition with the goal of developing automated methods for predicting spontaneous
+    termination of atrial fibrillation (AF).</p>
+
+    <p>The raw instances were 5 second segments of atrial fibrillation, containing
+    two ECG signals, each sampled at 128 samples per second. The class labels are:
+    n, s and t.</p>
+
+    <ul>
+
+    <li>class n is described as a non termination artiral fibrilation(that is, it
+    did not terminate for at least one hour after the original recording of the data).</li>
+
+    <li>class s is described as an atrial fibrilation that self terminates at least
+    one minute after the recording process.</li>
+
+    <li>class t is described as terminating immediately, that is within one second
+    of the recording ending.</li>
+
+    </ul>
+
+    <p>This is a pre-processed version of the dataset saved in numpy format. The original
+    dataset is obtained from <a href="https://www.timeseriesclassification.com/description.php?Dataset=AtrialFibrillation">here</a>.</p>
+
+    <p>The data are 3-dimensional arrays of shape [n_samples, time_steps, n_variables].
+    The data can be loaded as follows:</p>
+
+    <pre><code>loaded_data = np.load("AF.npz")
+
+    Xtr = loaded_data[''Xtr''] # Training data of shape (4823, 45, 2)
+
+    Ytr = loaded_data[''Ytr''] # Training labels of shape (4823, 1)
+
+    Xte = loaded_data[''Xte''] # Test data of shape (185, 45, 2)
+
+    Yte = loaded_data[''Yte''] # Test labels of shape (185, 1)</code></pre>'
+  used_for: &id140
+  - termination
+  input_formats: &id139 []
+  supported_languages: []
+  supported_inputs: *id139
+  properties_verified: *id140
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.13026/C2CC7Z
+  last_updated: '2024-03-22T09:31:54.399699+00:00'
+- name: FastForward for Termination
+  website: null
+  description: "<p>Reproducible outcomes from the CAV paper &quot;Fast Termination\
+    \ and Workflow Nets&quot; by Piotr Hofman, Filip Mazowiecki and Philip Offtermatt.</p>\n\
+    \n<p>&nbsp;</p>\n\n<p>The artifact contains implementations of several procedures\
+    \ related for fast termination in workflow nets, such as deciding whether a workflow\
+    \ net is terminating fast, and computing more fine-grained constants related to\
+    \ termination. The implementation is written as an extension to FastForward, a\
+    \ tool for decision and optimization procedures on Petri nets.</p>\n\n<p>&nbsp;</p>\n\
+    \n<p>This artifact includes a virtual machine image, which is equipped with the\
+    \ source code of the artifact, a benchmark suite of workflow nets, and instructions\
+    \ on how to reproduce the experiments from our paper.</p>\n\n<p>You can open the\
+    \ VM image e.g. with Virtualbox.</p>\n\n<p>&nbsp;</p>\n\n<p>A reviewer reported\
+    \ issues with unzipping the zip file, obtaining the following error message when\
+    \ running &acute;unzip&acute;:</p>\n\n<pre><code>Archive:  FastForwardForTermination.zip?download=1\n\
+    warning [FastForwardForTermination.zip?download=1]:  5447050078 extra bytes at\
+    \ beginning or within zipfile\n  (attempting to process anyway)\nerror [FastForwardForTermination.zip?download=1]:\
+    \  start of central directory not found;\n  zipfile corrupt.\n  (please check\
+    \ that you have transferred or created the zipfile in the\n  appropriate BINARY\
+    \ mode and that you have compiled UnZip properly)\n\n1 archive had fatal errors.</code></pre>\n\
+    \n<p>A workaround to this problem is to run</p>\n\n<p>` <code>zip -FF -fz FastForwardForTermination.zip\
+    \ -O FastForwardForTermination.fixed.zip</code>`,</p>\n\n<p>then `unzip <code>FastForwardForTermination.fixed.zip`</code></p>"
+  used_for: &id142
+  - termination
+  input_formats: &id141 []
+  supported_languages:
+  - C
+  supported_inputs: *id141
+  properties_verified: *id142
+  techniques:
+  - SMT solving
+  external_tools:
+  - Z3
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7927876
+  last_updated: '2023-05-13T02:28:19.585441+00:00'
+- name: 'CAV''25: Non-Termination Proving: 100 Million LoC and Beyond (Pulse Infinite
+    Artifact)'
+  website: null
+  description: '<p>This URL is intended to track the CAV''25 Artifact for paper: Non
+    Termination Proving: 100 Million LoC and Beyond</p>'
+  used_for: &id144
+  - termination
+  input_formats: &id143 []
+  supported_languages: []
+  supported_inputs: *id143
+  properties_verified: *id144
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.15314312
+  last_updated: '2025-05-01T04:57:12.231376+00:00'
+- name: Artifact for the intermediate report "Modular termination verification with
+    a higher-order concurrent separation logic" (December 2022) by Justus Fasse and
+    Bart Jacobs
+  website: null
+  description: '<p># Artifact for the intermediate report &quot;Modular termination
+    verification with a higher-order concurrent separation logic&quot; (December 2022)
+    by Justus Fasse and Bart Jacobs</p>
+
+
+    <p>The file contains Coq theories built on top of Iris 4.0.</p>
+
+
+    <p>To facilitate comparison with the original Iris/HeapLang development, from
+    which this artifact is derived, the source code is provided as a git bundle.</p>
+
+
+    <p>## How to build</p>
+
+
+    <p>Unpacking the git bundle<br>
+
+    - `git clone artifact.bundle`<br>
+
+    - `cd artifact`<br>
+
+    - You should now already be on the `HeapLangLt` branch</p>
+
+
+    <p>To build<br>
+
+    - `opam repo add coq-released https://coq.inria.fr/opam/released`<br>
+
+    - `opam pin add coq-iris 4.0.0`<br>
+
+    - `dune build`</p>
+
+
+    <p>## Directory structure</p>
+
+
+    <p>The rough directory structure of the development is described next. A precise
+    list of changes can be obtained via git&#39;s diff mechanism.</p>
+
+
+    <p>1. The directory `modular_termination/` which defines the global ghost resource
+    tracking the stock of call permissions, an instance of the Auth(Multiset) camera.<br>
+
+    The Auth(Multiset) camera is reused in the proof of the concurrent stack with
+    helping.</p>
+
+
+    <p>&nbsp; - `auth_gmultiset.v` constructs the general Auth(Multiset) camera construction
+    with some helper lemmas<br>
+
+    &nbsp; - `call_permissions.v` defines the global ghost resource used to reason
+    about HeapLang&lt;&#39;s stock of call permissions</p>
+
+
+    <p>2. `iris_heap_lang/` provides an adapted version of Iris 4.0&#39;s HeapLang
+    that defines HeapLang&lt;.</p>
+
+
+    <p>&nbsp; - `lang.v` defines the extended syntax and semantics of HeapLang&lt;<br>
+
+    &nbsp; - `iris_heap_lang/primitive_laws.v` contains the `wp_burn` lemma<br>
+
+    &nbsp; - `iris_heap_lang/termination.v` gives the definitions and proofs that
+    a HeapLang&lt; program with &quot;enough burns&quot; (defined in the same file)
+    cannot have infinite executions</p>
+
+
+    <p>3. `concurrent-stack-with-helping` contains the code for the case study of
+    a concurrent stack with helping with a HoCAP-style specification. In general both
+    the original code and our adaptions are present. In those cases, the definition
+    with the prime (e.g. `concurrent_stack` vs. `concurrent_stack&#39;`) is the version
+    adapted for termination verification.</p>
+
+
+    <p>&nbsp; - `specs.v` defines the HoCAP-style specification for concurrent stacks<br>
+
+    &nbsp; - `concurrent_stack4.v` gives an implementation satisfying the extended
+    specification. The main theorems of the example are `push&#39;_works` (`push&#39;`
+    corresponds to `push_inner` in the report), `push_outer_works` (`push_outer` corresponds
+    to `push` in the report) and finally the proofs that the implementation satisfies
+    the specification: `spec&#39;`.<br>
+
+    &nbsp; - `client.v` defines a simple client of the specification. It creates a
+    concurrent stack and pushes 42 twice to it, once in a forked off thread and once
+    in the original thread.</p>'
+  used_for: &id146
+  - termination
+  input_formats: &id145 []
+  supported_languages: []
+  supported_inputs: *id145
+  properties_verified: *id146
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7585369
+  last_updated: '2023-01-30T14:26:49.116100+00:00'
+- name: Fig. 4 in Fig. 4 in Responses of Phyllostomid Bats to Traditional Agriculture
+    in Neotropical Montane Forests of Southern Mexico.
+  website: null
+  description: 'Fig. 4. (a) Illustration of 17 landmarks on the Otolithes sp. 1: tip
+    of snout, 2: termination of maxilla, 3: ventral margin of interopercle, 4: anterior
+    margin of eye orbit, 5: posterior margin of eye orbit, 6: dorsal termination of
+    cranium, 7: origin of lateral line, 8: origin of pectoral fin, 9: origin of pelvic
+    fin, 10: anterior insertion of spinous dorsal fin, 11: origin of soft dorsal fin,
+    12: origin of anal fin; 13: termination of anal fin, 14: termination of second
+    dorsal fin, 15: insertion of dorsal-most caudal fin ray, 16: termination of lateral
+    line, and 17: insertion of ventral-most caudal fin ray. Procrustes superimposition
+    showing the pair-wise differences in shapes between (b) Western Arabian Gulf group
+    (WA) vs. West Indian Ocean II group, and (c) West Indian Ocean II group type A
+    vs. B. Arrows indicate the difference vector, which is amplified four times for
+    clarity.'
+  used_for: &id148
+  - termination
+  input_formats: &id147 []
+  supported_languages:
+  - C
+  supported_inputs: *id147
+  properties_verified: *id148
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.12820996
+  last_updated: '2024-08-28T17:43:16.760428+00:00'
+- name: R data objects for the HumanDEU package
+  website: null
+  description: '<p>This submission contains several R data objects that are part of
+    the R package HumanDEU available through Github (https://github.com/areyesq89/HumanTissuesDEU).
+    The objects correspond to processed data needed to reproduce the statistics, tables
+    and figures presented in the manuscript:<br>
+
+    <br>
+
+    A Reyes and W Huber. Alternative start and termination sites of transcription
+    drive most transcript isoform differences across human tissues. Nucleic Acids
+    Research, 2017. doi: https://www.doi.org/10.1093/nar/gkx1165<br>
+
+    <br>
+
+    For more details, please visit the Github repository.</p>'
+  used_for: &id150
+  - termination
+  input_formats: &id149 []
+  supported_languages: []
+  supported_inputs: *id149
+  properties_verified: *id150
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.2583270
+  last_updated: '2020-01-24T19:25:04.332673+00:00'
+- name: Reproduction Package for FSE 2025 Submission `A Modular Program-Transformation
+    Framework for Reducing Specifications to Reachability'
+  website: null
+  description: '<p>This is the Artifact for the paper &ldquo;A Modular Program-Transformation
+    Framework for Reducing Specifications to Reachability&rdquo; which has been submitted
+    to FSE 2025.</p>
+
+    <p>The FSE article presents a program transformation framework with the goal of
+    verifying different properties with of-the-shelf reachability analyzers. The transformations
+    in a framework is based on instrumentation automata, inspired by the BLAST query
+    language. In our initial study, we support three important concrete specifications
+    for C programs: termination, no-overflow, and memory cleanup. This artifact can
+    be used to reproduce the experiments presented in the paper. We demonstrate the
+    effectiveness and efficiency of our transformations by comparing verifiers that
+    support the specifications natively with verifiers for reachability applied to
+    the transformed programs. The results are very promising: Our transformations
+    can extend existing verifiers to be effective on specifications that they do not
+    support natively, and that the efficiency is often similar to verifiers that natively
+    support the considered specifications.</p>
+
+    <p>The artifact consists of Makefile that can be used to download all the revisions
+    of the tools used in the evaluation. Moreover, it downloads the transformation
+    framework from git repository and sets it to the right version and branch. Further,
+    it contains benchmarking definitions used by BenchExec to execute the experiments
+    and processing scripts of the results that were used to generate the tables. Folder
+    <code>figures-generation/results-FSE2025</code> contains all the data that we
+    computed.</p>
+
+    <h3>Contents</h3>
+
+    <p>The artifact contains the following items: - <code>README.{html,md}</code>:
+    this documentation - <code>Makefile</code>: makefile containing all the commands
+    for getting the source code of all the tools and our framework - <code>benchmark-defs/</code>:
+    definitions needed for BenchExec to run the experiments - <code>figures-generation/</code>:
+    folder containing all the processing scripts for the results and the results form
+    our experiments - <code>tasks/</code>: definitions for our selected subsets of
+    tasks that can be used to run the tool</p>
+
+    <h2>TL;DR</h2>
+
+    <ol>
+
+    <li>Setup variables in your shell environment to one of these:
+
+    <ul>
+
+    <li>If you have access to a <a href="https://vcloud.sosy-lab.org/cpachecker/webclient/help/">BenchCloud</a>
+    instance use <code>source benchmark-utils/config_vcloud.sh</code>, adapting it
+    correspondingly to your server</li>
+
+    <li>To execute on your local system use <code>source benchmark-utils/config.sh</code>.
+    You may want to adapt the amount of processes running in parallel by adjusting
+    the number of processes in <code>-N 2</code>.</li>
+
+    </ul>
+
+    </li>
+
+    <li>Select the tasks which you would like to use:
+
+    <ul>
+
+    <li><code>make tasks-benchmark</code>: to setup all tasks used in the experiments
+    in the paper</li>
+
+    <li><code>make tasks-subset</code>: to setup tasks to run a representative subset
+    of tasks for the experiments in the paper</li>
+
+    <li><code>make tasks-test</code>: to setup a few tasks to test the functionality
+    of the artifact</li>
+
+    </ul>
+
+    </li>
+
+    <li><strong>If not executing inside the artifact VM</strong>, you need to install
+    everything using <code>make setup-all</code>. This may take a while and you may
+    want to set a symlink to your SV-Benchmarks copy if available.</li>
+
+    <li>If you wish to only get the code of the transformation framework, run <code>make
+    specification-transformation</code>.</li>
+
+    <li>Execute the verification tasks on the original properties using <code>make
+    experiments-original-property</code></li>
+
+    <li>Transform the properties to reachability using <code>make transform-all-properties</code></li>
+
+    <li>Execute the verification tasks where the original property has been encoded
+    as a reachability property using <code>make experiments-transformed</code></li>
+
+    <li>Analyze the results to get the tables and plots from the paper using <code>make
+    process-results</code></li>
+
+    </ol>
+
+    <h3>Running BenchExec</h3>
+
+    <p>When running BenchExec some directories need to be given as overlay, hidden
+    and full access. Which ones are what is given in <a>config.sh</a>. If not using
+    the artifact VM, you should adjust them to your own paths.</p>'
+  used_for: &id152
+  - termination
+  input_formats: &id151 []
+  supported_languages:
+  - C
+  supported_inputs: *id151
+  properties_verified: *id152
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.13757310
+  last_updated: '2024-09-30T08:27:03.658175+00:00'
+- name: 'Empirical Research on the Issues of Termination of Employee Relationships
+    Post Pandemi Covid-19. Urgency of the Role of Work Motivation and Employee Trust:
+    Evidence from Indonesia'
+  website: null
+  description: <p>The purpose of this study was to determine the effect of Work Motivation
+    and Employee Trust on Termination Anxiety Issues post the COVID-19 Pandemic. This
+    research is classified as Explanatory Research with a quantitative approach. The
+    sample used was 90 employees of PT.Marinal Indo Prima with purposive sampling
+    technique. The type of data used is primary data, namely data collection using
+    a questionnaire. Analysis of the data used is Multiple Linear Regression with
+    SPSS. The results of this study indicate that work motivation has a negative effect
+    on Termination Anxiety Issues. Likewise, Employee Trust has a negative effect
+    on Termination Anxiety Issues. Simultaneously Work Motivation and Employee Trust
+    have an effect on Termination Anxiety Issues.</p>
+  used_for: &id154
+  - termination
+  input_formats: &id153 []
+  supported_languages: []
+  supported_inputs: *id153
+  properties_verified: *id154
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.8167440
+  last_updated: '2024-07-11T16:45:18.656164+00:00'
+- name: 'Further Materials (Additional Slides, Write-ups, Results, etc.) for Fanoos:
+    Multi-Resolution, Multi-Strength, Interactive XAI System'
+  website: null
+  description: '<p>This upload contains a tarred and compressed copy of the slides,
+    documents, git-history, and other material available at https://github.com/DBay-ani/FanoosFurtherMaterials
+    as of minute 54 hour 22 day 4 month 6 year 2022 UTC.</p>
+
+
+    <p>See the following paper for a description:</p>
+
+
+    <p>&nbsp;&nbsp;&nbsp; @inproceedings{DBLP:conf/vmcai/BayaniM22,<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; author&nbsp;&nbsp;&nbsp; = {David Bayani and Stefan
+    Mitsch},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; editor&nbsp;&nbsp;&nbsp; = {Bernd Finkbeiner and<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Thomas Wies},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title&nbsp;&nbsp;&nbsp;&nbsp; = {Fanoos: Multi-resolution,
+    Multi-strength, Interactive Explanations for Learned Systems},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; booktitle = {Verification, Model Checking, and
+    Abstract Interpretation - 23rd International Conference, {VMCAI} 2022, Philadelphia,
+    PA, USA, January 16-18, 2022, Proceedings},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; series&nbsp;&nbsp;&nbsp; = {Lecture Notes in Computer
+    Science},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; volume&nbsp;&nbsp;&nbsp; = {13182},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pages&nbsp;&nbsp;&nbsp;&nbsp; = {43--68},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; publisher = {Springer},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {2022},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; url&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {https://doi.org/10.1007/978-3-030-94583-1\_3},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; doi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {10.1007/978-3-030-94583-1\_3},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; timestamp = {Fri, 21 Jan 2022 22:02:46 +0100},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; biburl&nbsp;&nbsp;&nbsp; = {https://dblp.org/rec/conf/vmcai/BayaniM22.bib},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bibsource = {dblp computer science bibliography,
+    https://dblp.org}<br>
+
+    &nbsp;&nbsp;&nbsp; }</p>
+
+
+    <p>or see the extended write-up at:</p>
+
+
+    <p>&nbsp;&nbsp;&nbsp; @article{bayani2020fanoos,<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; title={Fanoos: Multi-Resolution, Multi-Strength, Interactive
+    Explanations for Learned Systems},<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; author={Bayani, David and Mitsch, Stefan},<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; journal={arXiv preprint arXiv:2006.12453},<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; year={2020},<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; url={https://arxiv.org/abs/2006.12453}<br>
+
+    &nbsp;&nbsp;&nbsp; }</p>
+
+
+    <p>This upload is related to the code available on the following Zenodo item:</p>
+
+
+    <p>&nbsp;&nbsp;&nbsp; @software{david_bayani_2021_5513079,<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; author&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {David
+    Bayani},<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {{Code
+    for the Fanoos Multi-Resolution, Multi-Strength, Interactive XAI System}},<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; month&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = mar,<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    = 2021,<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; publisher&nbsp;&nbsp;&nbsp; = {Zenodo},<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; doi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    = {10.5281/zenodo.5513079},<br>
+
+    &nbsp;&nbsp;&nbsp; &nbsp; url&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    = {https://doi.org/10.5281/zenodo.5513079}<br>
+
+    &nbsp;&nbsp;&nbsp; }</p>
+
+
+    <p>We note that this upload (&quot;Further Material for Fanoos [...]&quot;), in
+    contrast to the material cited immediately above, contains additional documents,
+    results, slides, etc., related to Fanoos, as opposed to its source code.</p>'
+  used_for: &id156 []
+  input_formats: &id155 []
+  supported_languages: []
+  supported_inputs: *id155
+  properties_verified: *id156
+  techniques:
+  - abstract interpretation
+  - model checking
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6614276
+  last_updated: '2022-06-04T23:39:22.760597+00:00'
+- name: European Autonomous Flight Termination Systems Based in Smart Avionics
+  website: null
+  description: '<p>Operating a launcher is not exempt from risks. Even if we are talking
+    about a reliable and tested system, the launchers need to operate in a very harsh
+    environment. Thus, any issue can cause a failure and the loss of the control on
+    the system. During the ascent phase, any failure implies risks to human lives
+    since it would be a huge uncontrolled vehicle full of flammable fuel. Therefore,
+    the launchers are tracked and monitored during the ascent phase, and in case any
+    issue is detected, the launcher needs to immediately terminate (typically exploding).</p>
+
+    <p>A traditional flight termination architecture ensures independency from the
+    vehicle functional chain using a radar network with human involvement in the decision-making
+    process. This means: (i) considerable budget share for infrastructure and operations,
+    (ii) limited flexibility (radar network needed), (iii) vehicle monitoring restricted
+    to LOS conditions and (iv) delay inherent to communications and human reaction.</p>
+
+    <p>The autonomous flight termination systems (AFTS) determine the safety of the
+    flight by processing different tracking inputs and comparing current estimated
+    state to flight rules (also known as mission rules), defined by the user during
+    flight missionization phase. By processing the mission rules directly on-board,
+    the reaction time is reduced, and the telemetry downlink is no longer required.</p>
+
+    <p>Within Europe, there is no clear standard on the design nor operation of an
+    AFTS. The critical part of this type of standards is related to managing the idiosyncrasy
+    of the flight regulation in each country, making it difficult to have a common
+    standard in Europe. The solution proposed is to have a highly configurable unit,
+    in which the range safety officer could even include proprietary software for
+    the termination logic, thus adapting to each specific local flight regulation
+    without the need to perform any factory customization.</p>
+
+    <p>The paper describes the general problem and the proposed solution for a European
+    Autonomous Flight Termination System highly configurable by the user, which make
+    is suitable for a broad range of launchers and countries. Sener is developing
+    an AFTU demonstrator in the frame of the RD EC Horizon Europe programme.</p>'
+  used_for: &id158
+  - safety
+  - termination
+  input_formats: &id157 []
+  supported_languages: []
+  supported_inputs: *id157
+  properties_verified: *id158
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.14161129
+  last_updated: '2025-04-11T08:36:02.190806+00:00'
+- name: Influence of Cover Crop Termination on Ground Dwelling Arthropods in Organic
+    Vegetable Systems
+  website: null
+  description: '<p>A key aspect in cover crop management is termination before the
+    cash crop is planted.<br>The aim of this study was to assess the effects of termination
+    methods on ground-dwelling<br>arthropods. The conventional mechanical termination
+    method&mdash;i.e., green manuring by means of a<br>disc harrow&mdash;was compared
+    to flattening using a roller crimper. Two different crop systems were<br>investigated
+    for two growing seasons; cauliflower was grown in autumn after the termination
+    of a<br>mixture of cowpea, pearl millet, and radish, and tomato was cropped in
+    spring and summer after the<br>termination of a mixture of barley and vetch. Ground
+    beetles (Coleoptera: Carabidae), rove beetles<br>(Coleoptera: Staphylinidae),
+    and spiders (Araneae) were sampled by means of standard pitfall<br>traps throughout
+    the growing season of both cash crops. The roller crimper increased the overall<br>abundance
+    of ground beetles in the first growing season of both cash crops, whereas in the
+    second<br>year, no significant effect could be detected. Rove beetles were more
+    abundant in plots where the<br>cover crops were terminated by the roller crimper.
+    Finally, green manuring increased the abundance<br>of spiders, especially on the
+    first sampling date after cover crop termination. Albeit different taxa<br>showed
+    different responses, the termination of cover crops by a roller crimper generally
+    increased the<br>abundance of ground dwelling arthropods. Given that most of the
+    sampled species were generalist<br>predators, their increased abundance could
+    possibly improve biological control</p>'
+  used_for: &id160
+  - termination
+  input_formats: &id159 []
+  supported_languages: []
+  supported_inputs: *id159
+  properties_verified: *id160
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.14717947
+  last_updated: '2025-01-22T11:04:39.755132+00:00'
+- name: Preliminary Results from an AFTU Prototype Based on Smart Avionics
+  website: null
+  description: '<p>This paper presents the development and testing of an&nbsp;Autonomous
+    Flight Termination Unit (AFTU) within the&nbsp;SAFEST project framework. Traditional
+    flight termination&nbsp;systems rely heavily on ground-based infrastructure, which&nbsp;limits
+    flexibility, incurs high costs, and introduces delays&nbsp;due to human decision-making.
+    The proposed AFTU&nbsp;leverages advances in GNSS technology, onboard&nbsp;computational
+    capabilities, and avionics software platforms&nbsp;to enable real-time, autonomous
+    termination decisions. The&nbsp;unit is highly configurable, allowing range safety
+    officers to&nbsp;define mission-specific rules and integrate proprietary&nbsp;software
+    to meet varying national regulations across Europe.</p>
+
+    <p>The paper focuses on the initial prototype''s test campaign that Sener is developing
+    in the frame of the RD EC Horizon Europe programme., detailing the system architecture,
+    test setup, and performance results. It also outlines the roadmap toward flight
+    qualification, emphasizing the system&rsquo;s adaptability for different launchers
+    and regulatory environments.</p>'
+  used_for: &id162
+  - safety
+  - termination
+  input_formats: &id161 []
+  supported_languages: []
+  supported_inputs: *id161
+  properties_verified: *id162
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.15188152
+  last_updated: '2025-04-11T08:27:47.233149+00:00'
+- name: Code for the Fanoos Multi-Resolution, Multi-Strength, Interactive XAI System
+  website: null
+  description: '<p>This upload contains a tarred and compressed copy of the code and
+    git-history available at https://github.com/DBay-ani/Fanoos as of hour 3 day 16
+    month 5 year 2021 UTC.</p>
+
+
+    <p>See the following paper for a description:</p>
+
+
+    <p>&nbsp;&nbsp;&nbsp; @inproceedings{DBLP:conf/vmcai/BayaniM22,<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; author&nbsp;&nbsp;&nbsp; = {David Bayani and Stefan
+    Mitsch},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; editor&nbsp;&nbsp;&nbsp; = {Bernd Finkbeiner and<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Thomas Wies},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title&nbsp;&nbsp;&nbsp;&nbsp; = {Fanoos: Multi-resolution,
+    Multi-strength, Interactive Explanations for Learned Systems},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; booktitle = {Verification, Model Checking, and
+    Abstract Interpretation - 23rd International Conference, {VMCAI} 2022, Philadelphia,
+    PA, USA, January 16-18, 2022, Proceedings},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; series&nbsp;&nbsp;&nbsp; = {Lecture Notes in Computer
+    Science},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; volume&nbsp;&nbsp;&nbsp; = {13182},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pages&nbsp;&nbsp;&nbsp;&nbsp; = {43--68},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; publisher = {Springer},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {2022},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; url&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {https://doi.org/10.1007/978-3-030-94583-1\_3},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; doi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {10.1007/978-3-030-94583-1\_3},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; timestamp = {Fri, 21 Jan 2022 22:02:46 +0100},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; biburl&nbsp;&nbsp;&nbsp; = {https://dblp.org/rec/conf/vmcai/BayaniM22.bib},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bibsource = {dblp computer science bibliography,
+    https://dblp.org}<br>
+
+    &nbsp;&nbsp;&nbsp; }</p>
+
+
+    <p>or see the extended write-up at:</p>
+
+
+    <p>&nbsp;&nbsp;&nbsp; @article{bayani2020fanoos,<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title={Fanoos: Multi-Resolution, Multi-Strength,
+    Interactive Explanations for Learned Systems},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; author={Bayani, David and Mitsch, Stefan},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; journal={arXiv preprint arXiv:2006.12453},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; year={2020},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; url={https://arxiv.org/abs/2006.12453}<br>
+
+    &nbsp;&nbsp;&nbsp; }</p>
+
+
+    <p>This upload is related to the additional written materials available on the<br>
+
+    following Zenodo item:</p>
+
+
+    <p>&nbsp;&nbsp;&nbsp; @misc{david_bayani_2022_6069468,<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; author&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {David
+    Bayani},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    = {{Further Materials (Additional Slides, Write-ups, Results, etc.) for Fanoos:
+    Multi-Resolution, Multi-Strength, Interactive XAI System}},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; month&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    = feb,<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    = 2022,<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; publisher&nbsp;&nbsp;&nbsp; = {Zenodo},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; doi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    = {10.5281/zenodo.6069468},<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; url&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    = {https://doi.org/10.5281/zenodo.6069468}<br>
+
+    &nbsp;&nbsp;&nbsp; }</p>
+
+
+    <p>We note that this upload (&quot;Code for Fanoos [...]&quot;), in contrast to
+    the material<br>
+
+    cited immediately above, contains source related to Fanoos, as opposed to<br>
+
+    additional write-up, slides, etc.</p>'
+  used_for: &id164 []
+  input_formats: &id163 []
+  supported_languages: []
+  supported_inputs: *id163
+  properties_verified: *id164
+  techniques:
+  - abstract interpretation
+  - model checking
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.5513079
+  last_updated: '2022-02-14T21:31:34.559742+00:00'
+- name: 'Reproduction Package for STTT Submission `Cooperative Verification: A Literature
+    Review'''
+  website: null
+  description: '<p>This artifact contains the aggregated data used for the article
+    &ldquo;Cooperative Verification: A Literature Review&rdquo;.</p>
+
+
+    <p>The artifact consists of the following data files:</p>
+
+
+    <p>|&ndash; stage-1_search-space.csv<br>
+
+    |&ndash; stage-2-3-4_keyword-search_process-title-abstract.csv<br>
+
+    |&ndash; review_sheet.csv</p>
+
+
+    <p><strong>Search space for literature review</strong></p>
+
+
+    <p>The file <code>stage-1_search-space.csv</code> contains metadata for the articles
+    comprising the search space for our literature review. These data correspond to
+    the output of <code>Stage 1</code> in the methodology described in the paper.</p>
+
+
+    <p><strong>Filtering process</strong></p>
+
+
+    <p>The file <code>stage-2-3-4_keyword-search_process-title-abstract.csv</code>
+    contains the data corresponding to the stages 2, 3, and 4 of the methodology described
+    in the paper. It contains metadata for the articles that passed the filter of
+    <code>keyword-search</code>, and the decisions based on reviewing titles and abstracts.</p>
+
+
+    <p><strong>Review sheet</strong></p>
+
+
+    <p>The file <code>review_sheet.csv</code> contains metadata for the articles we
+    reviewed. It contains the information related to the application of our definition
+    to the techniques presented in these articles, as well as the class assigned to
+    the cooperative techniques.</p>
+
+
+    <p><strong>Generating numbers</strong></p>
+
+
+    <p>Following commands can be executed to reproduce the numbers used in our literature
+    review.</p>
+
+
+    <pre><code># Change directory to the directory containing the CSV files of this
+    artifact.
+
+
+    # Number of papers in our search space.
+
+    cat stage-1_search-space.csv | tail -n +2 | wc -l
+
+
+    # Number of papers after keyword search.
+
+    cat stage-2-3-4_keyword-search_process-title-abstract.csv | tail -n +2 | wc -l
+
+
+    # Number of papers that are excluded based on titles.
+
+    cut -f11 stage-2-3-4_keyword-search_process-title-abstract.csv | tail -n +2 |
+    sort | uniq -c
+
+
+    # Number of papers that are excluded based on abstracts.
+
+    cut -f12 stage-2-3-4_keyword-search_process-title-abstract.csv | tail -n +2 |
+    sort | uniq -c
+
+
+    # Number of papers in different combination classes.
+
+    cut -f8 review_sheet.csv | tail -n +2 | sort | uniq -c</code></pre>'
+  used_for: &id166 []
+  input_formats: &id165 []
+  supported_languages:
+  - C
+  supported_inputs: *id165
+  properties_verified: *id166
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.7838608
+  last_updated: '2023-04-29T14:26:38.858367+00:00'
+- name: FIGURE 6 in New species of Grubeulepis Pettibone, 1969 (Eulepethidae, Annelida)
+    from northern Brazil
+  website: null
+  description: 'FIGURE 6. Grubeulepis serrata sp. nov. A, Spiny notochaetae; B, Spiny
+    notochaeta with spatulated-shaped termination; C, Notochaeta with spoon-shaped
+    termination; D, Notochaetae with denticles. Scales: A–C = 0.03 mm; D = 0.06 mm.'
+  used_for: &id168
+  - termination
+  input_formats: &id167 []
+  supported_languages:
+  - C
+  supported_inputs: *id167
+  properties_verified: *id168
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.1301877
+  last_updated: '2024-08-02T05:39:03.893879+00:00'
+- name: 'Figure 5 from: Ulmer JM, Mikó I, Deans AR, Krogmann L (2021) The Waterston''s
+    evaporatorium of Ceraphronidae (Ceraphronoidea, Hymenoptera): A morphological
+    barcode to a cryptic taxon. Journal of Hymenoptera Research 85: 29-56. https://doi.org/10.3897/jhr.85.67165'
+  website: null
+  description: Figure 5 Dorsal vessel termination in Ceraphronoidea (CLSM) A dorsal
+    vessel termination of Conostigmus sp. B dorsal vessel and abdominal pulsatory
+    organ of Ceraphron sp. C abdominal pulsatory organ and evaporatorium in Aphanogmus
+    sp.
+  used_for: &id170
+  - termination
+  input_formats: &id169 []
+  supported_languages:
+  - C
+  supported_inputs: *id169
+  properties_verified: *id170
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3897/jhr.85.67165.figure5
+  last_updated: '2024-07-17T19:32:26.346424+00:00'
+- name: A termination analyzer for Java bytecode based on path-length
+  website: null
+  description: "It is important to prove that supposedly terminating programs actually\
+    \ terminate, particularly if those programs must be run on critical systems or\
+    \ downloaded into a client such as a mobile phone. Although termination of computer\
+    \ programs is generally undecidable, it is possible and useful to prove termination\
+    \ of a large, nontrivial subset of the terminating programs. In this article,\
+    \ we present our termination analyzer for sequential Java bytecode, based on a\
+    \ program property called\n            path-length\n            . We describe\
+    \ the analyses which are needed before the path-length can be computed such as\
+    \ sharing, cyclicity, and aliasing. Then we formally define the path-length analysis\
+    \ and prove it correct with respect to a reference denotational semantics of the\
+    \ bytecode. We show that a constraint logic program\n            P\n         \
+    \   \n              CLP\n            \n            can be built from the result\
+    \ of the path-length analysis of a Java bytecode program\n            P\n    \
+    \        and formally prove that if\n            P\n            \n           \
+    \   CLP\n            \n            terminates, then\n            P\n         \
+    \   also terminates. Hence a termination prover for constraint logic programs\
+    \ can be applied to prove the termination of\n            P\n            . We\
+    \ conclude with some discussion of the possibilities and limitations of our approach.\
+    \ Ours is the first existing termination analyzer for Java bytecode dealing with\
+    \ any kind of data structures dynamically allocated on the heap and which does\
+    \ not require any help or annotation on the part of the user."
+  used_for: &id172
+  - termination
+  input_formats: &id171 []
+  supported_languages:
+  - Java
+  supported_inputs: *id171
+  properties_verified: *id172
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.1145/1709093.1709095
+  last_updated: '2024-12-09T18:43:39.384741+00:00'
+- name: Mulu Borneo stalagmite SC02 d18O and d13C 19.5-10.7 ky BP
+  website: null
+  description: <p>Here are presented Mulu, Borneo (4&deg;6&rsquo;N, 114&deg;53&rsquo;E)
+    Secret Cave stalagmite SC02 d18O and d13C values over Termination 1, published
+    in Buckingham et al. (accepted). U-Th ages were calculated using the initial detrital
+    230Th/232Th value of 111 &plusmn; 41 ppm. A Matlab Monte Carlo script was used
+    to calculated the absolute age and age errors associated with each U-Th sample.
+    The Poisson-process deposition model feature in OxCal(v4.4) was used to interpolate
+    between the eighteen U/Th ages to produce an age model. This study reports a d18O
+    and d13C record for the portion of SC02 104.1 to 182.4 mm distance from top of
+    stalagmite. The d18O record spans the full deglaciation, and reveals&nbsp;distinct
+    d18O variations connected with the B&oslash;lling-Aller&oslash;d onset and the
+    Younger Dryas event.</p>
+  used_for: &id174
+  - termination
+  input_formats: &id173 []
+  supported_languages:
+  - MATLAB
+  supported_inputs: *id173
+  properties_verified: *id174
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.6026615
+  last_updated: '2022-02-24T17:47:14.781260+00:00'
+- name: Review of contractual obligations in the Civil Code of Ukraine
+  website: null
+  description: <p>Breaching of contractual obligations may lead to certain negative
+    consequences. Hence, this work analyzes the theoretical aspects of termination
+    of contractual obligations in Ukraine&rsquo;s civil law. The article aims to study
+    the obligation termination mechanism by determining the legal framework for its
+    functioning. The author focuses on one of the forms of contractual obligation
+    termination, more specifically, the start of cancellation and deferred status
+    of a legal transaction. Using normative and protective functions in legislation,
+    the author plans to determine specifics of legal facts of normative compensatory
+    nature. It is established, that the condition for cancellation of a legal transaction,
+    can be a direct or reverse mechanism for the termination of contractual obligations.
+    A condition for cancellation of a legal transaction can be applied to the whole
+    transaction or to its separate parts.</p>
+  used_for: &id176
+  - termination
+  input_formats: &id175 []
+  supported_languages: []
+  supported_inputs: *id175
+  properties_verified: *id176
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.17533/udea.esde.v76n167a06
+  last_updated: '2024-07-22T18:35:04.543163+00:00'
+- name: 'Data from: One phase of the dormancy developmental pathway is critical for
+    the evolution of insect seasonality'
+  website: null
+  description: Evolutionary change in the timing of dormancy enables animals and plants
+    to adapt to changing seasonal environments and can result in ecological speciation.
+    Despite its clear biological importance, the mechanisms underlying the evolution
+    of dormancy timing in animals remain poorly understood because of a lack of anatomical
+    landmarks to discern which phase of dormancy an individual is experiencing. Taking
+    advantage of the nearly universal characteristic of metabolic suppression during
+    insect dormancy (diapause), we use patterns of respiratory metabolism to document
+    physiological landmarks of dormancy and test which of the distinct phases of the
+    dormancy developmental pathway contribute to a month-long shift in diapause timing
+    between a pair of incipient moth species. Here, we show that divergence in life
+    cycle between the earlier-emerging E-strain and the later-emerging Z-strain of
+    European corn borer (ECB) is clearly explained by a delay in the timing of the
+    developmental transition from the diapause maintenance phase to the termination
+    phase. Along with recent findings indicating that life-cycle differences between
+    ECB strains stem from allelic variation at a single sex-linked locus, our results
+    demonstrate how dramatic shifts in animal seasonality can result from simple developmental
+    and genetic changes. Although characterizing the multiple phases of the diapause
+    developmental programme in other locally adapted populations and species will
+    undoubtedly yield surprises about the nature of animal dormancy, results in the
+    ECB moth suggest that focusing on genetic variation in the timing of the dormancy
+    termination phase may help explain how (or whether) organisms rapidly respond
+    to global climate change, expand their ranges after accidental or managed introductions,
+    undergo seasonal adaptation, or evolve into distinct species through allochronic
+    isolation.
+  used_for: &id178
+  - termination
+  input_formats: &id177 []
+  supported_languages: []
+  supported_inputs: *id177
+  properties_verified: *id178
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5061/dryad.1vh94
+  last_updated: '2022-05-29T23:07:58.305204+00:00'
+- name: Termination Resilience Static Analysis
+  website: null
+  description: '<p>FuncTion is a research prototype static analyzer designed for proving
+    conditional termination resilience (and&nbsp; termination and conditional CTL
+    properties of C programs.<br><br></p>
+
+    <p>The tool automatically infers piecewise-defined ranking functions and sufficient
+    preconditions by means of abstract interpretation.</p>
+
+    <p>&nbsp;</p>'
+  used_for: &id180
+  - termination
+  input_formats: &id179 []
+  supported_languages:
+  - C
+  supported_inputs: *id179
+  properties_verified: *id180
+  techniques:
+  - abstract interpretation
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.17176433
+  last_updated: '2025-09-22T11:48:30.413091+00:00'
+- name: Ensuring Termination in ESFP
+  website: null
+  description: In previous papers we have proposed an elementary discipline of strong
+    functional programming (ESFP), in which all computations terminate. A key feature
+    of the discipline is that we introduce a type distinction between data which is
+    known to be finite, and codata which is (potentially) infinite. To ensure termination,
+    recursion over data must be well-founded, and corecursion (the definition schema
+    for codata) must be productive, and both of these restrictions must be enforced
+    automatically by the compiler. In our previous work we used abstract interpretation
+    to establish the productivity of corecursive definitions in an elementary strong
+    functional language. We show here that similar ideas can be applied in the dual
+    case to check whether recursive function definitions are strongly normalising.
+    We thus exhibit a powerful termination analysis technique which we demonstrate
+    can be extended to partial functions.
+  used_for: &id182
+  - termination
+  input_formats: &id181 []
+  supported_languages: []
+  supported_inputs: *id181
+  properties_verified: *id182
+  techniques:
+  - abstract interpretation
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3217/jucs-006-04-0474
+  last_updated: '2024-07-16T06:16:17.415034+00:00'
+- name: Benchmarks for program termination
+  website: null
+  description: <p>Benchmarks for program termination</p>
+  used_for: &id184
+  - termination
+  input_formats: &id183 []
+  supported_languages: []
+  supported_inputs: *id183
+  properties_verified: *id184
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.13756495
+  last_updated: '2024-09-13T06:25:30.756838+00:00'
+- name: Chorea, With Fatal Termination.
+  website: null
+  description: n/a
+  used_for: &id186 []
+  input_formats: &id185 []
+  supported_languages: []
+  supported_inputs: *id185
+  properties_verified: *id186
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.1016/s0140-6736(02)80667-5
+  last_updated: '2024-08-01T15:55:40.061286+00:00'
+- name: Termination of rights in the mechanism of civil legal relations
+  website: null
+  description: '<p>The article aims to research the termination of rights in the mechanism
+    of civil legal relations. The relevance of the work is expressed by the fact that
+    the analysis of the reasons for termination of right is based on the analysis
+    of legal facts that are realized in the process of formalization of some civil
+    legal relations. The fol-lowing methods were used: analysis, synthesis, comparison,
+    abstraction. The nov-elty of the study is determined by the fact that the authors
+    of the article research the causes of termination of right and the possibility
+    of implementing this process is universal and local legal systems. The authors
+    consider each of the principles of termination of right as an opportunity to form
+    a qualitatively new subject of re-search and development of the local legal system.
+    The article analyzes the general grounds for termination of rights and suggests
+    implementation measures with consideration of international law. The practical
+    relevance of the study is determined by the fact that for the first time not only
+    direct forms of restriction of rights and measures to terminate them were considered,
+    but also recommendations were developed on the details of the matter in question.</p>'
+  used_for: &id188
+  - termination
+  input_formats: &id187 []
+  supported_languages: []
+  supported_inputs: *id187
+  properties_verified: *id188
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.4046883
+  last_updated: '2024-07-19T15:37:09.936684+00:00'
+- name: 'The Spatial Constraint Requiring Organogenetic Termination: Supplemental
+    to Haeckel and von Baer for Development and Evolution'
+  website: null
+  description: '<p>In this article, it is pointed out that the requirement for organogenetic
+    termination is the new spatial constraint for animal development and heredity,
+    based on that: (a) organogenesis manifests limitation in time and possession of
+    termination, while infinite cell proliferation known as cancer is lethal; (b)
+    the notable indeterminate growth in some fishes and a few outgrowing skin derivatives
+    reversely demonstrates that termination is required for organogenesis inside the
+    animal. In further, it is supplemented this new spatial constraint to Haeckel
+    and von Baer for development and evolution. While not influencing the temporal
+    and spatial reorganization of morphogenesis during evolution, it places restrictions
+    on alteration of organogenetic mechanisms themselves, as that: (a) addition of
+    new induction mechanism or elimination of termination mechanism would usually
+    cause endless organogenesis, liable to become lethal; (b) addition of new termination
+    mechanism or elimination of induction mechanism in evolution not be affected by
+    this spatial constraint. Finally, it is identified this spatial constraint as
+    partial convergence and partial difference with Haeckel&rsquo;s recapitulation,
+    and as restriction onto Baer&rsquo;s tree. It is perspectives to use the method
+    of mathematical probability and statistics to study the spatial constraint of
+    development onto evolution in future.<span>&nbsp;</span></p>'
+  used_for: &id190
+  - termination
+  input_formats: &id189 []
+  supported_languages: []
+  supported_inputs: *id189
+  properties_verified: *id190
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.59324/ejtas.2024.2(3).39
+  last_updated: '2024-06-03T11:37:33.697655+00:00'
+- name: 'Figure 5 from: Wisitrassameewong K, Park MS, Lee H, Ghosh A, Das K, Buyck
+    B, Looney BP, Caboň M, Adamčík S, Kim C, Kim CS, Lim YW (2020) Taxonomic revision
+    of Russula subsection Amoeninae from South Korea. MycoKeys 75: 1-29. https://doi.org/10.3897/mycokeys.75.53673'
+  website: null
+  description: 'Figure 5 Microscopic features of Russula bella (SFC20170819-05) A
+    basidia B basidiola C clavate marginal cells D hymenial cystidia on lamellae sides
+    E subulate marginal cells F hyphal termination at pileus margin G hyphal termination
+    at pileus centre. Scale bars: 10 µm.'
+  used_for: &id192
+  - termination
+  input_formats: &id191 []
+  supported_languages:
+  - C
+  supported_inputs: *id191
+  properties_verified: *id192
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3897/mycokeys.75.53673.figure5
+  last_updated: '2024-07-19T13:37:54.465937+00:00'
+- name: Soil N<sub>2</sub>O emissions after perennial legume termination in an alfalfa-wheat
+    crop rotation system under Mediterranean conditions
+  website: null
+  description: 'Agricultural activities are potential sources of greenhouse gas (GHG)
+    emissions, and nitrous oxide (N2O) is one of the most important non-carbon-dioxide
+    GHGs. Perennial legumes such as alfalfa (Medicago sativa L.) have potential roles
+    for reduction of soil GHG emissions as part of crop rotation systems. However,
+    the implications of perennial legume termination by tillage and subsequent soil
+    incorporation of the residues for reduced GHG emissions have been poorly examined
+    in Mediterranean environments. With the aim to assess the magnitude of soil N2O
+    emissions (important for the definition of mitigation strategies) after perennial
+    legume termination in alfalfa-wheat crop rotation systems in a Mediterranean environment,
+    we defined the hypothesis that alfalfa termination by tillage with incorporation
+    of the crop residues will increase soil N2O emissions during the subsequent wheat
+    season. To test this hypothesis, closed static chambers were used in a field–plot
+    experiment, using a complete randomised block design with three replicates. Soil
+    N2O emissions were monitored across 33 sampling dates from October 2017 to July
+    2018, as a comparison between an original 6-year-old alfalfa field (''continuous
+    alfalfa'') and alfalfa termination followed by wheat (''alfalfa+ wheat''). The
+    soil N2O emission fluxes varied markedly across the treatments and throughout
+    the monitoring period (from – 0.02±0.01 to 0.53±0.14 g N-N2O ha–1 h–1, and from
+    0.02±0.07 to 0.37±0.11 g N-N2O ha–1 h–1 for continuous alfalfa and alfalfa+wheat,
+    respectively), generally following the changes in soil temperature. Several soil
+    N2O emission peaks were recorded for both treatments, which mainly coincided with
+    rainfall and with increased soil water content. In the 2 months following alfalfa
+    termination, alfalfa+wheat showed higher cumulative weekly soil N2O emissions
+    compared to continuous alfalfa. Following alfalfa termination for alfalfa+wheat,
+    the increased cumulative weekly soil N2O emissions appeared to be due to asynchrony
+    between nitrogen (N) released into the soil from mineralisation of the alfalfa
+    residues and N uptake by the wheat. Despite these initial high soil N2O emissions
+    for alfalfa+wheat, the seasonal cumulative soil N2O emissions were not significantly
+    different (0.77±0.09 vs 0.85±0.18 kg N-N2O ha–1 for continuous alfalfa and alfalfa+wheat,
+    respectively). These data suggest that legume perennial crop termination in alfalfa–wheat
+    rotation systems does not lead to significant loss of N2O from the soil. The alfalfa
+    termination by tillage performed in autumn might, on the one hand, have slowed
+    the mineralisation process, and might, on the other hand, have synchronised the
+    N release by the mineralised crop residues, with the N uptake by the wheat reducing
+    the soil N2O emissions.
+
+    Highlights - Soil N2O emissions peak after alfalfa termination and rainfall. -
+    Soil N2O emissions increase after spring alfalfa mowing. - Seasonal cumulative
+    soil N2O emissions are similar for alfalfa and alfalfa followed by wheat. - Mitigation
+    effects of perennial legume on soil N2O emissions are not lost after termination
+    by tillage under alfalfa-wheat rotation.'
+  used_for: &id194
+  - termination
+  input_formats: &id193 []
+  supported_languages: []
+  supported_inputs: *id193
+  properties_verified: *id194
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.4081/ija.2020.1613
+  last_updated: '2024-12-08T14:13:19.058501+00:00'
+- name: 'Figure 6 from: Wisitrassameewong K, Park MS, Lee H, Ghosh A, Das K, Buyck
+    B, Looney BP, Caboň M, Adamčík S, Kim C, Kim CS, Lim YW (2020) Taxonomic revision
+    of Russula subsection Amoeninae from South Korea. MycoKeys 75: 1-29. https://doi.org/10.3897/mycokeys.75.53673'
+  website: null
+  description: 'Figure 6 Microscopic features of Russula orientipurpurea (SFC20170725-37)
+    A basidia B basidiola C clavate marginal cells D hymenial cystidia on lamellae
+    sides E subulate marginal cells F hyphal termination at pileus margin G hyphal
+    termination at pileus centre. Scale bars: 10 µm.'
+  used_for: &id196
+  - termination
+  input_formats: &id195 []
+  supported_languages:
+  - C
+  supported_inputs: *id195
+  properties_verified: *id196
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3897/mycokeys.75.53673.figure6
+  last_updated: '2024-07-19T13:37:54.266517+00:00'
+- name: 'Figure 7 from: Wisitrassameewong K, Park MS, Lee H, Ghosh A, Das K, Buyck
+    B, Looney BP, Caboň M, Adamčík S, Kim C, Kim CS, Lim YW (2020) Taxonomic revision
+    of Russula subsection Amoeninae from South Korea. MycoKeys 75: 1-29. https://doi.org/10.3897/mycokeys.75.53673'
+  website: null
+  description: 'Figure 7 Microscopic features of Russula sp. (SFC20160726-13) A basidia
+    B basidiola C clavate marginal cells D hymenial cystidia on lamellae sides E subulate
+    marginal cells F hyphal termination at pileus margin G hyphal termination at pileus
+    centre. Scale bars: 10 µm.'
+  used_for: &id198
+  - termination
+  input_formats: &id197 []
+  supported_languages:
+  - C
+  supported_inputs: *id197
+  properties_verified: *id198
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.3897/mycokeys.75.53673.figure7
+  last_updated: '2024-07-19T13:37:54.039550+00:00'
+- name: TCP-drought-termination-v1.0.0
+  website: null
+  description: null
+  used_for: &id200 []
+  input_formats: &id199 []
+  supported_languages: []
+  supported_inputs: *id199
+  properties_verified: *id200
+  techniques: []
+  external_tools: []
+  status: Unknown
+  zenodo_url: null
+  repo_url: null
+  examples: []
+  references: []
+  doi: 10.5281/zenodo.13848266
+  last_updated: '2024-09-27T12:28:26.502160+00:00'
