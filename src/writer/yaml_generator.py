@@ -1,19 +1,19 @@
-# src/cli.py
-from .client import iterate_search
-from .record_parser import parse_basic_metadata
-from .extractor import extract_from_text
-from .github_helpers import determine_status
-from .yaml_writer import save_yaml
 import requests
 
-def run(query, pages=3):
+from src.scraper.search import iterate_search
+from src.scraper.extractor import extract_from_text
+from src.scraper.github_helpers import determine_status
+from src.scraper.record_parser import parse_basic_metadata
+
+
+def get_yaml(query, pages=3):
     tools = []
 
     for rec in iterate_search(query, pages):
         basic = parse_basic_metadata(rec)
 
         text = basic.get("description", "")
-        # Download README files if present
+
         for f in basic.get("files", []):
             if f["filename"].lower().startswith("readme"):
                 try:
@@ -51,7 +51,5 @@ def run(query, pages=3):
             "last_updated": basic.get("updated"),
         })
 
-    save_yaml(tools)
+    return tools
 
-if __name__ == "__main__":
-    run("verification OR \"neural network verification\" OR termination OR QBF", pages=5)

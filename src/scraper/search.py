@@ -1,6 +1,4 @@
-# src/zenodo_client.py
 import requests
-from urllib.parse import quote_plus
 
 ZENODO_API = "https://zenodo.org/api/records"
 
