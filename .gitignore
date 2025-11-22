@@ -1,2 +1,31 @@
-output
-virtual_vf
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+virtual_vf/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Output folders
+output/
+src/output/
+dist/
+build/
+
+# OS trash
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# Python cache
+*.pytest_cache/
+.pytest_cache/
