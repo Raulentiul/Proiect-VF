@@ -97,7 +97,7 @@ def generate_markdown(tools):
 
 
 def main():
-    input_path = r"C:\Users\reD0xcs\Documents\GitHub\Proiect-VF\src\output\tools.yml"
+    input_path = r"output\tools.yml"
     output_path = "TOOLS.md"
 
     # FIX: specificăm UTF-8
