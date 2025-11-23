@@ -54,30 +54,30 @@ This data set complements the publication
 	  A.D. Brucker and A. Stell. Verifying feedforward neural networks for classification in  Isabelle/HOL. In M. Chechik, J.-P. Katoen, and M. Leucker, editors, Formal Methods (FM 2023). Lübeck, Germany, 2023. ISBN: 978-3-642-38915-3.
 
 ### Used for
-- termination
+- adversarial robustness
 - safety
 - security
-- adversarial robustness
+- termination
 
 ### Input formats
 - SMT
 
 ### Supported languages
-- C
 - Python
+- C
 
 ### Supported inputs
 - SMT
 
 ### Properties verified
-- termination
+- adversarial robustness
 - safety
 - security
-- adversarial robustness
+- termination
 
 ### Techniques
-- SMT solving
 - neural network verification techniques
+- SMT solving
 
 ### External tools
 - Z3
@@ -106,9 +106,9 @@ smaller network cannot be verified, the verifier must perform a refinement step,
 in which it was determined that the refined network behaves correctly, allowing the verifier to focus on areas of the search space where bugs might yet be discovered. For evaluation, we implemented our approach as an extension to the Marabou verifier, and obtained highly promising results.
 
 ### Used for
-- liveness
-- safety
 - adversarial robustness
+- safety
+- liveness
 
 ### Input formats
 (none)
@@ -120,9 +120,9 @@ in which it was determined that the refined network behaves correctly, allowing
 (none)
 
 ### Properties verified
-- liveness
-- safety
 - adversarial robustness
+- safety
+- liveness
 
 ### Techniques
 - neural network verification techniques
@@ -167,8 +167,8 @@ We provide an artifact containing the DNNV tool for DNN verification, as well as
 (none)
 
 ### Techniques
-- SMT solving
 - neural network verification techniques
+- SMT solving
 
 ### External tools
 - TensorFlow
@@ -276,23 +276,23 @@ This is the artifact for the paper "Example Guided Synthesis of Linear Approxima
 - robustness
 
 ### Input formats
-- ONNX
 - PyTorch
+- ONNX
 
 ### Supported languages
-- C
 - Python
+- C
 
 ### Supported inputs
-- ONNX
 - PyTorch
+- ONNX
 
 ### Properties verified
 - robustness
 
 ### Techniques
-- SMT solving
 - neural network verification techniques
+- SMT solving
 
 ### External tools
 - PyTorch
@@ -422,8 +422,8 @@ The Random set contains random satisfiable conjunctions of 3-60 constraints with
 (none)
 
 ### Techniques
-- SMT solving
 - neural network verification techniques
+- SMT solving
 
 ### External tools
 - Z3
@@ -658,8 +658,8 @@ This project implements **QBF (Quantum Biological Field)** framework to uncover 
 - QBF
 
 ### Supported languages
-- C
 - Python
+- C
 
 ### Supported inputs
 - QBF
@@ -697,17 +697,17 @@ The minimization of propositional formulae is a classical problem in logic, whos
 
 ### Input formats
 - SMT
-- QBF
 - CNF
+- QBF
 
 ### Supported languages
-- C
 - Python
+- C
 
 ### Supported inputs
 - SMT
-- QBF
 - CNF
+- QBF
 
 ### Properties verified
 - termination
@@ -931,22 +931,22 @@ Pooya
 (none)
 
 ### Input formats
-- QBF
 - CNF
+- QBF
 
 ### Supported languages
 (none)
 
 ### Supported inputs
-- QBF
 - CNF
+- QBF
 
 ### Properties verified
 (none)
 
 ### Techniques
-- SMT solving
 - neural network verification techniques
+- SMT solving
 
 ### External tools
 (none)
@@ -1013,8 +1013,8 @@ We thank the reviewers for their comments and added the missing dependencies to 
 2LS ("tools") is a verification tool for C programs. It is built upon the CPROVER framework (cprover.org), which supports C89, C99, most of C11 and most compiler extensions provided by gcc and Visual Studio. It allows verifying array bounds (buffer overflows), pointer safety, exceptions, user-specified assertions, and termination properties. The analysis is performed by template-based predicate synthesis and abstraction refinements techniques.The uploaded archive is a submission used for SV-COMP 2024.
 
 ### Used for
-- termination
 - safety
+- termination
 
 ### Input formats
 (none)
@@ -1026,8 +1026,8 @@ We thank the reviewers for their comments and added the missing dependencies to 
 (none)
 
 ### Properties verified
-- termination
 - safety
+- termination
 
 ### Techniques
 (none)
@@ -1115,8 +1115,8 @@ In this paper, we propose a generic mechanism for extending decision procedures 
 - termination
 
 ### Techniques
-- SMT solving
 - model checking
+- SMT solving
 
 ### External tools
 (none)
@@ -1143,8 +1143,8 @@ In this paper, we propose a generic mechanism for extending decision procedures 
 The uploaded archive is a submission used for SV-COMP 2023.
 
 ### Used for
-- termination
 - safety
+- termination
 
 ### Input formats
 (none)
@@ -1156,8 +1156,8 @@ The uploaded archive is a submission used for SV-COMP 2023.
 (none)
 
 ### Properties verified
-- termination
 - safety
+- termination
 
 ### Techniques
 (none)
@@ -1185,29 +1185,29 @@ The uploaded archive is a submission used for SV-COMP 2023.
 Although effect handlers offer a versatile abstraction for user-defined effects, they produce complex and less restricted execution traces due to the composable non-local control flow mechanisms. This paper is interested in the temporal behaviors of effect sequences, such as unhandled effects, termination of the communication, safety, fairness, etc. Specifically, we propose a novel effects logic ContEffs, to write precise and modular specifications for programs in the presence of user-defined effect handlers and primitive effects. As a second contribution, we devise a forward verifier together with a fixpoint calculator to infer the behaviors of such programs. Lastly, our automated verification framework provides a purely algebraic term-rewriting system (TRS) as the back-end solver, efficiently checking the entailments between ContEffs assertions. To demonstrate the feasibility of our proposals, we prototype a verification system where zero-shot, one-shot, and multi-shot continuations coexist; prove its correctness; present experimental results; and report on case studies.
 
 ### Used for
-- termination
 - safety
 - security
+- termination
 
 ### Input formats
 - SMT
 
 ### Supported languages
-- C
 - OCaml
+- C
 
 ### Supported inputs
 - SMT
 
 ### Properties verified
-- termination
 - safety
 - security
+- termination
 
 ### Techniques
-- SMT solving
-- model checking
 - abstract interpretation
+- model checking
+- SMT solving
 
 ### External tools
 - Z3
@@ -1288,24 +1288,24 @@ This paper presents a novel application of QBF solving to automata reduction. We
 
 ### Input formats
 - SMT
-- QBF
 - CNF
+- QBF
 
 ### Supported languages
-- C
 - Python
+- C
 
 ### Supported inputs
 - SMT
-- QBF
 - CNF
+- QBF
 
 ### Properties verified
 (none)
 
 ### Techniques
-- SMT solving
 - model checking
+- SMT solving
 
 ### External tools
 - Z3
@@ -1486,8 +1486,8 @@ The authors of this repository do not endorse using its contents for ANY purpose
 (none)
 
 ### Supported languages
-- C
 - Python
+- C
 
 ### Supported inputs
 (none)
@@ -1636,23 +1636,23 @@ CMake
 (none)
 
 ### Input formats
-- QBF
 - CNF
+- QBF
 
 ### Supported languages
 - C++
 - C
 
 ### Supported inputs
-- QBF
 - CNF
+- QBF
 
 ### Properties verified
 (none)
 
 ### Techniques
-- SMT solving
 - model checking
+- SMT solving
 
 ### External tools
 (none)
@@ -1677,8 +1677,8 @@ CMake
 2LS is a C program analyser built upon the CPROVER infrastructure that can verify and refute program assertions, memory safety, and termination. Until now, one of the main drawbacks of 2LS was its inability to verify most programs with arrays. This paper introduces a new abstract domain in 2LS for reasoning about the contents of arrays. In addition, we introduce an improved approach to loop unwinding, a crucial component of the 2LS’ verification algorithm, which particularly enables finding proofs and counterexamples for programs working with dynamic memory.
 
 ### Used for
-- termination
 - safety
+- termination
 
 ### Input formats
 (none)
@@ -1690,13 +1690,13 @@ CMake
 (none)
 
 ### Properties verified
-- termination
 - safety
+- termination
 
 ### Techniques
-- SMT solving
-- model checking
 - abstract interpretation
+- model checking
+- SMT solving
 
 ### External tools
 (none)
@@ -1723,8 +1723,8 @@ Symbiotic is a tool for finding bugs in programs that combines fast static analy
 Symbiotic 7 brings improvements in all parts of the tool. In particular, we integrated the advanced shape analysis implemented in Predator to our instrumentation process for memory safety checking. Further, we extended our slicer to correctly handle non-terminating programs. This new slicing is applied in termination analysis, where we also added instrumentation for the detection of simple cycles in the program state space. The witness generation process changed as well.
 
 ### Used for
-- termination
 - safety
+- termination
 
 ### Input formats
 (none)
@@ -1737,8 +1737,8 @@ Symbiotic 7 brings improvements in all parts of the tool. In particular, we inte
 (none)
 
 ### Properties verified
-- termination
 - safety
+- termination
 
 ### Techniques
 (none)
@@ -1766,9 +1766,9 @@ Symbiotic 7 brings improvements in all parts of the tool. In particular, we inte
 This paper introduces the Octave-State Formalism, a novel theoretical framework for the analysis of computational loops. Moving beyond the classical, one-dimensional view of iteration, this formalism models a loop's execution as the discrete-time evolution of a state vector within an eight-dimensional abstract space. Each dimension of this "Octave-State" corresponds to a fundamental aspect of the loop's behavior, including its temporal progression, data transformation, causal dependencies, resource consumption, concurrency potential, numerical stability, control flow path, and termination horizon. By leveraging the mathematical rigor of state-space representation from control theory and drawing conceptual parallels with principles from theoretical physics—such as dimensional regularization, phase space, and the many-worlds interpretation—this paper develops a unified model. We demonstrate that this formalism provides a more holistic understanding of loop dynamics, offering new geometric insights into complex problems like data dependency analysis, loop-level parallelism, and formal verification through loop invariants. The Octave-State Formalism is presented not merely as a descriptive tool, but as a generative framework for the design and automated analysis of next-generation algorithms and high-assurance software systems.
 
 ### Used for
+- safety
 - liveness
 - termination
-- safety
 
 ### Input formats
 (none)
@@ -1780,9 +1780,9 @@ This paper introduces the Octave-State Formalism, a novel theoretical framework 
 (none)
 
 ### Properties verified
+- safety
 - liveness
 - termination
-- safety
 
 ### Techniques
 - abstract interpretation
@@ -1814,15 +1814,15 @@ Equivalence of deterministic finite automata (DFAs) has been researched for sev
 (none)
 
 ### Input formats
-- QBF
 - CNF
+- QBF
 
 ### Supported languages
 - Java
 
 ### Supported inputs
-- QBF
 - CNF
+- QBF
 
 ### Properties verified
 (none)
@@ -1859,8 +1859,8 @@ Benchmarks and result-files for paper "Large-Scale Analysis of Non-Termination B
 (none)
 
 ### Supported languages
-- Java
 - LLVM
+- Java
 - C
 
 ### Supported inputs
@@ -2058,17 +2058,17 @@ The estimated runtime is less than a few seconds.
 
 ### Input formats
 - SMT
-- QBF
 - CNF
+- QBF
 
 ### Supported languages
-- C
 - Python
+- C
 
 ### Supported inputs
 - SMT
-- QBF
 - CNF
+- QBF
 
 ### Properties verified
 - termination
@@ -2101,10 +2101,10 @@ Information flow policies are widely used for specifying confidentiality and int
 In this paper, we provide an extended definition of non-interference for systems that are specified in a MILS variant of the Architecture Analysis and Design Language (AADL). More concretely, we propose a type system for MILS-AADL component definitions that distinguishes between breaking non-interference because of legitimate use of sufficientlynbsp;strong encryption and breaking non-interference due to annbsp;unintended information leak. To this aim, it tracks bothnbsp;intra- and inter-component information flow and considersbr /> both data- and event-flow security./p>
 
 ### Used for
+- security
+- safety
 - liveness
 - termination
-- safety
-- security
 
 ### Input formats
 (none)
@@ -2116,10 +2116,10 @@ In this paper, we provide an extended definition of non-interference for systems
 (none)
 
 ### Properties verified
+- security
+- safety
 - liveness
 - termination
-- safety
-- security
 
 ### Techniques
 (none)
@@ -2290,8 +2290,8 @@ n/a
 - safety
 
 ### Techniques
-- SMT solving
 - model checking
+- SMT solving
 
 ### External tools
 (none)
@@ -2316,8 +2316,8 @@ n/a
 Set similarity join is an important problem with many applications in data discovery, cleaning and integration. To increase robustness, fuzzy set similarity join calculates the similarity of two sets based on maximum weighted bipartite matching instead of set overlap. This allows pairs of elements, represented as sets or strings, to also match approximately rather than exactly, e.g., based on Jaccard similarity or edit distance. However, this significantly increases the verification cost, making even more important the need for efficient and effective filtering techniques to reduce the number of candidate pairs. The current state-of-the-art algorithm relies on similarity computations between pairs of elements to filter candidates. In this paper, we propose token-based instead of element-based filtering, showing that it is significantly more lightweight, while offering similar or even better pruning effectiveness. Moreover, we address the top-𝑘 variant of the problem, alleviating the need for a user-specified similarity threshold. We also propose early termination to reduce the cost of verification. Our experimental results on six real-world datasets show that our approach always outperforms the state of the art, being an order of magnitude faster on average.
 
 ### Used for
-- termination
 - robustness
+- termination
 
 ### Input formats
 (none)
@@ -2329,8 +2329,8 @@ Set similarity join is an important problem with many applications in data disco
 (none)
 
 ### Properties verified
-- termination
 - robustness
+- termination
 
 ### Techniques
 (none)
@@ -2404,8 +2404,8 @@ Benchmarks and result-files for paper "Large-Scale Analysis of Non-Termination B
 (none)
 
 ### Supported languages
-- Java
 - LLVM
+- Java
 - C
 
 ### Supported inputs
@@ -2480,9 +2480,9 @@ This is the artifact for the CAV 2021 paper, “Reflections on Termination of Li
 The fast development of semiconductor technology and method scaling over a couple of many years has enabled the prolific increase of small-form issue wearable gadgets and physiological sensors. Those devices are connected to every different thru radio frequency conversation via air medium, and form a network of interconnected devices around the human body, normally known as the wireless body location network (WBAN). Human body verbal exchange (HBC), which uses the human frame because the communication medium, has these days emerged as an alternative to wireless media for conversation amongst these devices because of its low power requirement and more desirable safety residences. This alleviates key technological challenges: 1) electricity consumption, and 2) security, for such electricity-restricted battery-operated devices and may beautify their lifetime notably. One of the primary reasons for the electricity performance of HBC is due to the low loss channel supplied through the human frame, because of the conductance belongings of human tissue, compared to communique thru radio waves around the human frame. As a result, the entire know-how of the frequency characteristics of the human frame channel below special communication eventualities will permit the development of strength-efficient HBC primarily based on circuits and systems. Previous studies on HBC channel size have in most cases targeted intra-frame HBC, which characterizes the verbal exchange among two wearable devices worn by means of the identical character. There has been a huge variance in the measurement consequences reported in the literature mostly because of the experimental setup (low impedance size, vicinity of transmitter, receiver and many others.) and the excitation and termination modalities
 
 ### Used for
-- termination
 - safety
 - security
+- termination
 
 ### Input formats
 (none)
@@ -2494,9 +2494,9 @@ The fast development of semiconductor technology and method scaling over a coupl
 (none)
 
 ### Properties verified
-- termination
 - safety
 - security
+- termination
 
 ### Techniques
 (none)
@@ -2524,8 +2524,8 @@ The fast development of semiconductor technology and method scaling over a coupl
 Introduction: Second trimester termination of pregnancy accounts for around 10 to 15% of all abortions annually. These can be performed either medically or surgically. The aim of this study is to compare the efficacy and safety of extraamniotic mannitol along with carboprost (PGF2α) and intracervical misoprostol in second trimester termination of pregnancy. Result: The most common indication for termination of pregnancy was intrauterine fetal demise (41.7% in mannitol group and 45.8% in misoprostol group). Second trimester termination of pregnancy success rate was significantly higher in the extra-amniotic mannitol along with PGF2α group as compared to intracervical misoprostol group (95.8% v/s 75%, p<0.05).A significantly shorter duration from induction to delivery was observed in the extra-amniotic mannitol along with PGF2α group as compared to intracervical misoprostol group (19.3 ± 4.2 v/s 22.3 ± 2.1 hours, p<0.01).Incidence of side effects like pyrexia, diarrhea, abdominal pain and headache were significantly lower in the mannitol group as compared to misoprostol group. Conclusion: Extra-amniotic mannitol along with carboprost (PGF2α) is an effective and safe method for second trimester termination of pregnancy. The success rate of extra amniotic mannitol along with PGF2α was significantly higher with notably shorter induction-abortion interval. A remarkable lower hospital stay and fewer side effects were seen in patients induced by mannitol along with PGF2α.
 
 ### Used for
-- termination
 - safety
+- termination
 
 ### Input formats
 (none)
@@ -2537,8 +2537,8 @@ Introduction: Second trimester termination of pregnancy accounts for around 10 
 (none)
 
 ### Properties verified
-- termination
 - safety
+- termination
 
 ### Techniques
 (none)
@@ -2655,8 +2655,8 @@ Results: Demographic details are comparable and insignificant in the comparison.
 Conclusions: The combination of mifepristone and misoprostol is a highly effective and safe method for second-trimester termination of pregnancy. The amount of misoprostol needed to accomplish the abortion, and the severity of the adverse effects are lower in the mifepristone-primed group than in the misoprostol-alone group. Since there are fewer difficulties, this approach can be employed in hospitals with high patient density.
 
 ### Used for
-- termination
 - safety
+- termination
 
 ### Input formats
 (none)
@@ -2668,8 +2668,8 @@ Conclusions: The combination of mifepristone and misoprostol is a highly effecti
 (none)
 
 ### Properties verified
-- termination
 - safety
+- termination
 
 ### Techniques
 (none)
@@ -2740,17 +2740,17 @@ Archiving the artifact with Zenodo on release.
 (none)
 
 ### Input formats
-- QBF
 - CNF
+- QBF
 
 ### Supported languages
+- Python
 - C++
 - C
-- Python
 
 ### Supported inputs
-- QBF
 - CNF
+- QBF
 
 ### Properties verified
 (none)
@@ -2785,46 +2785,6 @@ Materials and Methods: A registry-based retrospective study was carried out amon
 Results: A total of 400 pregnant women underwent Medical Termination of Pregnancy between October 2020 and September 2021. 30.5 % (122/400) women between 26–30 years of age underwent termination of pregnancy, followed by 27.3 % women aged between 31–35 years. Social reasons for termination of pregnancy were more evident in women aged 26 years and above. 84.09 % pregnancies were terminated in the second trimester (>12 weeks) on eugenic ground, while 65.01 % pregnancies were terminated in the first trimester (6–12 weeks) on social grounds. Only 7.75 % (31/400) women opted for sterilization or family planning after MTP, out of which the majority opted for temporary methods of contraception.
 
 Conclusion: We conclude from the results of the present study that women in the peak reproductive age (26–30 years) are more likely to seek pregnancy termination and this group of women needs to be the focus of contraceptive counseling and family planning services. Timely ultrasound scans by an expert sonologist may be a step forward towards lowering the rates of late pregnancy termination. There is a need to educate women to avail and use contraceptive methods in an effective manner and to make them aware of utilizing sterilization services, once they complete their families to avoid unwanted pregnancies.
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-- C
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## The moment of termination of corporate legal relations
-
-- **Website:** N/A
-- **DOI:** 10.21564/2414-990X.152.223330
-- **Status:** Unknown
-- **Last updated:** 2024-07-19T05:13:31.284753+00:00
-
-### Description
-The long-term nature of corporate legal relations necessitates the theoretical selection of certain moments of their emergence, change and termination. The update of the corporate legislation has necessitated a review of the established positions on the moment of termination of corporate legal relations, analysis and study of the legislation and resolution of problems that arise in connection with its application. The introduction of the institution of consent in corporate legal relations necessitated a scientific rethinking of certain aspects of the mechanism of termination of corporate legal relations. The article investigates the main scientific approaches to determining the moment of termination of corporate legal relations, analyzes the moment of termination of corporate legal relations depending on the grounds for their termination. Based on four main approaches to determining the moment of termination of corporate legal relations, the positions of scientists who adhere to them are studied, changes to the current corporate legislation are analyzed, inconsistencies regarding the moment of termination of corporate legal relations are revealed. The peculiarities of the moment of termination of corporate legal relations in case of alienation of a share (part of a share) in the authorized capital of the company, exclusion of a participant from the company, its withdrawal, withdrawal, recovery from the defendant (claim from his possession) to a share (part of the share) are analyzed. Peculiarities of state registration of changes in information about a legal entity in the aspect of determining the moment of termination of corporate legal relations are determined. A position has been formed regarding the application of a separate approach to determining the moment of termination of corporate legal relations on certain grounds for termination of corporate legal relations and suggested ways to resolve existing inconsistencies in corporate law regarding certain grounds for termination of corporate legal relations.
 
 ### Used for
 - termination
@@ -2896,6 +2856,46 @@ Rho-dependent transcription terminators participate in sophisticated genetic reg
 
 ---
 
+## The moment of termination of corporate legal relations
+
+- **Website:** N/A
+- **DOI:** 10.21564/2414-990X.152.223330
+- **Status:** Unknown
+- **Last updated:** 2024-07-19T05:13:31.284753+00:00
+
+### Description
+The long-term nature of corporate legal relations necessitates the theoretical selection of certain moments of their emergence, change and termination. The update of the corporate legislation has necessitated a review of the established positions on the moment of termination of corporate legal relations, analysis and study of the legislation and resolution of problems that arise in connection with its application. The introduction of the institution of consent in corporate legal relations necessitated a scientific rethinking of certain aspects of the mechanism of termination of corporate legal relations. The article investigates the main scientific approaches to determining the moment of termination of corporate legal relations, analyzes the moment of termination of corporate legal relations depending on the grounds for their termination. Based on four main approaches to determining the moment of termination of corporate legal relations, the positions of scientists who adhere to them are studied, changes to the current corporate legislation are analyzed, inconsistencies regarding the moment of termination of corporate legal relations are revealed. The peculiarities of the moment of termination of corporate legal relations in case of alienation of a share (part of a share) in the authorized capital of the company, exclusion of a participant from the company, its withdrawal, withdrawal, recovery from the defendant (claim from his possession) to a share (part of the share) are analyzed. Peculiarities of state registration of changes in information about a legal entity in the aspect of determining the moment of termination of corporate legal relations are determined. A position has been formed regarding the application of a separate approach to determining the moment of termination of corporate legal relations on certain grounds for termination of corporate legal relations and suggested ways to resolve existing inconsistencies in corporate law regarding certain grounds for termination of corporate legal relations.
+
+### Used for
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
 ## Prove your Colorings: Formal Verification of Cache Coloring of Bao Hypervisor. Companion Artifact for the Paper Submitted to FASE 2025
 
 - **Website:** N/A
@@ -2914,35 +2914,35 @@ See the included REQUIREMENTS.md file for more detail and the Disclaimer in READ
 Hint: on some versions of host OS and VirtualBox, bugs or limited support prevent the use of VirtualBox or a correct termination of the VM start-up (the VM remains freezed on the loading screen). Changing the VM window size a couple of times can help to refresh the VM screen and get control on it. Otherwise check the known VirtualBox bugs or limitations.
 
 ### Used for
-- termination
 - safety
 - security
+- termination
 
 ### Input formats
-- SMT
 - C source
+- SMT
 
 ### Supported languages
-- Java
-- C
-- OCaml
 - Python
+- Java
+- OCaml
+- C
 
 ### Supported inputs
-- SMT
 - C source
+- SMT
 
 ### Properties verified
-- termination
 - safety
 - security
+- termination
 
 ### Techniques
 - SMT solving
 
 ### External tools
-- Z3
 - CVC5
+- Z3
 
 ### Examples
 (none)
@@ -2978,8 +2978,8 @@ termination of pregnancy act 1971, amendment in act and effect of Supreme Court�
 mortality.
 
 ### Used for
-- termination
 - safety
+- termination
 
 ### Input formats
 (none)
@@ -2991,8 +2991,8 @@ mortality.
 (none)
 
 ### Properties verified
-- termination
 - safety
+- termination
 
 ### Techniques
 (none)
@@ -3020,9 +3020,9 @@ mortality.
 This paper has been published in Peer-reviewed International Journal "Remarking An Analisation"            URL : https://www.socialresearchfoundation.com/new/publish-journal.php?editID=7690Publisher : Social Research Foundation, Kanpur (SRF International)             Abstract :The Medical Termination of Pregnancy Act, 1971 is considered a major milestone of social legislations in India. However, 50 years of its application, it has failed to keep up with changing times, needs and advancements in technology. In this regard, The Medical Termination of Pregnancy (Amendment) Act, 2021 was a welcome step. Though the amendment made many necessary changes in the MTP Act. The aforementioned Amendment Act has failed to give any recognition to the right to abortion as a right to privacy of a pregnant woman. At no point of time during pregnancy can a pregnant woman seek abortion as per her choice. The Abortion law as such does not provide a pregnant woman right over her body making an essential human right like the right to privacy meaningless to a pregnant woman. The judiciary has time and again reiterated right to abortion as a right to privacy through different judgments. However, the legislature has time and again failed to give recognition to the same including the Medical Termination of Pregnancy (Amendment) Act 2021.
 
 ### Used for
-- termination
 - safety
 - security
+- termination
 
 ### Input formats
 (none)
@@ -3034,9 +3034,49 @@ This paper has been published in Peer-reviewed International Journal "Remarking 
 (none)
 
 ### Properties verified
-- termination
 - safety
 - security
+- termination
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## Synochoneura
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.6242027
+- **Status:** Unknown
+- **Last updated:** 2024-12-10T02:10:56.137162+00:00
+
+### Description
+Key to species of Synochoneura based on the male genital characters1. Valva long and narrow, distinctly narrowed beyond middle, forming a neck; sacculus very long, exceeding termination of costa ................................................................................................................. S. ochriclivis- Valva short and broad, without distinctly narrowed neck; sacculus short, not reaching termination of costa......................................................................................................................................................................22. Distal part of valva slightly contracted; free termination of sacculus subquadrate; aedeagus slender........... .................................................................................................................................................. S. tapaishani- Distal part of valva distinctly contracted; free termination of sacculus dentate; aedeagus stout ................... ........................................................................................................................................ S. dentana sp. nov.
+
+### Used for
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+(none)
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
 
 ### Techniques
 (none)
@@ -3087,46 +3127,6 @@ Kata Kunci: Pandemi, Pekerja, Pemutusan.
 
 ### Supported languages
 - C
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## Synochoneura
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.6242027
-- **Status:** Unknown
-- **Last updated:** 2024-12-10T02:10:56.137162+00:00
-
-### Description
-Key to species of Synochoneura based on the male genital characters1. Valva long and narrow, distinctly narrowed beyond middle, forming a neck; sacculus very long, exceeding termination of costa ................................................................................................................. S. ochriclivis- Valva short and broad, without distinctly narrowed neck; sacculus short, not reaching termination of costa......................................................................................................................................................................22. Distal part of valva slightly contracted; free termination of sacculus subquadrate; aedeagus slender........... .................................................................................................................................................. S. tapaishani- Distal part of valva distinctly contracted; free termination of sacculus dentate; aedeagus stout ................... ........................................................................................................................................ S. dentana sp. nov.
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
 
 ### Supported inputs
 (none)
@@ -3335,6 +3335,46 @@ Yte = loaded_data['Yte'] # Test labels of shape (185, 1)
 
 ---
 
+## [ ATVA24 Artifact ] HyperQB: A QBF-Based Bounded Model Checker for Hyperproperties
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.11282197
+- **Status:** Unknown
+- **Last updated:** 2024-05-24T16:08:35.288296+00:00
+
+### Description
+Artifact for ATVA 2024, paper 80: HyperQB: A QBF-Based Bounded Model Checker for Hyperproperties
+
+### Used for
+(none)
+
+### Input formats
+- QBF
+
+### Supported languages
+(none)
+
+### Supported inputs
+- QBF
+
+### Properties verified
+(none)
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
 ## Juridical Review of Unilateral Termination of Employment by PT Indosat TBK during the Covid-19 Pandemic
 
 - **Website:** N/A
@@ -3394,73 +3434,33 @@ See the included LICENSE.md file for the licenses of different components. 
 Hint: on some versions of host OS and VirtualBox, bugs or limited support prevent the use of VirtualBox or a correct termination of the VM start-up (the VM remains freezed on the loading screen). Changing the VM window size a couple of times can help to refresh the VM screen and get control on it. Otherwise check the known VirtualBox bugs or limitations. In particular, there are known compatibility issues for VirtualBox on ARM processors at the time of writing.
 
 ### Used for
-- termination
 - safety
 - security
+- termination
 
 ### Input formats
 - SMT
 
 ### Supported languages
-- Java
-- C
-- OCaml
 - Python
+- Java
+- OCaml
+- C
 
 ### Supported inputs
 - SMT
 
 ### Properties verified
-- termination
 - safety
 - security
+- termination
 
 ### Techniques
 - SMT solving
 
 ### External tools
-- Z3
 - CVC5
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## [ ATVA24 Artifact ] HyperQB: A QBF-Based Bounded Model Checker for Hyperproperties
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.11282197
-- **Status:** Unknown
-- **Last updated:** 2024-05-24T16:08:35.288296+00:00
-
-### Description
-Artifact for ATVA 2024, paper 80: HyperQB: A QBF-Based Bounded Model Checker for Hyperproperties
-
-### Used for
-(none)
-
-### Input formats
-- QBF
-
-### Supported languages
-(none)
-
-### Supported inputs
-- QBF
-
-### Properties verified
-(none)
-
-### Techniques
-(none)
-
-### External tools
-(none)
+- Z3
 
 ### Examples
 (none)
@@ -3485,27 +3485,27 @@ PBFD was empirically validated through an eight-year enterprise deployment, demo
 Together, PBFD and PDFD establish a reproducible, transparent framework that integrates formal verification into practical software development. All formal specifications, MVPs, and datasets are publicly available to foster academic research and industrial-grade adoption.
 
 ### Used for
-- termination
-- complexity bounds
 - security
 - safety
+- complexity bounds
+- termination
 
 ### Input formats
 (none)
 
 ### Supported languages
+- Python
 - Java
 - C
-- Python
 
 ### Supported inputs
 (none)
 
 ### Properties verified
-- termination
-- complexity bounds
 - security
 - safety
+- complexity bounds
+- termination
 
 ### Techniques
 (none)
@@ -3877,9 +3877,9 @@ Within Europe, there is no clear standard on the design nor operation of an AFTS
 The paper describes the general problem and the proposed solution for a European Autonomous Flight Termination System highly configurable by the user, which make is suitable for a broad range of launchers and countries. Sener is developing an AFTU demonstrator in the frame of the RD EC Horizon Europe programme.
 
 ### Used for
-- termination
-- robustness
 - safety
+- robustness
+- termination
 
 ### Input formats
 (none)
@@ -3892,9 +3892,9 @@ The paper describes the general problem and the proposed solution for a European
 (none)
 
 ### Properties verified
-- termination
-- robustness
 - safety
+- robustness
+- termination
 
 ### Techniques
 (none)
@@ -3981,8 +3981,8 @@ We note that this upload ("Further Material for Fanoos [...]"), in contrast to t
 (none)
 
 ### Techniques
-- model checking
 - abstract interpretation
+- model checking
 
 ### External tools
 (none)
@@ -4007,9 +4007,9 @@ We note that this upload ("Further Material for Fanoos [...]"), in contrast to t
 The purpose of this study was to determine the effect of Work Motivation and Employee Trust on Termination Anxiety Issues post the COVID-19 Pandemic. This research is classified as Explanatory Research with a quantitative approach. The sample used was 90 employees of PT.Marinal Indo Prima with purposive sampling technique. The type of data used is primary data, namely data collection using a questionnaire. Analysis of the data used is Multiple Linear Regression with SPSS. The results of this study indicate that work motivation has a negative effect on Termination Anxiety Issues. Likewise, Employee Trust has a negative effect on Termination Anxiety Issues. Simultaneously Work Motivation and Employee Trust have an effect on Termination Anxiety Issues.
 
 ### Used for
-- termination
 - safety
 - security
+- termination
 
 ### Input formats
 (none)
@@ -4021,9 +4021,9 @@ The purpose of this study was to determine the effect of Work Motivation and Emp
 (none)
 
 ### Properties verified
-- termination
 - safety
 - security
+- termination
 
 ### Techniques
 (none)
@@ -4132,9 +4132,51 @@ This paper presents the development and testing of an Autonomous Flight Termina
 The paper focuses on the initial prototype's test campaign that Sener is developing in the frame of the RD EC Horizon Europe programme., detailing the system architecture, test setup, and performance results. It also outlines the roadmap toward flight qualification, emphasizing the system’s adaptability for different launchers and regulatory environments.
 
 ### Used for
-- termination
-- robustness
 - safety
+- robustness
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- safety
+- robustness
+- termination
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## FIGURE 6 in New species of Grubeulepis Pettibone, 1969 (Eulepethidae, Annelida) from northern Brazil
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.1301877
+- **Status:** Unknown
+- **Last updated:** 2024-08-02T05:39:03.893879+00:00
+
+### Description
+FIGURE 6. Grubeulepis serrata sp. nov. A, Spiny notochaetae; B, Spiny notochaeta with spatulated-shaped termination; C, Notochaeta with spoon-shaped termination; D, Notochaetae with denticles. Scales: A–C = 0.03 mm; D = 0.06 mm.
+
+### Used for
+- termination
 
 ### Input formats
 (none)
@@ -4147,8 +4189,6 @@ The paper focuses on the initial prototype's test campaign that Sener is develop
 
 ### Properties verified
 - termination
-- robustness
-- safety
 
 ### Techniques
 (none)
@@ -4238,112 +4278,8 @@ additional write-up, slides, etc.
 - termination
 
 ### Techniques
-- model checking
 - abstract interpretation
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## FIGURE 6 in New species of Grubeulepis Pettibone, 1969 (Eulepethidae, Annelida) from northern Brazil
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.1301877
-- **Status:** Unknown
-- **Last updated:** 2024-08-02T05:39:03.893879+00:00
-
-### Description
-FIGURE 6. Grubeulepis serrata sp. nov. A, Spiny notochaetae; B, Spiny notochaeta with spatulated-shaped termination; C, Notochaeta with spoon-shaped termination; D, Notochaetae with denticles. Scales: A–C = 0.03 mm; D = 0.06 mm.
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-- C
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## A termination analyzer for Java bytecode based on path-length
-
-- **Website:** N/A
-- **DOI:** 10.1145/1709093.1709095
-- **Status:** Unknown
-- **Last updated:** 2024-12-09T18:43:39.384741+00:00
-
-### Description
-It is important to prove that supposedly terminating programs actually terminate, particularly if those programs must be run on critical systems or downloaded into a client such as a mobile phone. Although termination of computer programs is generally undecidable, it is possible and useful to prove termination of a large, nontrivial subset of the terminating programs. In this article, we present our termination analyzer for sequential Java bytecode, based on a program property called
-            path-length
-            . We describe the analyses which are needed before the path-length can be computed such as sharing, cyclicity, and aliasing. Then we formally define the path-length analysis and prove it correct with respect to a reference denotational semantics of the bytecode. We show that a constraint logic program
-            P
-            
-              CLP
-            
-            can be built from the result of the path-length analysis of a Java bytecode program
-            P
-            and formally prove that if
-            P
-            
-              CLP
-            
-            terminates, then
-            P
-            also terminates. Hence a termination prover for constraint logic programs can be applied to prove the termination of
-            P
-            . We conclude with some discussion of the possibilities and limitations of our approach. Ours is the first existing termination analyzer for Java bytecode dealing with any kind of data structures dynamically allocated on the heap and which does not require any help or annotation on the part of the user.
-
-### Used for
-- termination
-- safety
-
-### Input formats
-(none)
-
-### Supported languages
-- Java
-- C
-- Haskell
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
-- safety
-
-### Techniques
-- SMT solving
 - model checking
-- abstract interpretation
 
 ### External tools
 (none)
@@ -4436,6 +4372,70 @@ cut -f8 review_sheet.csv | tail -n +2 | sort | uniq -c
 
 ---
 
+## A termination analyzer for Java bytecode based on path-length
+
+- **Website:** N/A
+- **DOI:** 10.1145/1709093.1709095
+- **Status:** Unknown
+- **Last updated:** 2024-12-09T18:43:39.384741+00:00
+
+### Description
+It is important to prove that supposedly terminating programs actually terminate, particularly if those programs must be run on critical systems or downloaded into a client such as a mobile phone. Although termination of computer programs is generally undecidable, it is possible and useful to prove termination of a large, nontrivial subset of the terminating programs. In this article, we present our termination analyzer for sequential Java bytecode, based on a program property called
+            path-length
+            . We describe the analyses which are needed before the path-length can be computed such as sharing, cyclicity, and aliasing. Then we formally define the path-length analysis and prove it correct with respect to a reference denotational semantics of the bytecode. We show that a constraint logic program
+            P
+            
+              CLP
+            
+            can be built from the result of the path-length analysis of a Java bytecode program
+            P
+            and formally prove that if
+            P
+            
+              CLP
+            
+            terminates, then
+            P
+            also terminates. Hence a termination prover for constraint logic programs can be applied to prove the termination of
+            P
+            . We conclude with some discussion of the possibilities and limitations of our approach. Ours is the first existing termination analyzer for Java bytecode dealing with any kind of data structures dynamically allocated on the heap and which does not require any help or annotation on the part of the user.
+
+### Used for
+- safety
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+- Haskell
+- Java
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- safety
+- termination
+
+### Techniques
+- abstract interpretation
+- model checking
+- SMT solving
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
 ## Figure 5 from: Ulmer JM, Mikó I, Deans AR, Krogmann L (2021) The Waterston's evaporatorium of Ceraphronidae (Ceraphronoidea, Hymenoptera): A morphological barcode to a cryptic taxon. Journal of Hymenoptera Research 85: 29-56. https://doi.org/10.3897/jhr.85.67165
 
 - **Website:** N/A
@@ -4487,8 +4487,8 @@ Figure 5 Dorsal vessel termination in Ceraphronoidea (CLSM) A dorsal vessel term
 Breaching of contractual obligations may lead to certain negative consequences. Hence, this work analyzes the theoretical aspects of termination of contractual obligations in Ukraine’s civil law. The article aims to study the obligation termination mechanism by determining the legal framework for its functioning. The author focuses on one of the forms of contractual obligation termination, more specifically, the start of cancellation and deferred status of a legal transaction. Using normative and protective functions in legislation, the author plans to determine specifics of legal facts of normative compensatory nature. It is established, that the condition for cancellation of a legal transaction, can be a direct or reverse mechanism for the termination of contractual obligations. A condition for cancellation of a legal transaction can be applied to the whole transaction or to its separate parts.
 
 ### Used for
-- termination
 - security
+- termination
 
 ### Input formats
 (none)
@@ -4500,8 +4500,8 @@ Breaching of contractual obligations may lead to certain negative consequences. 
 (none)
 
 ### Properties verified
-- termination
 - security
+- termination
 
 ### Techniques
 (none)
@@ -4616,8 +4616,8 @@ Benchmarks for program termination
 (none)
 
 ### Supported languages
-- C
 - Python
+- C
 
 ### Supported inputs
 (none)
@@ -4657,8 +4657,8 @@ In previous papers we have proposed an elementary discipline of strong functiona
 (none)
 
 ### Supported languages
-- C
 - Haskell
+- C
 
 ### Supported inputs
 (none)
@@ -4681,15 +4681,15 @@ In previous papers we have proposed an elementary discipline of strong functiona
 
 ---
 
-## Termination of rights in the mechanism of civil legal relations
+## Chorea, With Fatal Termination.
 
 - **Website:** N/A
-- **DOI:** 10.5281/zenodo.4046883
+- **DOI:** 10.1016/s0140-6736(02)80667-5
 - **Status:** Unknown
-- **Last updated:** 2024-07-19T15:37:09.936684+00:00
+- **Last updated:** 2024-08-01T15:55:40.061286+00:00
 
 ### Description
-The article aims to research the termination of rights in the mechanism of civil legal relations. The relevance of the work is expressed by the fact that the analysis of the reasons for termination of right is based on the analysis of legal facts that are realized in the process of formalization of some civil legal relations. The fol-lowing methods were used: analysis, synthesis, comparison, abstraction. The nov-elty of the study is determined by the fact that the authors of the article research the causes of termination of right and the possibility of implementing this process is universal and local legal systems. The authors consider each of the principles of termination of right as an opportunity to form a qualitatively new subject of re-search and development of the local legal system. The article analyzes the general grounds for termination of rights and suggests implementation measures with consideration of international law. The practical relevance of the study is determined by the fact that for the first time not only direct forms of restriction of rights and measures to terminate them were considered, but also recommendations were developed on the details of the matter in question.
+n/a
 
 ### Used for
 - termination
@@ -4721,15 +4721,15 @@ The article aims to research the termination of rights in the mechanism of civil
 
 ---
 
-## Chorea, With Fatal Termination.
+## Termination of rights in the mechanism of civil legal relations
 
 - **Website:** N/A
-- **DOI:** 10.1016/s0140-6736(02)80667-5
+- **DOI:** 10.5281/zenodo.4046883
 - **Status:** Unknown
-- **Last updated:** 2024-08-01T15:55:40.061286+00:00
+- **Last updated:** 2024-07-19T15:37:09.936684+00:00
 
 ### Description
-n/a
+The article aims to research the termination of rights in the mechanism of civil legal relations. The relevance of the work is expressed by the fact that the analysis of the reasons for termination of right is based on the analysis of legal facts that are realized in the process of formalization of some civil legal relations. The fol-lowing methods were used: analysis, synthesis, comparison, abstraction. The nov-elty of the study is determined by the fact that the authors of the article research the causes of termination of right and the possibility of implementing this process is universal and local legal systems. The authors consider each of the principles of termination of right as an opportunity to form a qualitatively new subject of re-search and development of the local legal system. The article analyzes the general grounds for termination of rights and suggests implementation measures with consideration of international law. The practical relevance of the study is determined by the fact that for the first time not only direct forms of restriction of rights and measures to terminate them were considered, but also recommendations were developed on the details of the matter in question.
 
 ### Used for
 - termination

@@ -10,7 +10,7 @@ def fetch_text_file(url):
             return r.text or ""
     except:
         pass
-    return ""  # returnăm întotdeauna string
+    return ""
 
 def fetch_pdf_text(url):
     try:
@@ -23,14 +23,9 @@ def fetch_pdf_text(url):
             return pdf_extract_text(tmp_path) or ""
     except:
         pass
-    return ""  # întotdeauna string
+    return ""
 
 def fetch_zip_text(url):
-    """
-    Extrage doar fișiere relevante dintr-un ZIP:
-    - README (*.md, *.txt, *.rst)
-    - PDF-uri (*.pdf)
-    """
     try:
         r = requests.get(url, timeout=30)
         if r.status_code != 200:
@@ -45,7 +40,6 @@ def fetch_zip_text(url):
                 except:
                     pass
             elif lower_name.endswith(".pdf"):
-                # extragem PDF direct din zip
                 try:
                     import tempfile
                     from pdfminer.high_level import extract_text as pdf_extract_text

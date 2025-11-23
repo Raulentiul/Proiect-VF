@@ -8,7 +8,7 @@ from scraper.github_helpers import determine_status
 from scraper.record_parser import parse_basic_metadata
 from scraper.file_extractors import fetch_text_file, fetch_pdf_text, fetch_zip_text
 
-def get_yaml(query, pages=1):
+def get_yaml(query, pages=3):
     tools = []
 
     for rec in tqdm(iterate_search(query, pages), desc="Processing Zenodo records"):
@@ -32,7 +32,7 @@ def get_yaml(query, pages=1):
 
             elif ext == ".zip":
                 try:
-                    head = requests.head(url, timeout=10)
+                    head = requests.head(url, timeout=20)
                     size = int(head.headers.get("Content-Length", 0))
                     max_size = 100 * 1024 * 1024  # 100 MB
 
@@ -46,7 +46,6 @@ def get_yaml(query, pages=1):
                     print(f"Failed to check zip size: {filename}")
                     continue
 
-        # Extragem informații cu extractorul tău
         MAX_TEXT_LENGTH = 5_000_000  # 5 MB
         if len(text) > MAX_TEXT_LENGTH:
             print(f"Text too large ({len(text)/1_000_000:.2f} MB), truncating for extraction")
