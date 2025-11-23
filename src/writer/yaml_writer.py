@@ -1,7 +1,10 @@
 import yaml
 from pathlib import Path
 
-def save_yaml(tools_list, path="../output/tools.yml"):
+def save_yaml(tools_list, path=None):
+    if path is None:
+        base_dir = Path(__file__).resolve().parents[1]
+        path = base_dir / "output" / "tools.yml"
     p = Path(path)
     p.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w+", encoding="utf-8") as f:

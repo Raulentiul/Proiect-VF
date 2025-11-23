@@ -1,9 +1,9 @@
 import requests
 
-from src.scraper.search import iterate_search
-from src.scraper.extractor import extract_from_text
-from src.scraper.github_helpers import determine_status
-from src.scraper.record_parser import parse_basic_metadata
+from scraper.search import iterate_search
+from scraper.extractor import extract_from_text
+from scraper.github_helpers import determine_status
+from scraper.record_parser import parse_basic_metadata
 
 
 def get_yaml(query, pages=3):

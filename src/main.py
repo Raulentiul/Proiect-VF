@@ -1,7 +1,7 @@
 import argparse
-from src.writer.yaml_generator import get_yaml
-from src.writer.yaml_to_markdown_tools import write_markdown_file
-from src.writer.yaml_writer import save_yaml
+from writer.yaml_generator import get_yaml
+from writer.yaml_to_markdown_tools import write_markdown_file
+from writer.yaml_writer import save_yaml
 
 DEFAULT_QUERY = 'verification OR "neural network verification" OR termination OR QBF'
 

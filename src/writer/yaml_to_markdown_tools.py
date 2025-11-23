@@ -87,10 +87,15 @@ def generate_markdown(tools):
 
 
 def write_markdown_file():
-    input_path = r"../../output/tools.yml"
-    output_path = "TOOLS.md"
+    base_dir = Path(__file__).resolve().parents[1]
+    input_path = base_dir / "output" / "tools.yml"
+    output_path = base_dir / "TOOLS.md"
+    input_path.parent.mkdir(parents=True, exist_ok=True)
+    
+    if not input_path.exists():
+        input_path.write_text("tools: []", encoding="utf-8")
 
-    yaml_text = Path(input_path).read_text(encoding="utf-8")
+    yaml_text = input_path.read_text(encoding="utf-8")
     data = yaml.safe_load(yaml_text)
 
     if "tools" not in data:
@@ -98,6 +103,5 @@ def write_markdown_file():
         return
 
     md = generate_markdown(data["tools"])
-
-    Path(output_path).write_text(md, encoding="utf-8")
-    print(f"Markdown generat: {output_path}")
+    output_path.write_text(md, encoding="utf-8")
+    print(f"Markdown created: {output_path}")
