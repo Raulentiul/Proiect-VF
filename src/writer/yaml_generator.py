@@ -1,29 +1,58 @@
 import requests
+from pathlib import Path
+from tqdm import tqdm
 
 from scraper.search import iterate_search
 from scraper.extractor import extract_from_text
 from scraper.github_helpers import determine_status
 from scraper.record_parser import parse_basic_metadata
+from scraper.file_extractors import fetch_text_file, fetch_pdf_text, fetch_zip_text
 
-
-def get_yaml(query, pages=3):
+def get_yaml(query, pages=1):
     tools = []
 
-    for rec in iterate_search(query, pages):
+    for rec in tqdm(iterate_search(query, pages), desc="Processing Zenodo records"):
         basic = parse_basic_metadata(rec)
+        text = basic.get("description", "") or ""
 
-        text = basic.get("description", "")
+        files = basic.get("files", [])
+        for f in tqdm(files, desc=f"Files in {basic.get('name')}", leave=False):
+            filename = f.get("filename", "")
+            url = f.get("url", "")
+            ext = Path(filename).suffix.lower()
 
-        for f in basic.get("files", []):
-            if f["filename"].lower().startswith("readme"):
+            if not url:
+                continue
+
+            if ext in {".md", ".txt", ".rst"}:
+                text += "\n\n" + fetch_text_file(url)
+
+            elif ext == ".pdf":
+                text += "\n\n" + fetch_pdf_text(url)
+
+            elif ext == ".zip":
                 try:
-                    r = requests.get(f["url"], timeout=20)
-                    if r.status_code == 200:
-                        text += "\n\n" + r.text
-                except:
-                    pass
+                    head = requests.head(url, timeout=10)
+                    size = int(head.headers.get("Content-Length", 0))
+                    max_size = 100 * 1024 * 1024  # 100 MB
 
-        extracted = extract_from_text(text)
+                    if size > max_size:
+                        print(f"Skipping large zip: {filename} ({size / 1_000_000:.2f} MB)")
+                        continue
+
+                    text += "\n\n" + fetch_zip_text(url)
+
+                except:
+                    print(f"Failed to check zip size: {filename}")
+                    continue
+
+        # Extragem informații cu extractorul tău
+        MAX_TEXT_LENGTH = 5_000_000  # 5 MB
+        if len(text) > MAX_TEXT_LENGTH:
+            print(f"Text too large ({len(text)/1_000_000:.2f} MB), truncating for extraction")
+        text_to_extract = text[:MAX_TEXT_LENGTH]
+        extracted = extract_from_text(text_to_extract)
+
 
         repo_url = basic.get("repo_url")
         status = determine_status(basic, repo_url)

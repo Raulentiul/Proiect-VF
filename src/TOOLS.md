@@ -14,13 +14,13 @@ Code for DeepMIP and MiniMIP algorithms.
 (none)
 
 ### Input formats
-(none)
+- ONNX
 
 ### Supported languages
-(none)
+- Python
 
 ### Supported inputs
-(none)
+- ONNX
 
 ### Properties verified
 (none)
@@ -54,25 +54,34 @@ This data set complements the publication
 	  A.D. Brucker and A. Stell. Verifying feedforward neural networks for classification in  Isabelle/HOL. In M. Chechik, J.-P. Katoen, and M. Leucker, editors, Formal Methods (FM 2023). Lübeck, Germany, 2023. ISBN: 978-3-642-38915-3.
 
 ### Used for
-(none)
+- termination
+- safety
+- security
+- adversarial robustness
 
 ### Input formats
-(none)
+- SMT
 
 ### Supported languages
-(none)
+- C
+- Python
 
 ### Supported inputs
-(none)
+- SMT
 
 ### Properties verified
-(none)
+- termination
+- safety
+- security
+- adversarial robustness
 
 ### Techniques
-(none)
+- SMT solving
+- neural network verification techniques
 
 ### External tools
-(none)
+- Z3
+- TensorFlow
 
 ### Examples
 (none)
@@ -97,24 +106,26 @@ smaller network cannot be verified, the verifier must perform a refinement step,
 in which it was determined that the refined network behaves correctly, allowing the verifier to focus on areas of the search space where bugs might yet be discovered. For evaluation, we implemented our approach as an extension to the Marabou verifier, and obtained highly promising results.
 
 ### Used for
-- safety
 - liveness
+- safety
+- adversarial robustness
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- Python
 
 ### Supported inputs
 (none)
 
 ### Properties verified
-- safety
 - liveness
+- safety
+- adversarial robustness
 
 ### Techniques
-(none)
+- neural network verification techniques
 
 ### External tools
 (none)
@@ -156,8 +167,8 @@ We provide an artifact containing the DNNV tool for DNN verification, as well as
 (none)
 
 ### Techniques
-- neural network verification techniques
 - SMT solving
+- neural network verification techniques
 
 ### External tools
 - TensorFlow
@@ -262,25 +273,30 @@ This is the artifact for the paper "Example Guided Synthesis of Linear Approxima
 (none)
 
 ### Used for
-(none)
+- robustness
 
 ### Input formats
-(none)
+- ONNX
+- PyTorch
 
 ### Supported languages
-(none)
+- C
+- Python
 
 ### Supported inputs
-(none)
+- ONNX
+- PyTorch
 
 ### Properties verified
-(none)
+- robustness
 
 ### Techniques
-(none)
+- SMT solving
+- neural network verification techniques
 
 ### External tools
-(none)
+- PyTorch
+- TensorFlow
 
 ### Examples
 (none)
@@ -392,22 +408,22 @@ The Random set contains random satisfiable conjunctions of 3-60 constraints with
 (none)
 
 ### Input formats
-- SMT-LIB
 - SMT
+- SMT-LIB
 
 ### Supported languages
 (none)
 
 ### Supported inputs
-- SMT-LIB
 - SMT
+- SMT-LIB
 
 ### Properties verified
 (none)
 
 ### Techniques
-- neural network verification techniques
 - SMT solving
+- neural network verification techniques
 
 ### External tools
 - Z3
@@ -438,7 +454,7 @@ Tools for computing lower bounds on the probability of termination and the almos
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
@@ -514,7 +530,7 @@ Contents:
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
@@ -551,13 +567,13 @@ Supplemental material to the paper.
 (none)
 
 ### Input formats
-(none)
+- CNF
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
-(none)
+- CNF
 
 ### Properties verified
 (none)
@@ -642,7 +658,8 @@ This project implements **QBF (Quantum Biological Field)** framework to uncover 
 - QBF
 
 ### Supported languages
-(none)
+- C
+- Python
 
 ### Supported inputs
 - QBF
@@ -676,21 +693,24 @@ This project implements **QBF (Quantum Biological Field)** framework to uncover 
 The minimization of propositional formulae is a classical problem in logic, whose first algorithms date back at least to the 1950s with the works of Quine and Karnaugh. Most previous work in the area has focused on obtaining minimal, or quasi-minimal, formulae in conjunctive normal form (CNF) or disjunctive normal form (DNF), with applications in hardware design. In this paper, we are interested in the problem of obtaining an equivalent formula in any format, also allowing connectives that are not present in the original formula. We are primarily motivated in applying minimization algorithms to generate natural language translations of the original formula, where using shorter equivalents as input may result in better translations. Recently, Buchfuhrer and Umans have proved that the (decisional version of the) problem is Σcomplete. We analyze three possible (practical) approaches to solving the problem. First, using brute force, generating all possible formulae in increasing size and checking if they are equivalent to the original formula by testing all possible variable assignments. Second, generating the Tseitin coding of all the formulae and checking equivalence with the original using a SAT solver. Third, encoding the problem as a Quantified Boolean Formula (QBF), and using a QBF solver. Our results show that the QBF approach largely outperforms the other two.
 
 ### Used for
-(none)
+- termination
 
 ### Input formats
-- CNF
+- SMT
 - QBF
+- CNF
 
 ### Supported languages
-(none)
+- C
+- Python
 
 ### Supported inputs
-- CNF
+- SMT
 - QBF
+- CNF
 
 ### Properties verified
-(none)
+- termination
 
 ### Techniques
 - SMT solving
@@ -811,7 +831,7 @@ Support for SAT Modulo Symmetries for isomorph-free graph generation subject to 
 - QBF
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 - QBF
@@ -820,7 +840,7 @@ Support for SAT Modulo Symmetries for isomorph-free graph generation subject to 
 (none)
 
 ### Techniques
-(none)
+- SMT solving
 
 ### External tools
 (none)
@@ -851,7 +871,8 @@ Support for SAT Modulo Symmetries for isomorph-free graph generation subject to 
 - QBF
 
 ### Supported languages
-(none)
+- C++
+- C
 
 ### Supported inputs
 - QBF
@@ -860,7 +881,7 @@ Support for SAT Modulo Symmetries for isomorph-free graph generation subject to 
 (none)
 
 ### Techniques
-(none)
+- SMT solving
 
 ### External tools
 (none)
@@ -910,22 +931,22 @@ Pooya
 (none)
 
 ### Input formats
-- CNF
 - QBF
+- CNF
 
 ### Supported languages
 (none)
 
 ### Supported inputs
-- CNF
 - QBF
+- CNF
 
 ### Properties verified
 (none)
 
 ### Techniques
-- neural network verification techniques
 - SMT solving
+- neural network verification techniques
 
 ### External tools
 (none)
@@ -992,8 +1013,8 @@ We thank the reviewers for their comments and added the missing dependencies to 
 2LS ("tools") is a verification tool for C programs. It is built upon the CPROVER framework (cprover.org), which supports C89, C99, most of C11 and most compiler extensions provided by gcc and Visual Studio. It allows verifying array bounds (buffer overflows), pointer safety, exceptions, user-specified assertions, and termination properties. The analysis is performed by template-based predicate synthesis and abstraction refinements techniques.The uploaded archive is a submission used for SV-COMP 2024.
 
 ### Used for
-- safety
 - termination
+- safety
 
 ### Input formats
 (none)
@@ -1005,8 +1026,8 @@ We thank the reviewers for their comments and added the missing dependencies to 
 (none)
 
 ### Properties verified
-- safety
 - termination
+- safety
 
 ### Techniques
 (none)
@@ -1045,7 +1066,7 @@ This submission contains three parts:
 - QBF
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 - QBF
@@ -1054,7 +1075,7 @@ This submission contains three parts:
 (none)
 
 ### Techniques
-(none)
+- SMT solving
 
 ### External tools
 (none)
@@ -1085,7 +1106,7 @@ In this paper, we propose a generic mechanism for extending decision procedures 
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
@@ -1094,7 +1115,8 @@ In this paper, we propose a generic mechanism for extending decision procedures 
 - termination
 
 ### Techniques
-(none)
+- SMT solving
+- model checking
 
 ### External tools
 (none)
@@ -1121,8 +1143,8 @@ In this paper, we propose a generic mechanism for extending decision procedures 
 The uploaded archive is a submission used for SV-COMP 2023.
 
 ### Used for
-- safety
 - termination
+- safety
 
 ### Input formats
 (none)
@@ -1134,8 +1156,8 @@ The uploaded archive is a submission used for SV-COMP 2023.
 (none)
 
 ### Properties verified
-- safety
 - termination
+- safety
 
 ### Techniques
 (none)
@@ -1163,25 +1185,29 @@ The uploaded archive is a submission used for SV-COMP 2023.
 Although effect handlers offer a versatile abstraction for user-defined effects, they produce complex and less restricted execution traces due to the composable non-local control flow mechanisms. This paper is interested in the temporal behaviors of effect sequences, such as unhandled effects, termination of the communication, safety, fairness, etc. Specifically, we propose a novel effects logic ContEffs, to write precise and modular specifications for programs in the presence of user-defined effect handlers and primitive effects. As a second contribution, we devise a forward verifier together with a fixpoint calculator to infer the behaviors of such programs. Lastly, our automated verification framework provides a purely algebraic term-rewriting system (TRS) as the back-end solver, efficiently checking the entailments between ContEffs assertions. To demonstrate the feasibility of our proposals, we prototype a verification system where zero-shot, one-shot, and multi-shot continuations coexist; prove its correctness; present experimental results; and report on case studies.
 
 ### Used for
-- safety
 - termination
+- safety
+- security
 
 ### Input formats
-(none)
+- SMT
 
 ### Supported languages
-- OCaml
 - C
+- OCaml
 
 ### Supported inputs
-(none)
+- SMT
 
 ### Properties verified
-- safety
 - termination
+- safety
+- security
 
 ### Techniques
 - SMT solving
+- model checking
+- abstract interpretation
 
 ### External tools
 - Z3
@@ -1218,7 +1244,7 @@ ii) on practice one can see that associations are established and exist in the f
 Certain issues which shall be regulated in legislation relate to establishment and activities of business associations such as procedure of managing the state association; differentiation of authorities between the Cabinet of Ministers of Ukraine and central executive agencies regarding establishment of the state associations, approval of the articles of association, appointment of managers etc.
 
 ### Used for
-(none)
+- termination
 
 ### Input formats
 (none)
@@ -1230,7 +1256,7 @@ Certain issues which shall be regulated in legislation relate to establishment a
 (none)
 
 ### Properties verified
-(none)
+- termination
 
 ### Techniques
 (none)
@@ -1261,22 +1287,29 @@ This paper presents a novel application of QBF solving to automata reduction. We
 (none)
 
 ### Input formats
+- SMT
 - QBF
+- CNF
 
 ### Supported languages
-(none)
+- C
+- Python
 
 ### Supported inputs
+- SMT
 - QBF
+- CNF
 
 ### Properties verified
 (none)
 
 ### Techniques
-(none)
+- SMT solving
+- model checking
 
 ### External tools
-(none)
+- Z3
+- SPIN
 
 ### Examples
 (none)
@@ -1453,8 +1486,8 @@ The authors of this repository do not endorse using its contents for ANY purpose
 (none)
 
 ### Supported languages
-- Python
 - C
+- Python
 
 ### Supported inputs
 (none)
@@ -1604,18 +1637,22 @@ CMake
 
 ### Input formats
 - QBF
+- CNF
 
 ### Supported languages
+- C++
 - C
 
 ### Supported inputs
 - QBF
+- CNF
 
 ### Properties verified
 (none)
 
 ### Techniques
-(none)
+- SMT solving
+- model checking
 
 ### External tools
 (none)
@@ -1640,8 +1677,8 @@ CMake
 2LS is a C program analyser built upon the CPROVER infrastructure that can verify and refute program assertions, memory safety, and termination. Until now, one of the main drawbacks of 2LS was its inability to verify most programs with arrays. This paper introduces a new abstract domain in 2LS for reasoning about the contents of arrays. In addition, we introduce an improved approach to loop unwinding, a crucial component of the 2LS’ verification algorithm, which particularly enables finding proofs and counterexamples for programs working with dynamic memory.
 
 ### Used for
-- safety
 - termination
+- safety
 
 ### Input formats
 (none)
@@ -1653,11 +1690,13 @@ CMake
 (none)
 
 ### Properties verified
-- safety
 - termination
+- safety
 
 ### Techniques
-(none)
+- SMT solving
+- model checking
+- abstract interpretation
 
 ### External tools
 (none)
@@ -1684,27 +1723,28 @@ Symbiotic is a tool for finding bugs in programs that combines fast static analy
 Symbiotic 7 brings improvements in all parts of the tool. In particular, we integrated the advanced shape analysis implemented in Predator to our instrumentation process for memory safety checking. Further, we extended our slicer to correctly handle non-terminating programs. This new slicing is applied in termination analysis, where we also added instrumentation for the detection of simple cycles in the program state space. The witness generation process changed as well.
 
 ### Used for
-- safety
 - termination
+- safety
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- LLVM
+- C
 
 ### Supported inputs
 (none)
 
 ### Properties verified
-- safety
 - termination
+- safety
 
 ### Techniques
 (none)
 
 ### External tools
-(none)
+- Z3
 
 ### Examples
 (none)
@@ -1726,22 +1766,27 @@ Symbiotic 7 brings improvements in all parts of the tool. In particular, we inte
 This paper introduces the Octave-State Formalism, a novel theoretical framework for the analysis of computational loops. Moving beyond the classical, one-dimensional view of iteration, this formalism models a loop's execution as the discrete-time evolution of a state vector within an eight-dimensional abstract space. Each dimension of this "Octave-State" corresponds to a fundamental aspect of the loop's behavior, including its temporal progression, data transformation, causal dependencies, resource consumption, concurrency potential, numerical stability, control flow path, and termination horizon. By leveraging the mathematical rigor of state-space representation from control theory and drawing conceptual parallels with principles from theoretical physics—such as dimensional regularization, phase space, and the many-worlds interpretation—this paper develops a unified model. We demonstrate that this formalism provides a more holistic understanding of loop dynamics, offering new geometric insights into complex problems like data dependency analysis, loop-level parallelism, and formal verification through loop invariants. The Octave-State Formalism is presented not merely as a descriptive tool, but as a generative framework for the design and automated analysis of next-generation algorithms and high-assurance software systems.
 
 ### Used for
+- liveness
 - termination
+- safety
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
 
 ### Properties verified
+- liveness
 - termination
+- safety
 
 ### Techniques
-(none)
+- abstract interpretation
+- neural network verification techniques
 
 ### External tools
 (none)
@@ -1769,19 +1814,21 @@ Equivalence of deterministic finite automata (DFAs) has been researched for sev
 (none)
 
 ### Input formats
-(none)
+- QBF
+- CNF
 
 ### Supported languages
-(none)
+- Java
 
 ### Supported inputs
-(none)
+- QBF
+- CNF
 
 ### Properties verified
 (none)
 
 ### Techniques
-(none)
+- SMT solving
 
 ### External tools
 (none)
@@ -1812,7 +1859,9 @@ Benchmarks and result-files for paper "Large-Scale Analysis of Non-Termination B
 (none)
 
 ### Supported languages
-(none)
+- Java
+- LLVM
+- C
 
 ### Supported inputs
 (none)
@@ -1821,7 +1870,7 @@ Benchmarks and result-files for paper "Large-Scale Analysis of Non-Termination B
 - termination
 
 ### Techniques
-(none)
+- SMT solving
 
 ### External tools
 (none)
@@ -2005,22 +2054,27 @@ The estimated runtime is less than a few seconds.
 (none)
 
 ### Used for
-(none)
+- termination
 
 ### Input formats
-(none)
+- SMT
+- QBF
+- CNF
 
 ### Supported languages
-(none)
+- C
+- Python
 
 ### Supported inputs
-(none)
+- SMT
+- QBF
+- CNF
 
 ### Properties verified
-(none)
+- termination
 
 ### Techniques
-(none)
+- SMT solving
 
 ### External tools
 (none)
@@ -2047,18 +2101,24 @@ Information flow policies are widely used for specifying confidentiality and int
 In this paper, we provide an extended definition of non-interference for systems that are specified in a MILS variant of the Architecture Analysis and Design Language (AADL). More concretely, we propose a type system for MILS-AADL component definitions that distinguishes between breaking non-interference because of legitimate use of sufficientlynbsp;strong encryption and breaking non-interference due to annbsp;unintended information leak. To this aim, it tracks bothnbsp;intra- and inter-component information flow and considersbr /> both data- and event-flow security./p>
 
 ### Used for
+- liveness
+- termination
+- safety
 - security
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
 
 ### Properties verified
+- liveness
+- termination
+- safety
 - security
 
 ### Techniques
@@ -2097,6 +2157,7 @@ Inside the VM, AProVE is already installed, and you will find our benchmark set.
 
 ### Supported languages
 - Java
+- C
 
 ### Supported inputs
 - SMT
@@ -2109,46 +2170,6 @@ Inside the VM, AProVE is already installed, and you will find our benchmark set.
 
 ### External tools
 - Z3
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## Incremental Development of Real-Time Requirements: The Light Control Case Study
-
-- **Website:** N/A
-- **DOI:** 10.3217/jucs-006-07-0704
-- **Status:** Unknown
-- **Last updated:** 2024-07-16T06:16:13.638204+00:00
-
-### Description
-System requirements frequently change while the system is still under development. Usually this means going back and revising the requirements specification and redoing those development steps already completed. In this article we show how formal requirements can be allowed to evolve while system development is in progress, without the need for costly redevelopment. This is done via a formalism which allows requirements engineering steps to be interleaved with formal development steps in a manageable way. The approach is demonstrated by a significant case study, the Light Control System.
-
-### Used for
-(none)
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-(none)
-
-### Techniques
-(none)
-
-### External tools
-(none)
 
 ### Examples
 (none)
@@ -2203,6 +2224,46 @@ to install the image in your local environment.
 
 ---
 
+## Incremental Development of Real-Time Requirements: The Light Control Case Study
+
+- **Website:** N/A
+- **DOI:** 10.3217/jucs-006-07-0704
+- **Status:** Unknown
+- **Last updated:** 2024-07-16T06:16:13.638204+00:00
+
+### Description
+System requirements frequently change while the system is still under development. Usually this means going back and revising the requirements specification and redoing those development steps already completed. In this article we show how formal requirements can be allowed to evolve while system development is in progress, without the need for costly redevelopment. This is done via a formalism which allows requirements engineering steps to be interleaved with formal development steps in a manageable way. The approach is demonstrated by a significant case study, the Light Control System.
+
+### Used for
+- safety
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- safety
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
 ## Report of the Third QBF Solvers Evaluation1
 
 - **Website:** N/A
@@ -2214,22 +2275,23 @@ to install the image in your local environment.
 n/a
 
 ### Used for
-(none)
+- safety
 
 ### Input formats
-(none)
+- QBF
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
-(none)
+- QBF
 
 ### Properties verified
-(none)
+- safety
 
 ### Techniques
-(none)
+- SMT solving
+- model checking
 
 ### External tools
 (none)
@@ -2254,21 +2316,21 @@ n/a
 Set similarity join is an important problem with many applications in data discovery, cleaning and integration. To increase robustness, fuzzy set similarity join calculates the similarity of two sets based on maximum weighted bipartite matching instead of set overlap. This allows pairs of elements, represented as sets or strings, to also match approximately rather than exactly, e.g., based on Jaccard similarity or edit distance. However, this significantly increases the verification cost, making even more important the need for efficient and effective filtering techniques to reduce the number of candidate pairs. The current state-of-the-art algorithm relies on similarity computations between pairs of elements to filter candidates. In this paper, we propose token-based instead of element-based filtering, showing that it is significantly more lightweight, while offering similar or even better pruning effectiveness. Moreover, we address the top-𝑘 variant of the problem, alleviating the need for a user-specified similarity threshold. We also propose early termination to reduce the cost of verification. Our experimental results on six real-world datasets show that our approach always outperforms the state of the art, being an order of magnitude faster on average.
 
 ### Used for
-- robustness
 - termination
+- robustness
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
 
 ### Properties verified
-- robustness
 - termination
+- robustness
 
 ### Techniques
 (none)
@@ -2342,7 +2404,9 @@ Benchmarks and result-files for paper "Large-Scale Analysis of Non-Termination B
 (none)
 
 ### Supported languages
-(none)
+- Java
+- LLVM
+- C
 
 ### Supported inputs
 (none)
@@ -2351,7 +2415,7 @@ Benchmarks and result-files for paper "Large-Scale Analysis of Non-Termination B
 - termination
 
 ### Techniques
-(none)
+- SMT solving
 
 ### External tools
 (none)
@@ -2405,19 +2469,20 @@ This is the artifact for the CAV 2021 paper, “Reflections on Termination of Li
 
 ---
 
-## The Efficacy and Safety of Extraamniotic Mannitol along with Carboprost (PGF2α) and Intracervical Misoprostol (PGE1) in Second Trimester Termination of Pregnancy: A Prospective Comparative Clinical Study
+## A special view on the method of implication, classification, and decision-making strategies of the human body channels
 
 - **Website:** N/A
-- **DOI:** 10.5281/zenodo.12679117
+- **DOI:** 10.5281/zenodo.7109863
 - **Status:** Unknown
-- **Last updated:** 2024-07-07T09:50:18.760535+00:00
+- **Last updated:** 2024-07-16T01:58:44.862671+00:00
 
 ### Description
-Introduction: Second trimester termination of pregnancy accounts for around 10 to 15% of all abortions annually. These can be performed either medically or surgically. The aim of this study is to compare the efficacy and safety of extraamniotic mannitol along with carboprost (PGF2α) and intracervical misoprostol in second trimester termination of pregnancy. Result: The most common indication for termination of pregnancy was intrauterine fetal demise (41.7% in mannitol group and 45.8% in misoprostol group). Second trimester termination of pregnancy success rate was significantly higher in the extra-amniotic mannitol along with PGF2α group as compared to intracervical misoprostol group (95.8% v/s 75%, p<0.05).A significantly shorter duration from induction to delivery was observed in the extra-amniotic mannitol along with PGF2α group as compared to intracervical misoprostol group (19.3 ± 4.2 v/s 22.3 ± 2.1 hours, p<0.01).Incidence of side effects like pyrexia, diarrhea, abdominal pain and headache were significantly lower in the mannitol group as compared to misoprostol group. Conclusion: Extra-amniotic mannitol along with carboprost (PGF2α) is an effective and safe method for second trimester termination of pregnancy. The success rate of extra amniotic mannitol along with PGF2α was significantly higher with notably shorter induction-abortion interval. A remarkable lower hospital stay and fewer side effects were seen in patients induced by mannitol along with PGF2α.
+The fast development of semiconductor technology and method scaling over a couple of many years has enabled the prolific increase of small-form issue wearable gadgets and physiological sensors. Those devices are connected to every different thru radio frequency conversation via air medium, and form a network of interconnected devices around the human body, normally known as the wireless body location network (WBAN). Human body verbal exchange (HBC), which uses the human frame because the communication medium, has these days emerged as an alternative to wireless media for conversation amongst these devices because of its low power requirement and more desirable safety residences. This alleviates key technological challenges: 1) electricity consumption, and 2) security, for such electricity-restricted battery-operated devices and may beautify their lifetime notably. One of the primary reasons for the electricity performance of HBC is due to the low loss channel supplied through the human frame, because of the conductance belongings of human tissue, compared to communique thru radio waves around the human frame. As a result, the entire know-how of the frequency characteristics of the human frame channel below special communication eventualities will permit the development of strength-efficient HBC primarily based on circuits and systems. Previous studies on HBC channel size have in most cases targeted intra-frame HBC, which characterizes the verbal exchange among two wearable devices worn by means of the identical character. There has been a huge variance in the measurement consequences reported in the literature mostly because of the experimental setup (low impedance size, vicinity of transmitter, receiver and many others.) and the excitation and termination modalities
 
 ### Used for
-- safety
 - termination
+- safety
+- security
 
 ### Input formats
 (none)
@@ -2429,8 +2494,9 @@ Introduction: Second trimester termination of pregnancy accounts for around 10 
 (none)
 
 ### Properties verified
-- safety
 - termination
+- safety
+- security
 
 ### Techniques
 (none)
@@ -2447,34 +2513,32 @@ Introduction: Second trimester termination of pregnancy accounts for around 10 
 
 ---
 
-## A special view on the method of implication, classification, and decision-making strategies of the human body channels
+## The Efficacy and Safety of Extraamniotic Mannitol along with Carboprost (PGF2α) and Intracervical Misoprostol (PGE1) in Second Trimester Termination of Pregnancy: A Prospective Comparative Clinical Study
 
 - **Website:** N/A
-- **DOI:** 10.5281/zenodo.7109863
+- **DOI:** 10.5281/zenodo.12679117
 - **Status:** Unknown
-- **Last updated:** 2024-07-16T01:58:44.862671+00:00
+- **Last updated:** 2024-07-07T09:50:18.760535+00:00
 
 ### Description
-The fast development of semiconductor technology and method scaling over a couple of many years has enabled the prolific increase of small-form issue wearable gadgets and physiological sensors. Those devices are connected to every different thru radio frequency conversation via air medium, and form a network of interconnected devices around the human body, normally known as the wireless body location network (WBAN). Human body verbal exchange (HBC), which uses the human frame because the communication medium, has these days emerged as an alternative to wireless media for conversation amongst these devices because of its low power requirement and more desirable safety residences. This alleviates key technological challenges: 1) electricity consumption, and 2) security, for such electricity-restricted battery-operated devices and may beautify their lifetime notably. One of the primary reasons for the electricity performance of HBC is due to the low loss channel supplied through the human frame, because of the conductance belongings of human tissue, compared to communique thru radio waves around the human frame. As a result, the entire know-how of the frequency characteristics of the human frame channel below special communication eventualities will permit the development of strength-efficient HBC primarily based on circuits and systems. Previous studies on HBC channel size have in most cases targeted intra-frame HBC, which characterizes the verbal exchange among two wearable devices worn by means of the identical character. There has been a huge variance in the measurement consequences reported in the literature mostly because of the experimental setup (low impedance size, vicinity of transmitter, receiver and many others.) and the excitation and termination modalities
+Introduction: Second trimester termination of pregnancy accounts for around 10 to 15% of all abortions annually. These can be performed either medically or surgically. The aim of this study is to compare the efficacy and safety of extraamniotic mannitol along with carboprost (PGF2α) and intracervical misoprostol in second trimester termination of pregnancy. Result: The most common indication for termination of pregnancy was intrauterine fetal demise (41.7% in mannitol group and 45.8% in misoprostol group). Second trimester termination of pregnancy success rate was significantly higher in the extra-amniotic mannitol along with PGF2α group as compared to intracervical misoprostol group (95.8% v/s 75%, p<0.05).A significantly shorter duration from induction to delivery was observed in the extra-amniotic mannitol along with PGF2α group as compared to intracervical misoprostol group (19.3 ± 4.2 v/s 22.3 ± 2.1 hours, p<0.01).Incidence of side effects like pyrexia, diarrhea, abdominal pain and headache were significantly lower in the mannitol group as compared to misoprostol group. Conclusion: Extra-amniotic mannitol along with carboprost (PGF2α) is an effective and safe method for second trimester termination of pregnancy. The success rate of extra amniotic mannitol along with PGF2α was significantly higher with notably shorter induction-abortion interval. A remarkable lower hospital stay and fewer side effects were seen in patients induced by mannitol along with PGF2α.
 
 ### Used for
-- safety
 - termination
-- security
+- safety
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
 
 ### Properties verified
-- safety
 - termination
-- security
+- safety
 
 ### Techniques
 (none)
@@ -2545,19 +2609,19 @@ The purpose of this project is to draw attention to a particular family of quant
 (none)
 
 ### Input formats
-(none)
+- QBF
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
-(none)
+- QBF
 
 ### Properties verified
 (none)
 
 ### Techniques
-(none)
+- SMT solving
 
 ### External tools
 (none)
@@ -2591,8 +2655,8 @@ Results: Demographic details are comparable and insignificant in the comparison.
 Conclusions: The combination of mifepristone and misoprostol is a highly effective and safe method for second-trimester termination of pregnancy. The amount of misoprostol needed to accomplish the abortion, and the severity of the adverse effects are lower in the mifepristone-primed group than in the misoprostol-alone group. Since there are fewer difficulties, this approach can be employed in hospitals with high patient density.
 
 ### Used for
-- safety
 - termination
+- safety
 
 ### Input formats
 (none)
@@ -2604,8 +2668,8 @@ Conclusions: The combination of mifepristone and misoprostol is a highly effecti
 (none)
 
 ### Properties verified
-- safety
 - termination
+- safety
 
 ### Techniques
 (none)
@@ -2676,59 +2740,23 @@ Archiving the artifact with Zenodo on release.
 (none)
 
 ### Input formats
-(none)
+- QBF
+- CNF
 
 ### Supported languages
-(none)
+- C++
+- C
+- Python
 
 ### Supported inputs
-(none)
+- QBF
+- CNF
 
 ### Properties verified
 (none)
 
 ### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## The moment of termination of corporate legal relations
-
-- **Website:** N/A
-- **DOI:** 10.21564/2414-990X.152.223330
-- **Status:** Unknown
-- **Last updated:** 2024-07-19T05:13:31.284753+00:00
-
-### Description
-The long-term nature of corporate legal relations necessitates the theoretical selection of certain moments of their emergence, change and termination. The update of the corporate legislation has necessitated a review of the established positions on the moment of termination of corporate legal relations, analysis and study of the legislation and resolution of problems that arise in connection with its application. The introduction of the institution of consent in corporate legal relations necessitated a scientific rethinking of certain aspects of the mechanism of termination of corporate legal relations. The article investigates the main scientific approaches to determining the moment of termination of corporate legal relations, analyzes the moment of termination of corporate legal relations depending on the grounds for their termination. Based on four main approaches to determining the moment of termination of corporate legal relations, the positions of scientists who adhere to them are studied, changes to the current corporate legislation are analyzed, inconsistencies regarding the moment of termination of corporate legal relations are revealed. The peculiarities of the moment of termination of corporate legal relations in case of alienation of a share (part of a share) in the authorized capital of the company, exclusion of a participant from the company, its withdrawal, withdrawal, recovery from the defendant (claim from his possession) to a share (part of the share) are analyzed. Peculiarities of state registration of changes in information about a legal entity in the aspect of determining the moment of termination of corporate legal relations are determined. A position has been formed regarding the application of a separate approach to determining the moment of termination of corporate legal relations on certain grounds for termination of corporate legal relations and suggested ways to resolve existing inconsistencies in corporate law regarding certain grounds for termination of corporate legal relations.
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
-
-### Techniques
-(none)
+- SMT solving
 
 ### External tools
 (none)
@@ -2765,7 +2793,47 @@ Conclusion: We conclude from the results of the present study that women in the 
 (none)
 
 ### Supported languages
+- C
+
+### Supported inputs
 (none)
+
+### Properties verified
+- termination
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## The moment of termination of corporate legal relations
+
+- **Website:** N/A
+- **DOI:** 10.21564/2414-990X.152.223330
+- **Status:** Unknown
+- **Last updated:** 2024-07-19T05:13:31.284753+00:00
+
+### Description
+The long-term nature of corporate legal relations necessitates the theoretical selection of certain moments of their emergence, change and termination. The update of the corporate legislation has necessitated a review of the established positions on the moment of termination of corporate legal relations, analysis and study of the legislation and resolution of problems that arise in connection with its application. The introduction of the institution of consent in corporate legal relations necessitated a scientific rethinking of certain aspects of the mechanism of termination of corporate legal relations. The article investigates the main scientific approaches to determining the moment of termination of corporate legal relations, analyzes the moment of termination of corporate legal relations depending on the grounds for their termination. Based on four main approaches to determining the moment of termination of corporate legal relations, the positions of scientists who adhere to them are studied, changes to the current corporate legislation are analyzed, inconsistencies regarding the moment of termination of corporate legal relations are revealed. The peculiarities of the moment of termination of corporate legal relations in case of alienation of a share (part of a share) in the authorized capital of the company, exclusion of a participant from the company, its withdrawal, withdrawal, recovery from the defendant (claim from his possession) to a share (part of the share) are analyzed. Peculiarities of state registration of changes in information about a legal entity in the aspect of determining the moment of termination of corporate legal relations are determined. A position has been formed regarding the application of a separate approach to determining the moment of termination of corporate legal relations on certain grounds for termination of corporate legal relations and suggested ways to resolve existing inconsistencies in corporate law regarding certain grounds for termination of corporate legal relations.
+
+### Used for
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+- C
 
 ### Supported inputs
 (none)
@@ -2847,24 +2915,34 @@ Hint: on some versions of host OS and VirtualBox, bugs or limited support preven
 
 ### Used for
 - termination
+- safety
+- security
 
 ### Input formats
-(none)
+- SMT
+- C source
 
 ### Supported languages
-(none)
+- Java
+- C
+- OCaml
+- Python
 
 ### Supported inputs
-(none)
+- SMT
+- C source
 
 ### Properties verified
 - termination
+- safety
+- security
 
 ### Techniques
-(none)
+- SMT solving
 
 ### External tools
-(none)
+- Z3
+- CVC5
 
 ### Examples
 (none)
@@ -2901,18 +2979,20 @@ mortality.
 
 ### Used for
 - termination
+- safety
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
 
 ### Properties verified
 - termination
+- safety
 
 ### Techniques
 (none)
@@ -2941,58 +3021,22 @@ This paper has been published in Peer-reviewed International Journal "Remarking 
 
 ### Used for
 - termination
+- safety
+- security
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
 
 ### Properties verified
 - termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## Synochoneura
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.6242027
-- **Status:** Unknown
-- **Last updated:** 2024-12-10T02:10:56.137162+00:00
-
-### Description
-Key to species of Synochoneura based on the male genital characters1. Valva long and narrow, distinctly narrowed beyond middle, forming a neck; sacculus very long, exceeding termination of costa ................................................................................................................. S. ochriclivis- Valva short and broad, without distinctly narrowed neck; sacculus short, not reaching termination of costa......................................................................................................................................................................22. Distal part of valva slightly contracted; free termination of sacculus subquadrate; aedeagus slender........... .................................................................................................................................................. S. tapaishani- Distal part of valva distinctly contracted; free termination of sacculus dentate; aedeagus stout ................... ........................................................................................................................................ S. dentana sp. nov.
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
+- safety
+- security
 
 ### Techniques
 (none)
@@ -3034,6 +3078,46 @@ ABSTRAK
 Terhadap kondisi pendemi seperti saat ini sangat banyak problematika yang muncul. Tidak hanya dari aspek kesehatan, namun juga aspek ketenagakerjaan, hak asasi manusia, dll. Terlebih lagi dalam hak, adapun permasalahan atas hak dan kewajiban para pekerja yang secara langsung mendapati Pemutusan Hubungan Kerja (PHK). Hal ini dinilai tidak sesuai dengan hak dan kewajiban para pekerja, namun dikarenakan kondisi pandemi yang sepeeti ini dan berujung pada krisis disegala aspek bidang, maka keputusan PHK nenjadi keputusan akhir yang dilakukan oleh para perusahaan meningat agar tidak semakin rugi dalam perusahaan tersebut. Mengurangi karyawan adalah dianggap efisiensi karena dapat membantu mengurangi pengeluaran. Banyak sekali perusahaan yang menekan SDM di balik keadaan pandemi seperti ini. PHK ada, karena sudah tidak adanya kemampuan dari pihak perusahaan dari sisi keuangan. Dirasa, keadaan pandemi seperti imi adalah tanggungjawab dan juga masalah dari segala aspek. Tidak hanya tentang pegawai, namun juga pemerintahan, perusahaan, semua ikut merasakan dampak dari keadaan pandemi ini.
 
 Kata Kunci: Pandemi, Pekerja, Pemutusan.
+
+### Used for
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## Synochoneura
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.6242027
+- **Status:** Unknown
+- **Last updated:** 2024-12-10T02:10:56.137162+00:00
+
+### Description
+Key to species of Synochoneura based on the male genital characters1. Valva long and narrow, distinctly narrowed beyond middle, forming a neck; sacculus very long, exceeding termination of costa ................................................................................................................. S. ochriclivis- Valva short and broad, without distinctly narrowed neck; sacculus short, not reaching termination of costa......................................................................................................................................................................22. Distal part of valva slightly contracted; free termination of sacculus subquadrate; aedeagus slender........... .................................................................................................................................................. S. tapaishani- Distal part of valva distinctly contracted; free termination of sacculus dentate; aedeagus stout ................... ........................................................................................................................................ S. dentana sp. nov.
 
 ### Used for
 - termination
@@ -3135,7 +3219,7 @@ useful management tools for bloom prediction and monitoring.
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
@@ -3169,7 +3253,7 @@ useful management tools for bloom prediction and monitoring.
 n/a
 
 ### Used for
-(none)
+- termination
 
 ### Input formats
 (none)
@@ -3181,7 +3265,7 @@ n/a
 (none)
 
 ### Properties verified
-(none)
+- termination
 
 ### Techniques
 (none)
@@ -3251,6 +3335,102 @@ Yte = loaded_data['Yte'] # Test labels of shape (185, 1)
 
 ---
 
+## Juridical Review of Unilateral Termination of Employment by PT Indosat TBK during the Covid-19 Pandemic
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.6416911
+- **Status:** Unknown
+- **Last updated:** 2024-07-16T22:50:41.717470+00:00
+
+### Description
+This research examined from a legal perspective regarding the unilateral termination of employment by PT Indosat Tbk, during the Covid-19 Pandemic. Two main issues were discussed in this study, the first was the chronology of unilateral termination carried out by PT Indosat Tbk to its employees during the Covid-19 pandemic, and analyzing the legal termination procedural during the Covid-19 Pandemic. This study used a normative juridical research method using secondary legal data. Based on the results of the study, it was known that the chronology of layoffs was carried out by PT. Indosat, Tbk to its workers during the Covid-19 pandemic was unilateral. Meanwhile, the legal termination procedure during the Covid-19 pandemic must go through the stages of negotiations between the employers, in this case, PT. Indosat, Tbk with employees represented by existing labor associations. In its implementation carried out, PT. Indosat, Tbk did not carry out negotiations before carrying out simultaneous termination. In connection with the above, the employer should negotiate first before implementing efficiency by doing the termination of employment (PHK).
+
+### Used for
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## Formal Verification of PKCS#1 Signature Parser using Frama-C. Companion Artifact for the Paper Submitted to iFM 2025
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.16919839
+- **Status:** Unknown
+- **Last updated:** 2025-09-03T08:12:54.971642+00:00
+
+### Description
+This artifact aims to support and reproduce the verification results of the paper  "Formal Verification of PKCS#1 Signature Parser using Frama-C" by Martin Hána, Nikolai Kosmatov, Virgile Prevosto and Julien Signoles, accepted for publication at iFM 2025, and should be cited as:
+Martin Hána, Nikolai Kosmatov, Virgile Prevosto and Julien Signoles. "Formal Verification of PKCS#1 Signature Parser using Frama-C. Companion Artifact for the Paper Submitted to iFM 2025".  Zenodo. https://doi.org/10.5281/zenodo.16919839
+The artifact itself is available in the attached VM PKCS1ParserProof.ova. See the documentation in README.md in the folder /home/user/PKCS1ParserProof/ inside the VM. In the provided VM, all tools have already been installed. 
+The VM is running Ubuntu 24.04. The VM was tested with VirtualBox 7.0.14. For information, the password of user "user" in the VM is "user".  
+For convenience of the readers and a faster access to files, the contents of the VM are also available in the attached ZIP. The ZIP is provided for information. The artifact should be preferably used with the attached VM PKCS1ParserProof.ova.Requirements for the VM:
+- at least 4 CPU cores allocated for the VM; - at least 8 GB RAM allocated for the VM; - at least 25 GB free disk space before importing the VM.
+See the included REQUIREMENTS.md file for more detail and the Disclaimer in README.md for possible reasons and situations when to increase allocated resources.
+See the included LICENSE.md file for the licenses of different components. 
+Hint: on some versions of host OS and VirtualBox, bugs or limited support prevent the use of VirtualBox or a correct termination of the VM start-up (the VM remains freezed on the loading screen). Changing the VM window size a couple of times can help to refresh the VM screen and get control on it. Otherwise check the known VirtualBox bugs or limitations. In particular, there are known compatibility issues for VirtualBox on ARM processors at the time of writing.
+
+### Used for
+- termination
+- safety
+- security
+
+### Input formats
+- SMT
+
+### Supported languages
+- Java
+- C
+- OCaml
+- Python
+
+### Supported inputs
+- SMT
+
+### Properties verified
+- termination
+- safety
+- security
+
+### Techniques
+- SMT solving
+
+### External tools
+- Z3
+- CVC5
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
 ## [ ATVA24 Artifact ] HyperQB: A QBF-Based Bounded Model Checker for Hyperproperties
 
 - **Website:** N/A
@@ -3291,78 +3471,41 @@ Artifact for ATVA 2024, paper 80: HyperQB: A QBF-Based Bounded Model Checker for
 
 ---
 
-## Formal Verification of PKCS#1 Signature Parser using Frama-C. Companion Artifact for the Paper Submitted to iFM 2025
+## PBFD and PDFD: Formally Defined and Verified Methodologies and Empirical  Evaluation for Scalable Full-Stack Software Engineering
 
 - **Website:** N/A
-- **DOI:** 10.5281/zenodo.16919839
+- **DOI:** 10.5281/zenodo.16883985
 - **Status:** Unknown
-- **Last updated:** 2025-09-03T08:12:54.971642+00:00
+- **Last updated:** 2025-08-17T02:55:56.424272+00:00
 
 ### Description
-This artifact aims to support and reproduce the verification results of the paper  "Formal Verification of PKCS#1 Signature Parser using Frama-C" by Martin Hána, Nikolai Kosmatov, Virgile Prevosto and Julien Signoles, accepted for publication at iFM 2025, and should be cited as:
-Martin Hána, Nikolai Kosmatov, Virgile Prevosto and Julien Signoles. "Formal Verification of PKCS#1 Signature Parser using Frama-C. Companion Artifact for the Paper Submitted to iFM 2025".  Zenodo. https://doi.org/10.5281/zenodo.16919839
-The artifact itself is available in the attached VM PKCS1ParserProof.ova. See the documentation in README.md in the folder /home/user/PKCS1ParserProof/ inside the VM. In the provided VM, all tools have already been installed. 
-The VM is running Ubuntu 24.04. The VM was tested with VirtualBox 7.0.14. For information, the password of user "user" in the VM is "user".  
-For convenience of the readers and a faster access to files, the contents of the VM are also available in the attached ZIP. The ZIP is provided for information. The artifact should be preferably used with the attached VM PKCS1ParserProof.ova.Requirements for the VM:
-- at least 4 CPU cores allocated for the VM; - at least 8 GB RAM allocated for the VM; - at least 25 GB free disk space before importing the VM.
-See the included REQUIREMENTS.md file for more detail and the Disclaimer in README.md for possible reasons and situations when to increase allocated resources.
-See the included LICENSE.md file for the licenses of different components. 
-Hint: on some versions of host OS and VirtualBox, bugs or limited support prevent the use of VirtualBox or a correct termination of the VM start-up (the VM remains freezed on the loading screen). Changing the VM window size a couple of times can help to refresh the VM screen and get control on it. Otherwise check the known VirtualBox bugs or limitations. In particular, there are known compatibility issues for VirtualBox on ARM processors at the time of writing.
+This paper introduces Primary Breadth-First Development (PBFD) and Primary Depth-First Development (PDFD), two formally defined and verified methodologies for scalable, industrial-grade full-stack software engineering. These approaches bridge a longstanding gap between formal methods and real-world development practice by enforcing structural correctness through graph-theoretic modeling. Unlike prior graph-based approaches, PBFD and PDFD operate over layered directed graphs and are formalized using unified state machines and Communicating Sequential Processes (CSP) to ensure critical properties, including bounded-refinement termination and structural completeness.
+To coordinate hierarchical data at scale, we propose Three-Level Encapsulation (TLE)—a novel, bitmask-based encoding scheme that delivers provably constant-time updates. TLE’s formal guarantees underpin PBFD’s industrial-scale performance and scalability.
+PBFD was empirically validated through an eight-year enterprise deployment, demonstrating over 20× faster development than Salesforce OmniScript and 7–8× faster query performance compared to conventional relational models. Additionally, both methodologies are supported by open-source MVPs, with PDFD’s implementation conclusively demonstrating its correctness-first design principles.
+Together, PBFD and PDFD establish a reproducible, transparent framework that integrates formal verification into practical software development. All formal specifications, MVPs, and datasets are publicly available to foster academic research and industrial-grade adoption.
 
 ### Used for
 - termination
+- complexity bounds
+- security
+- safety
 
 ### Input formats
 (none)
 
 ### Supported languages
+- Java
 - C
+- Python
 
 ### Supported inputs
 (none)
 
 ### Properties verified
 - termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## Juridical Review of Unilateral Termination of Employment by PT Indosat TBK during the Covid-19 Pandemic
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.6416911
-- **Status:** Unknown
-- **Last updated:** 2024-07-16T22:50:41.717470+00:00
-
-### Description
-This research examined from a legal perspective regarding the unilateral termination of employment by PT Indosat Tbk, during the Covid-19 Pandemic. Two main issues were discussed in this study, the first was the chronology of unilateral termination carried out by PT Indosat Tbk to its employees during the Covid-19 pandemic, and analyzing the legal termination procedural during the Covid-19 Pandemic. This study used a normative juridical research method using secondary legal data. Based on the results of the study, it was known that the chronology of layoffs was carried out by PT. Indosat, Tbk to its workers during the Covid-19 pandemic was unilateral. Meanwhile, the legal termination procedure during the Covid-19 pandemic must go through the stages of negotiations between the employers, in this case, PT. Indosat, Tbk with employees represented by existing labor associations. In its implementation carried out, PT. Indosat, Tbk did not carry out negotiations before carrying out simultaneous termination. In connection with the above, the employer should negotiate first before implementing efficiency by doing the termination of employment (PHK).
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
+- complexity bounds
+- security
+- safety
 
 ### Techniques
 (none)
@@ -3449,49 +3592,6 @@ then `unzip FastForwardForTermination.fixed.zip`
 
 ---
 
-## PBFD and PDFD: Formally Defined and Verified Methodologies and Empirical  Evaluation for Scalable Full-Stack Software Engineering
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.16883985
-- **Status:** Unknown
-- **Last updated:** 2025-08-17T02:55:56.424272+00:00
-
-### Description
-This paper introduces Primary Breadth-First Development (PBFD) and Primary Depth-First Development (PDFD), two formally defined and verified methodologies for scalable, industrial-grade full-stack software engineering. These approaches bridge a longstanding gap between formal methods and real-world development practice by enforcing structural correctness through graph-theoretic modeling. Unlike prior graph-based approaches, PBFD and PDFD operate over layered directed graphs and are formalized using unified state machines and Communicating Sequential Processes (CSP) to ensure critical properties, including bounded-refinement termination and structural completeness.
-To coordinate hierarchical data at scale, we propose Three-Level Encapsulation (TLE)—a novel, bitmask-based encoding scheme that delivers provably constant-time updates. TLE’s formal guarantees underpin PBFD’s industrial-scale performance and scalability.
-PBFD was empirically validated through an eight-year enterprise deployment, demonstrating over 20× faster development than Salesforce OmniScript and 7–8× faster query performance compared to conventional relational models. Additionally, both methodologies are supported by open-source MVPs, with PDFD’s implementation conclusively demonstrating its correctness-first design principles.
-Together, PBFD and PDFD establish a reproducible, transparent framework that integrates formal verification into practical software development. All formal specifications, MVPs, and datasets are publicly available to foster academic research and industrial-grade adoption.
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
 ## CAV'25: Non-Termination Proving: 100 Million LoC and Beyond (Pulse Infinite Artifact)
 
 - **Website:** N/A
@@ -3501,84 +3601,6 @@ Together, PBFD and PDFD establish a reproducible, transparent framework that int
 
 ### Description
 This URL is intended to track the CAV'25 Artifact for paper: Non Termination Proving: 100 Million LoC and Beyond
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## Artifact for the intermediate report "Modular termination verification with a higher-order concurrent separation logic" (December 2022) by Justus Fasse and Bart Jacobs
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.7585369
-- **Status:** Unknown
-- **Last updated:** 2023-01-30T14:26:49.116100+00:00
-
-### Description
-# Artifact for the intermediate report "Modular termination verification with a higher-order concurrent separation logic" (December 2022) by Justus Fasse and Bart Jacobs
-
-The file contains Coq theories built on top of Iris 4.0.
-
-To facilitate comparison with the original Iris/HeapLang development, from which this artifact is derived, the source code is provided as a git bundle.
-
-## How to build
-
-Unpacking the git bundle
-- `git clone artifact.bundle`
-- `cd artifact`
-- You should now already be on the `HeapLangLt` branch
-
-To build
-- `opam repo add coq-released https://coq.inria.fr/opam/released`
-- `opam pin add coq-iris 4.0.0`
-- `dune build`
-
-## Directory structure
-
-The rough directory structure of the development is described next. A precise list of changes can be obtained via git's diff mechanism.
-
-1. The directory `modular_termination/` which defines the global ghost resource tracking the stock of call permissions, an instance of the Auth(Multiset) camera.
-The Auth(Multiset) camera is reused in the proof of the concurrent stack with helping.
-
-  - `auth_gmultiset.v` constructs the general Auth(Multiset) camera construction with some helper lemmas
-  - `call_permissions.v` defines the global ghost resource used to reason about HeapLang<'s stock of call permissions
-
-2. `iris_heap_lang/` provides an adapted version of Iris 4.0's HeapLang that defines HeapLang<.
-
-  - `lang.v` defines the extended syntax and semantics of HeapLang<
-  - `iris_heap_lang/primitive_laws.v` contains the `wp_burn` lemma
-  - `iris_heap_lang/termination.v` gives the definitions and proofs that a HeapLang< program with "enough burns" (defined in the same file) cannot have infinite executions
-
-3. `concurrent-stack-with-helping` contains the code for the case study of a concurrent stack with helping with a HoCAP-style specification. In general both the original code and our adaptions are present. In those cases, the definition with the prime (e.g. `concurrent_stack` vs. `concurrent_stack'`) is the version adapted for termination verification.
-
-  - `specs.v` defines the HoCAP-style specification for concurrent stacks
-  - `concurrent_stack4.v` gives an implementation satisfying the extended specification. The main theorems of the example are `push'_works` (`push'` corresponds to `push_inner` in the report), `push_outer_works` (`push_outer` corresponds to `push` in the report) and finally the proofs that the implementation satisfies the specification: `spec'`.
-  - `client.v` defines a simple client of the specification. It creates a concurrent stack and pushes 42 twice to it, once in a forked off thread and once in the original thread.
 
 ### Used for
 - termination
@@ -3694,6 +3716,84 @@ For more details, please visit the Github repository.
 
 ---
 
+## Artifact for the intermediate report "Modular termination verification with a higher-order concurrent separation logic" (December 2022) by Justus Fasse and Bart Jacobs
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.7585369
+- **Status:** Unknown
+- **Last updated:** 2023-01-30T14:26:49.116100+00:00
+
+### Description
+# Artifact for the intermediate report "Modular termination verification with a higher-order concurrent separation logic" (December 2022) by Justus Fasse and Bart Jacobs
+
+The file contains Coq theories built on top of Iris 4.0.
+
+To facilitate comparison with the original Iris/HeapLang development, from which this artifact is derived, the source code is provided as a git bundle.
+
+## How to build
+
+Unpacking the git bundle
+- `git clone artifact.bundle`
+- `cd artifact`
+- You should now already be on the `HeapLangLt` branch
+
+To build
+- `opam repo add coq-released https://coq.inria.fr/opam/released`
+- `opam pin add coq-iris 4.0.0`
+- `dune build`
+
+## Directory structure
+
+The rough directory structure of the development is described next. A precise list of changes can be obtained via git's diff mechanism.
+
+1. The directory `modular_termination/` which defines the global ghost resource tracking the stock of call permissions, an instance of the Auth(Multiset) camera.
+The Auth(Multiset) camera is reused in the proof of the concurrent stack with helping.
+
+  - `auth_gmultiset.v` constructs the general Auth(Multiset) camera construction with some helper lemmas
+  - `call_permissions.v` defines the global ghost resource used to reason about HeapLang<'s stock of call permissions
+
+2. `iris_heap_lang/` provides an adapted version of Iris 4.0's HeapLang that defines HeapLang<.
+
+  - `lang.v` defines the extended syntax and semantics of HeapLang<
+  - `iris_heap_lang/primitive_laws.v` contains the `wp_burn` lemma
+  - `iris_heap_lang/termination.v` gives the definitions and proofs that a HeapLang< program with "enough burns" (defined in the same file) cannot have infinite executions
+
+3. `concurrent-stack-with-helping` contains the code for the case study of a concurrent stack with helping with a HoCAP-style specification. In general both the original code and our adaptions are present. In those cases, the definition with the prime (e.g. `concurrent_stack` vs. `concurrent_stack'`) is the version adapted for termination verification.
+
+  - `specs.v` defines the HoCAP-style specification for concurrent stacks
+  - `concurrent_stack4.v` gives an implementation satisfying the extended specification. The main theorems of the example are `push'_works` (`push'` corresponds to `push_inner` in the report), `push_outer_works` (`push_outer` corresponds to `push` in the report) and finally the proofs that the implementation satisfies the specification: `spec'`.
+  - `client.v` defines a simple client of the specification. It creates a concurrent stack and pushes 42 twice to it, once in a forked off thread and once in the original thread.
+
+### Used for
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+(none)
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
 ## Reproduction Package for FSE 2025 Submission `A Modular Program-Transformation Framework for Reducing Specifications to Reachability'
 
 - **Website:** N/A
@@ -3777,61 +3877,24 @@ Within Europe, there is no clear standard on the design nor operation of an AFTS
 The paper describes the general problem and the proposed solution for a European Autonomous Flight Termination System highly configurable by the user, which make is suitable for a broad range of launchers and countries. Sener is developing an AFTU demonstrator in the frame of the RD EC Horizon Europe programme.
 
 ### Used for
-- safety
 - termination
+- robustness
+- safety
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-- safety
-- termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## Empirical Research on the Issues of Termination of Employee Relationships Post Pandemi Covid-19. Urgency of the Role of Work Motivation and Employee Trust: Evidence from Indonesia
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.8167440
-- **Status:** Unknown
-- **Last updated:** 2024-07-11T16:45:18.656164+00:00
-
-### Description
-The purpose of this study was to determine the effect of Work Motivation and Employee Trust on Termination Anxiety Issues post the COVID-19 Pandemic. This research is classified as Explanatory Research with a quantitative approach. The sample used was 90 employees of PT.Marinal Indo Prima with purposive sampling technique. The type of data used is primary data, namely data collection using a questionnaire. Analysis of the data used is Multiple Linear Regression with SPSS. The results of this study indicate that work motivation has a negative effect on Termination Anxiety Issues. Likewise, Employee Trust has a negative effect on Termination Anxiety Issues. Simultaneously Work Motivation and Employee Trust have an effect on Termination Anxiety Issues.
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
+- MATLAB
+- C
 
 ### Supported inputs
 (none)
 
 ### Properties verified
 - termination
+- robustness
+- safety
 
 ### Techniques
 (none)
@@ -3920,6 +3983,50 @@ We note that this upload ("Further Material for Fanoos [...]"), in contrast to t
 ### Techniques
 - model checking
 - abstract interpretation
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## Empirical Research on the Issues of Termination of Employee Relationships Post Pandemi Covid-19. Urgency of the Role of Work Motivation and Employee Trust: Evidence from Indonesia
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.8167440
+- **Status:** Unknown
+- **Last updated:** 2024-07-11T16:45:18.656164+00:00
+
+### Description
+The purpose of this study was to determine the effect of Work Motivation and Employee Trust on Termination Anxiety Issues post the COVID-19 Pandemic. This research is classified as Explanatory Research with a quantitative approach. The sample used was 90 employees of PT.Marinal Indo Prima with purposive sampling technique. The type of data used is primary data, namely data collection using a questionnaire. Analysis of the data used is Multiple Linear Regression with SPSS. The results of this study indicate that work motivation has a negative effect on Termination Anxiety Issues. Likewise, Employee Trust has a negative effect on Termination Anxiety Issues. Simultaneously Work Motivation and Employee Trust have an effect on Termination Anxiety Issues.
+
+### Used for
+- termination
+- safety
+- security
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+- safety
+- security
+
+### Techniques
+(none)
 
 ### External tools
 (none)
@@ -4025,49 +4132,9 @@ This paper presents the development and testing of an Autonomous Flight Termina
 The paper focuses on the initial prototype's test campaign that Sener is developing in the frame of the RD EC Horizon Europe programme., detailing the system architecture, test setup, and performance results. It also outlines the roadmap toward flight qualification, emphasizing the system’s adaptability for different launchers and regulatory environments.
 
 ### Used for
+- termination
+- robustness
 - safety
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-- safety
-- termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## FIGURE 6 in New species of Grubeulepis Pettibone, 1969 (Eulepethidae, Annelida) from northern Brazil
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.1301877
-- **Status:** Unknown
-- **Last updated:** 2024-08-02T05:39:03.893879+00:00
-
-### Description
-FIGURE 6. Grubeulepis serrata sp. nov. A, Spiny notochaetae; B, Spiny notochaeta with spatulated-shaped termination; C, Notochaeta with spoon-shaped termination; D, Notochaetae with denticles. Scales: A–C = 0.03 mm; D = 0.06 mm.
-
-### Used for
-- termination
 
 ### Input formats
 (none)
@@ -4080,6 +4147,8 @@ FIGURE 6. Grubeulepis serrata sp. nov. A, Spiny notochaetae; B, Spiny notochaeta
 
 ### Properties verified
 - termination
+- robustness
+- safety
 
 ### Techniques
 (none)
@@ -4154,21 +4223,125 @@ cited immediately above, contains source related to Fanoos, as opposed to
 additional write-up, slides, etc.
 
 ### Used for
-(none)
+- termination
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
 
 ### Properties verified
-(none)
+- termination
 
 ### Techniques
+- model checking
+- abstract interpretation
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## FIGURE 6 in New species of Grubeulepis Pettibone, 1969 (Eulepethidae, Annelida) from northern Brazil
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.1301877
+- **Status:** Unknown
+- **Last updated:** 2024-08-02T05:39:03.893879+00:00
+
+### Description
+FIGURE 6. Grubeulepis serrata sp. nov. A, Spiny notochaetae; B, Spiny notochaeta with spatulated-shaped termination; C, Notochaeta with spoon-shaped termination; D, Notochaetae with denticles. Scales: A–C = 0.03 mm; D = 0.06 mm.
+
+### Used for
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## A termination analyzer for Java bytecode based on path-length
+
+- **Website:** N/A
+- **DOI:** 10.1145/1709093.1709095
+- **Status:** Unknown
+- **Last updated:** 2024-12-09T18:43:39.384741+00:00
+
+### Description
+It is important to prove that supposedly terminating programs actually terminate, particularly if those programs must be run on critical systems or downloaded into a client such as a mobile phone. Although termination of computer programs is generally undecidable, it is possible and useful to prove termination of a large, nontrivial subset of the terminating programs. In this article, we present our termination analyzer for sequential Java bytecode, based on a program property called
+            path-length
+            . We describe the analyses which are needed before the path-length can be computed such as sharing, cyclicity, and aliasing. Then we formally define the path-length analysis and prove it correct with respect to a reference denotational semantics of the bytecode. We show that a constraint logic program
+            P
+            
+              CLP
+            
+            can be built from the result of the path-length analysis of a Java bytecode program
+            P
+            and formally prove that if
+            P
+            
+              CLP
+            
+            terminates, then
+            P
+            also terminates. Hence a termination prover for constraint logic programs can be applied to prove the termination of
+            P
+            . We conclude with some discussion of the possibilities and limitations of our approach. Ours is the first existing termination analyzer for Java bytecode dealing with any kind of data structures dynamically allocated on the heap and which does not require any help or annotation on the part of the user.
+
+### Used for
+- termination
+- safety
+
+### Input formats
+(none)
+
+### Supported languages
+- Java
+- C
+- Haskell
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+- safety
+
+### Techniques
+- SMT solving
 - model checking
 - abstract interpretation
 
@@ -4263,64 +4436,6 @@ cut -f8 review_sheet.csv | tail -n +2 | sort | uniq -c
 
 ---
 
-## A termination analyzer for Java bytecode based on path-length
-
-- **Website:** N/A
-- **DOI:** 10.1145/1709093.1709095
-- **Status:** Unknown
-- **Last updated:** 2024-12-09T18:43:39.384741+00:00
-
-### Description
-It is important to prove that supposedly terminating programs actually terminate, particularly if those programs must be run on critical systems or downloaded into a client such as a mobile phone. Although termination of computer programs is generally undecidable, it is possible and useful to prove termination of a large, nontrivial subset of the terminating programs. In this article, we present our termination analyzer for sequential Java bytecode, based on a program property called
-            path-length
-            . We describe the analyses which are needed before the path-length can be computed such as sharing, cyclicity, and aliasing. Then we formally define the path-length analysis and prove it correct with respect to a reference denotational semantics of the bytecode. We show that a constraint logic program
-            P
-            
-              CLP
-            
-            can be built from the result of the path-length analysis of a Java bytecode program
-            P
-            and formally prove that if
-            P
-            
-              CLP
-            
-            terminates, then
-            P
-            also terminates. Hence a termination prover for constraint logic programs can be applied to prove the termination of
-            P
-            . We conclude with some discussion of the possibilities and limitations of our approach. Ours is the first existing termination analyzer for Java bytecode dealing with any kind of data structures dynamically allocated on the heap and which does not require any help or annotation on the part of the user.
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-- Java
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
 ## Figure 5 from: Ulmer JM, Mikó I, Deans AR, Krogmann L (2021) The Waterston's evaporatorium of Ceraphronidae (Ceraphronoidea, Hymenoptera): A morphological barcode to a cryptic taxon. Journal of Hymenoptera Research 85: 29-56. https://doi.org/10.3897/jhr.85.67165
 
 - **Website:** N/A
@@ -4370,6 +4485,48 @@ Figure 5 Dorsal vessel termination in Ceraphronoidea (CLSM) A dorsal vessel term
 
 ### Description
 Breaching of contractual obligations may lead to certain negative consequences. Hence, this work analyzes the theoretical aspects of termination of contractual obligations in Ukraine’s civil law. The article aims to study the obligation termination mechanism by determining the legal framework for its functioning. The author focuses on one of the forms of contractual obligation termination, more specifically, the start of cancellation and deferred status of a legal transaction. Using normative and protective functions in legislation, the author plans to determine specifics of legal facts of normative compensatory nature. It is established, that the condition for cancellation of a legal transaction, can be a direct or reverse mechanism for the termination of contractual obligations. A condition for cancellation of a legal transaction can be applied to the whole transaction or to its separate parts.
+
+### Used for
+- termination
+- security
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+- security
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## Data from: One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality
+
+- **Website:** N/A
+- **DOI:** 10.5061/dryad.1vh94
+- **Status:** Unknown
+- **Last updated:** 2022-05-29T23:07:58.305204+00:00
+
+### Description
+Evolutionary change in the timing of dormancy enables animals and plants to adapt to changing seasonal environments and can result in ecological speciation. Despite its clear biological importance, the mechanisms underlying the evolution of dormancy timing in animals remain poorly understood because of a lack of anatomical landmarks to discern which phase of dormancy an individual is experiencing. Taking advantage of the nearly universal characteristic of metabolic suppression during insect dormancy (diapause), we use patterns of respiratory metabolism to document physiological landmarks of dormancy and test which of the distinct phases of the dormancy developmental pathway contribute to a month-long shift in diapause timing between a pair of incipient moth species. Here, we show that divergence in life cycle between the earlier-emerging E-strain and the later-emerging Z-strain of European corn borer (ECB) is clearly explained by a delay in the timing of the developmental transition from the diapause maintenance phase to the termination phase. Along with recent findings indicating that life-cycle differences between ECB strains stem from allelic variation at a single sex-linked locus, our results demonstrate how dramatic shifts in animal seasonality can result from simple developmental and genetic changes. Although characterizing the multiple phases of the diapause developmental programme in other locally adapted populations and species will undoubtedly yield surprises about the nature of animal dormancy, results in the ECB moth suggest that focusing on genetic variation in the timing of the dormancy termination phase may help explain how (or whether) organisms rapidly respond to global climate change, expand their ranges after accidental or managed introductions, undergo seasonal adaptation, or evolve into distinct species through allochronic isolation.
 
 ### Used for
 - termination
@@ -4459,7 +4616,8 @@ Benchmarks for program termination
 (none)
 
 ### Supported languages
-(none)
+- C
+- Python
 
 ### Supported inputs
 (none)
@@ -4499,7 +4657,8 @@ In previous papers we have proposed an elementary discipline of strong functiona
 (none)
 
 ### Supported languages
-(none)
+- C
+- Haskell
 
 ### Supported inputs
 (none)
@@ -4509,6 +4668,46 @@ In previous papers we have proposed an elementary discipline of strong functiona
 
 ### Techniques
 - abstract interpretation
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## Termination of rights in the mechanism of civil legal relations
+
+- **Website:** N/A
+- **DOI:** 10.5281/zenodo.4046883
+- **Status:** Unknown
+- **Last updated:** 2024-07-19T15:37:09.936684+00:00
+
+### Description
+The article aims to research the termination of rights in the mechanism of civil legal relations. The relevance of the work is expressed by the fact that the analysis of the reasons for termination of right is based on the analysis of legal facts that are realized in the process of formalization of some civil legal relations. The fol-lowing methods were used: analysis, synthesis, comparison, abstraction. The nov-elty of the study is determined by the fact that the authors of the article research the causes of termination of right and the possibility of implementing this process is universal and local legal systems. The authors consider each of the principles of termination of right as an opportunity to form a qualitatively new subject of re-search and development of the local legal system. The article analyzes the general grounds for termination of rights and suggests implementation measures with consideration of international law. The practical relevance of the study is determined by the fact that for the first time not only direct forms of restriction of rights and measures to terminate them were considered, but also recommendations were developed on the details of the matter in question.
+
+### Used for
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+
+### Techniques
+(none)
 
 ### External tools
 (none)
@@ -4533,53 +4732,13 @@ In previous papers we have proposed an elementary discipline of strong functiona
 n/a
 
 ### Used for
-(none)
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-(none)
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## Data from: One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality
-
-- **Website:** N/A
-- **DOI:** 10.5061/dryad.1vh94
-- **Status:** Unknown
-- **Last updated:** 2022-05-29T23:07:58.305204+00:00
-
-### Description
-Evolutionary change in the timing of dormancy enables animals and plants to adapt to changing seasonal environments and can result in ecological speciation. Despite its clear biological importance, the mechanisms underlying the evolution of dormancy timing in animals remain poorly understood because of a lack of anatomical landmarks to discern which phase of dormancy an individual is experiencing. Taking advantage of the nearly universal characteristic of metabolic suppression during insect dormancy (diapause), we use patterns of respiratory metabolism to document physiological landmarks of dormancy and test which of the distinct phases of the dormancy developmental pathway contribute to a month-long shift in diapause timing between a pair of incipient moth species. Here, we show that divergence in life cycle between the earlier-emerging E-strain and the later-emerging Z-strain of European corn borer (ECB) is clearly explained by a delay in the timing of the developmental transition from the diapause maintenance phase to the termination phase. Along with recent findings indicating that life-cycle differences between ECB strains stem from allelic variation at a single sex-linked locus, our results demonstrate how dramatic shifts in animal seasonality can result from simple developmental and genetic changes. Although characterizing the multiple phases of the diapause developmental programme in other locally adapted populations and species will undoubtedly yield surprises about the nature of animal dormancy, results in the ECB moth suggest that focusing on genetic variation in the timing of the dormancy termination phase may help explain how (or whether) organisms rapidly respond to global climate change, expand their ranges after accidental or managed introductions, undergo seasonal adaptation, or evolve into distinct species through allochronic isolation.
-
-### Used for
 - termination
 
 ### Input formats
 (none)
 
 ### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
@@ -4619,47 +4778,7 @@ In this article, it is pointed out that the requirement for organogenetic termin
 (none)
 
 ### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-- termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## Termination of rights in the mechanism of civil legal relations
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.4046883
-- **Status:** Unknown
-- **Last updated:** 2024-07-19T15:37:09.936684+00:00
-
-### Description
-The article aims to research the termination of rights in the mechanism of civil legal relations. The relevance of the work is expressed by the fact that the analysis of the reasons for termination of right is based on the analysis of legal facts that are realized in the process of formalization of some civil legal relations. The fol-lowing methods were used: analysis, synthesis, comparison, abstraction. The nov-elty of the study is determined by the fact that the authors of the article research the causes of termination of right and the possibility of implementing this process is universal and local legal systems. The authors consider each of the principles of termination of right as an opportunity to form a qualitatively new subject of re-search and development of the local legal system. The article analyzes the general grounds for termination of rights and suggests implementation measures with consideration of international law. The practical relevance of the study is determined by the fact that for the first time not only direct forms of restriction of rights and measures to terminate them were considered, but also recommendations were developed on the details of the matter in question.
-
-### Used for
-- termination
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
+- C
 
 ### Supported inputs
 (none)
@@ -4691,6 +4810,47 @@ The article aims to research the termination of rights in the mechanism of civil
 
 ### Description
 Figure 5 Microscopic features of Russula bella (SFC20170819-05) A basidia B basidiola C clavate marginal cells D hymenial cystidia on lamellae sides E subulate marginal cells F hyphal termination at pileus margin G hyphal termination at pileus centre. Scale bars: 10 µm.
+
+### Used for
+- termination
+
+### Input formats
+(none)
+
+### Supported languages
+- C
+
+### Supported inputs
+(none)
+
+### Properties verified
+- termination
+
+### Techniques
+(none)
+
+### External tools
+(none)
+
+### Examples
+(none)
+
+### References
+(none)
+
+
+---
+
+## Soil N<sub>2</sub>O emissions after perennial legume termination in an alfalfa-wheat crop rotation system under Mediterranean conditions
+
+- **Website:** N/A
+- **DOI:** 10.4081/ija.2020.1613
+- **Status:** Unknown
+- **Last updated:** 2024-12-08T14:13:19.058501+00:00
+
+### Description
+Agricultural activities are potential sources of greenhouse gas (GHG) emissions, and nitrous oxide (N2O) is one of the most important non-carbon-dioxide GHGs. Perennial legumes such as alfalfa (Medicago sativa L.) have potential roles for reduction of soil GHG emissions as part of crop rotation systems. However, the implications of perennial legume termination by tillage and subsequent soil incorporation of the residues for reduced GHG emissions have been poorly examined in Mediterranean environments. With the aim to assess the magnitude of soil N2O emissions (important for the definition of mitigation strategies) after perennial legume termination in alfalfa-wheat crop rotation systems in a Mediterranean environment, we defined the hypothesis that alfalfa termination by tillage with incorporation of the crop residues will increase soil N2O emissions during the subsequent wheat season. To test this hypothesis, closed static chambers were used in a field–plot experiment, using a complete randomised block design with three replicates. Soil N2O emissions were monitored across 33 sampling dates from October 2017 to July 2018, as a comparison between an original 6-year-old alfalfa field ('continuous alfalfa') and alfalfa termination followed by wheat ('alfalfa+ wheat'). The soil N2O emission fluxes varied markedly across the treatments and throughout the monitoring period (from – 0.02±0.01 to 0.53±0.14 g N-N2O ha–1 h–1, and from 0.02±0.07 to 0.37±0.11 g N-N2O ha–1 h–1 for continuous alfalfa and alfalfa+wheat, respectively), generally following the changes in soil temperature. Several soil N2O emission peaks were recorded for both treatments, which mainly coincided with rainfall and with increased soil water content. In the 2 months following alfalfa termination, alfalfa+wheat showed higher cumulative weekly soil N2O emissions compared to continuous alfalfa. Following alfalfa termination for alfalfa+wheat, the increased cumulative weekly soil N2O emissions appeared to be due to asynchrony between nitrogen (N) released into the soil from mineralisation of the alfalfa residues and N uptake by the wheat. Despite these initial high soil N2O emissions for alfalfa+wheat, the seasonal cumulative soil N2O emissions were not significantly different (0.77±0.09 vs 0.85±0.18 kg N-N2O ha–1 for continuous alfalfa and alfalfa+wheat, respectively). These data suggest that legume perennial crop termination in alfalfa–wheat rotation systems does not lead to significant loss of N2O from the soil. The alfalfa termination by tillage performed in autumn might, on the one hand, have slowed the mineralisation process, and might, on the other hand, have synchronised the N release by the mineralised crop residues, with the N uptake by the wheat reducing the soil N2O emissions.
+Highlights - Soil N2O emissions peak after alfalfa termination and rainfall. - Soil N2O emissions increase after spring alfalfa mowing. - Seasonal cumulative soil N2O emissions are similar for alfalfa and alfalfa followed by wheat. - Mitigation effects of perennial legume on soil N2O emissions are not lost after termination by tillage under alfalfa-wheat rotation.
 
 ### Used for
 - termination
@@ -4802,16 +4962,15 @@ Figure 7 Microscopic features of Russula sp. (SFC20160726-13) A basidia B basidi
 
 ---
 
-## Soil N<sub>2</sub>O emissions after perennial legume termination in an alfalfa-wheat crop rotation system under Mediterranean conditions
+## Early-season biomass and weather enable robust cereal rye cover crop biomass predictions
 
 - **Website:** N/A
-- **DOI:** 10.4081/ija.2020.1613
+- **DOI:** 10.5061/dryad.ngf1vhj1r
 - **Status:** Unknown
-- **Last updated:** 2024-12-08T14:13:19.058501+00:00
+- **Last updated:** 2024-01-22T05:06:43.233549+00:00
 
 ### Description
-Agricultural activities are potential sources of greenhouse gas (GHG) emissions, and nitrous oxide (N2O) is one of the most important non-carbon-dioxide GHGs. Perennial legumes such as alfalfa (Medicago sativa L.) have potential roles for reduction of soil GHG emissions as part of crop rotation systems. However, the implications of perennial legume termination by tillage and subsequent soil incorporation of the residues for reduced GHG emissions have been poorly examined in Mediterranean environments. With the aim to assess the magnitude of soil N2O emissions (important for the definition of mitigation strategies) after perennial legume termination in alfalfa-wheat crop rotation systems in a Mediterranean environment, we defined the hypothesis that alfalfa termination by tillage with incorporation of the crop residues will increase soil N2O emissions during the subsequent wheat season. To test this hypothesis, closed static chambers were used in a field–plot experiment, using a complete randomised block design with three replicates. Soil N2O emissions were monitored across 33 sampling dates from October 2017 to July 2018, as a comparison between an original 6-year-old alfalfa field ('continuous alfalfa') and alfalfa termination followed by wheat ('alfalfa+ wheat'). The soil N2O emission fluxes varied markedly across the treatments and throughout the monitoring period (from – 0.02±0.01 to 0.53±0.14 g N-N2O ha–1 h–1, and from 0.02±0.07 to 0.37±0.11 g N-N2O ha–1 h–1 for continuous alfalfa and alfalfa+wheat, respectively), generally following the changes in soil temperature. Several soil N2O emission peaks were recorded for both treatments, which mainly coincided with rainfall and with increased soil water content. In the 2 months following alfalfa termination, alfalfa+wheat showed higher cumulative weekly soil N2O emissions compared to continuous alfalfa. Following alfalfa termination for alfalfa+wheat, the increased cumulative weekly soil N2O emissions appeared to be due to asynchrony between nitrogen (N) released into the soil from mineralisation of the alfalfa residues and N uptake by the wheat. Despite these initial high soil N2O emissions for alfalfa+wheat, the seasonal cumulative soil N2O emissions were not significantly different (0.77±0.09 vs 0.85±0.18 kg N-N2O ha–1 for continuous alfalfa and alfalfa+wheat, respectively). These data suggest that legume perennial crop termination in alfalfa–wheat rotation systems does not lead to significant loss of N2O from the soil. The alfalfa termination by tillage performed in autumn might, on the one hand, have slowed the mineralisation process, and might, on the other hand, have synchronised the N release by the mineralised crop residues, with the N uptake by the wheat reducing the soil N2O emissions.
-Highlights - Soil N2O emissions peak after alfalfa termination and rainfall. - Soil N2O emissions increase after spring alfalfa mowing. - Seasonal cumulative soil N2O emissions are similar for alfalfa and alfalfa followed by wheat. - Mitigation effects of perennial legume on soil N2O emissions are not lost after termination by tillage under alfalfa-wheat rotation.
+Farmers need accurate estimates of winter cover crop biomass to make informed decisions on termination timing or to estimate potential release of nitrogen from cover crop residues to subsequent cash crops. Utilizing data from an extensive experiment across 11 states from 2016 to 2020, this study explores the most reliable predictors for determining cereal rye cover crop biomass at the time of termination. Our findings demonstrate a strong relationship between early-season and late-season cover crop biomass. Employing a random forest model, we predicted late-season cereal rye biomass with a margin of error of approximately 1,000 kg ha-1 based on early-season biomass, growing degree days, cereal rye planting and termination dates, photosynthetically active radiation, precipitation, and site coordinates as predictors. Our results suggest that similar modeling approaches could be combined with remotely sensed early-season biomass estimations to improve the accuracy of predicting winter cover crop biomass at termination for decision support tools.
 
 ### Used for
 - termination
@@ -4827,46 +4986,6 @@ Highlights - Soil N2O emissions peak after alfalfa termination and rainfall. - S
 
 ### Properties verified
 - termination
-
-### Techniques
-(none)
-
-### External tools
-(none)
-
-### Examples
-(none)
-
-### References
-(none)
-
-
----
-
-## TCP-drought-termination-v1.0.0
-
-- **Website:** N/A
-- **DOI:** 10.5281/zenodo.13848266
-- **Status:** Unknown
-- **Last updated:** 2024-09-27T12:28:26.502160+00:00
-
-### Description
-(none)
-
-### Used for
-(none)
-
-### Input formats
-(none)
-
-### Supported languages
-(none)
-
-### Supported inputs
-(none)
-
-### Properties verified
-(none)
 
 ### Techniques
 (none)
