@@ -123,8 +123,12 @@ def main(argv=None):
     commit_time = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
     commit_message = f"Update wiki: {args.page} ({commit_time})"
 
+    print(f"Preparing to update wiki page '{args.page}' in repository '{owner_repo}' with filename '{filename}'")
+    print("Commit message:", commit_message)
+
     with tempfile.TemporaryDirectory() as td:
         tmpdir = Path(td)
+        print("Using temporary directory for clone:", tmpdir)
         if not args.confirm:
             simulated_clone = tmpdir / 'wiki'
             simulated_clone.mkdir(parents=True, exist_ok=True)
@@ -137,12 +141,14 @@ def main(argv=None):
             return
 
         try:
+            print("Cloning wiki repository...")
             clone_path = clone_wiki(owner_repo, tmpdir)
         except Exception as e:
             print("ERROR: Failed to clone wiki: ", str(e))
             sys.exit(5)
 
         try:
+            print("Verifying remote URL...")
             remote_url = get_remote_url(clone_path)
         except Exception as e:
             print("ERROR: failed to get remote url:", e)
@@ -152,9 +158,11 @@ def main(argv=None):
             print(f"ERROR: remote url {remote_url} does not look like expected {owner_repo}; aborting")
             sys.exit(7)
 
+        print("Writing remote wiki contents...")
         out_file = write_page_file(clone_path, filename, content)
 
         try:
+            print("Adding and committing changes...")
             changed = git_add_commit(clone_path, out_file.relative_to(clone_path), commit_message, token)
         except Exception as e:
             print("ERROR: git add/commit failed:", e)
@@ -169,6 +177,7 @@ def main(argv=None):
             sys.exit(9)
 
         try:
+            print("Pushing changes to remote...")
             safe_push(clone_path, owner_repo, token)
         except Exception as e:
             print("ERROR: push failed:", e)
