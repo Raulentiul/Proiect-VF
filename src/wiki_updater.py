@@ -11,6 +11,7 @@ Notes:
 - By default it runs in dry-run mode. Use --confirm to allow pushing.
 """
 import argparse
+import datetime
 import os
 import subprocess
 import sys
@@ -68,9 +69,7 @@ def write_page_file(clone_path: Path, filename: str, content: str) -> Path:
     return dest
 
 
-def git_add_commit(cwd: Path, file_path: Path, author_name: str, author_email: str, message: str, token: Optional[str]):
-    run(["git", "config", "user.name", author_name], cwd=cwd, token=token)
-    run(["git", "config", "user.email", author_email], cwd=cwd, token=token)
+def git_add_commit(cwd: Path, file_path: Path, message: str, token: Optional[str]):
     run(["git", "add", str(file_path)], cwd=cwd, token=token)
     try:
         run(["git", "commit", "-m", message], cwd=cwd, token=token)
@@ -82,7 +81,7 @@ def git_add_commit(cwd: Path, file_path: Path, author_name: str, author_email: s
     return True
 
 
-def safe_push(cwd: Path, owner_repo: str, token: str, token_env_name: str):
+def safe_push(cwd: Path, owner_repo: str, token: str):
     try:
         current_push = run(["git", "remote", "get-url", "--push", "origin"], cwd=cwd).stdout.strip()
     except RuntimeError:
@@ -101,39 +100,28 @@ def main(argv=None):
     parser.add_argument("--repo", required=True, help="OWNER/REPO of the target repository")
     parser.add_argument("--page", required=True, help="Wiki page title (will be converted to filename)")
     group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("--content-file", help="Path to a local file with content to put in the wiki page")
-    group.add_argument("--content", help="Content string for the wiki page")
-    parser.add_argument("--token-env", default="GITHUB_TOKEN", help="Environment variable name that holds the GitHub token (default: GITHUB_TOKEN)")
-    parser.add_argument("--commit-message", default=None, help="Commit message to use (default generated)")
-    parser.add_argument("--author-name", default="github-wiki-updater", help="git author name to configure locally")
-    parser.add_argument("--author-email", default="noreply@github.com", help="git author email to configure locally")
-    parser.add_argument("--confirm", action="store_true", help="Confirm an actual push (required to allow pushing)")
+    group.add_argument("--content", help="Path to a local file with content to put in the wiki page")
+    parser.add_argument("--confirm", help="Confirm an actual push (required to allow pushing)")
     args = parser.parse_args(argv)
 
-    token = os.environ.get(args.token_env)
-
-    if not token:
-        print(f"ERROR: Environment variable {args.token_env} not set. Set it to a GitHub token with repo/public_repo scope.")
-        sys.exit(2)
-
+    token = os.environ.get('GITHUB_TOKEN')
 
     owner_repo = args.repo
     filename = sanitize_page_to_filename(args.page)
 
-    if args.content_file:
-        content_path = Path(args.content_file)
+    content = ""
+    if args.content:
+        content_path = Path(args.content)
         if not content_path.exists():
             print(f"ERROR: content file {content_path} does not exist")
             sys.exit(3)
+
         content = content_path.read_text(encoding='utf-8')
     else:
-        content = args.content
+        print("ERROR: --content-file argument is required")
 
-    if content is None:
-        print("ERROR: No content provided")
-        sys.exit(4)
-
-    commit_message = args.commit_message or f"Update wiki: {args.page}"
+    commit_time = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
+    commit_message = f"Update wiki: {args.page} ({commit_time})"
 
     with tempfile.TemporaryDirectory() as td:
         tmpdir = Path(td)
@@ -167,7 +155,7 @@ def main(argv=None):
         out_file = write_page_file(clone_path, filename, content)
 
         try:
-            changed = git_add_commit(clone_path, out_file.relative_to(clone_path), args.author_name, args.author_email, commit_message, token)
+            changed = git_add_commit(clone_path, out_file.relative_to(clone_path), commit_message, token)
         except Exception as e:
             print("ERROR: git add/commit failed:", e)
             sys.exit(8)
@@ -176,17 +164,12 @@ def main(argv=None):
             print("No changes detected; nothing to push.")
             return
 
-        if args.no_push:
-            print(f"Local commit created in {clone_path}, but --no-push was passed so not pushing")
-            print("You can inspect the repo and push manually if desired.")
-            return
-
         if not args.confirm:
             print("Refusing to push: --confirm not provided. Use --confirm to allow pushing to remote.")
             sys.exit(9)
 
         try:
-            safe_push(clone_path, owner_repo, token, args.token_env)
+            safe_push(clone_path, owner_repo, token)
         except Exception as e:
             print("ERROR: push failed:", e)
             sys.exit(10)
